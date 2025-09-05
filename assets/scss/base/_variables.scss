@@ -13,6 +13,30 @@
   --websize: 150rem;
   --text-small: 1.3rem;
   --base-round: 0.5rem;
+  --icon-notice: url("../images/icon/blue/notice.svg");
+  --icon-theme: url("../images/icon/blue/theme.svg");
+  --icon-darkmode: url("../images/icon/blue/darkmode.svg");
+  --icon-lightmode: url("../images/icon/blue/lightmode.svg");
+  --icon-mypage: url("../images/icon/blue/mypage.svg");
+  --icon-menu01: url("../images/icon/blue/menu01.svg");
+  --icon-menu02: url("../images/icon/blue/menu02.svg");
+  --icon-menu03: url("../images/icon/blue/menu03.svg");
+  --icon-menu04: url("../images/icon/blue/menu04.svg");
+  --icon-menu05: url("../images/icon/blue/menu05.svg");
+  --icon-menu06: url("../images/icon/blue/menu06.svg");
+  --icon-menu07: url("../images/icon/blue/menu07.svg");
+  --icon-menu08: url("../images/icon/blue/menu08.svg");
+  --icon-menu09: url("../images/icon/blue/menu09.svg");
+  --icon-menu10: url("../images/icon/blue/menu10.svg");
+  --icon-menu11: url("../images/icon/blue/menu11.svg");
+  --icon-arrow1: url("../images/icon/blue/arrow1.svg");
+  --icon-close: url("../images/icon/blue/close.svg");
+  --icon-edit: url("../images/icon/blue/edit.svg");
+  --icon-logout: url("../images/icon/blue/logout.svg");
+  --icon-maximize: url("../images/icon/blue/maximize.svg");
+  --icon-trash: url("../images/icon/blue/trash.svg");
+  --icon-menu_align_up: url("../images/icon/blue/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/blue/menu_align_down.svg");
 }
 
 [data-theme="dark"] {
@@ -35,19 +59,115 @@
 }
 
 /* 테마별 색상  */
-[data-theme-color="black"] {
+[data-theme-color="blue"] {
   --primary-color: #1277e7;
   --secondary-color: #e9f3ff;
+  --icon-notice: url("../images/icon/blue/notice.svg");
+  --icon-theme: url("../images/icon/blue/theme.svg");
+  --icon-darkmode: url("../images/icon/blue/darkmode.svg");
+  --icon-lightmode: url("../images/icon/blue/lightmode.svg");
+  --icon-mypage: url("../images/icon/blue/mypage.svg");
+  --icon-menu01: url("../images/icon/blue/menu01.svg");
+  --icon-menu02: url("../images/icon/blue/menu02.svg");
+  --icon-menu03: url("../images/icon/blue/menu03.svg");
+  --icon-menu04: url("../images/icon/blue/menu04.svg");
+  --icon-menu05: url("../images/icon/blue/menu05.svg");
+  --icon-menu06: url("../images/icon/blue/menu06.svg");
+  --icon-menu07: url("../images/icon/blue/menu07.svg");
+  --icon-menu08: url("../images/icon/blue/menu08.svg");
+  --icon-menu09: url("../images/icon/blue/menu09.svg");
+  --icon-menu10: url("../images/icon/blue/menu10.svg");
+  --icon-menu11: url("../images/icon/blue/menu11.svg");
+  --icon-arrow1: url("../images/icon/blue/arrow1.svg");
+  --icon-close: url("../images/icon/blue/close.svg");
+  --icon-edit: url("../images/icon/blue/edit.svg");
+  --icon-logout: url("../images/icon/blue/logout.svg");
+  --icon-maximize: url("../images/icon/blue/maximize.svg");
+  --icon-trash: url("../images/icon/blue/trash.svg");
+  --icon-menu_align_up: url("../images/icon/blue/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/blue/menu_align_down.svg");
 }
 [data-theme-color="green"] {
   --primary-color: #44c378;
   --secondary-color: #eaf5e9;
+  --icon-notice: url("../images/icon/green/notice.svg");
+  --icon-theme: url("../images/icon/green/theme.svg");
+  --icon-darkmode: url("../images/icon/green/darkmode.svg");
+  --icon-lightmode: url("../images/icon/green/lightmode.svg");
+  --icon-mypage: url("../images/icon/green/mypage.svg");
+  --icon-menu01: url("../images/icon/green/menu01.svg");
+  --icon-menu02: url("../images/icon/green/menu02.svg");
+  --icon-menu03: url("../images/icon/green/menu03.svg");
+  --icon-menu04: url("../images/icon/green/menu04.svg");
+  --icon-menu05: url("../images/icon/green/menu05.svg");
+  --icon-menu06: url("../images/icon/green/menu06.svg");
+  --icon-menu07: url("../images/icon/green/menu07.svg");
+  --icon-menu08: url("../images/icon/green/menu08.svg");
+  --icon-menu09: url("../images/icon/green/menu09.svg");
+  --icon-menu10: url("../images/icon/green/menu10.svg");
+  --icon-menu11: url("../images/icon/green/menu11.svg");
+  --icon-arrow1: url("../images/icon/green/arrow1.svg");
+  --icon-close: url("../images/icon/green/close.svg");
+  --icon-edit: url("../images/icon/green/edit.svg");
+  --icon-logout: url("../images/icon/green/logout.svg");
+  --icon-maximize: url("../images/icon/green/maximize.svg");
+  --icon-trash: url("../images/icon/green/trash.svg");
+  --icon-menu_align_up: url("../images/icon/green/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/green/menu_align_down.svg");
 }
 [data-theme-color="red"] {
   --primary-color: #e64f56;
   --secondary-color: #f5e9e9;
+  --icon-notice: url("../images/icon/red/notice.svg");
+  --icon-theme: url("../images/icon/red/theme.svg");
+  --icon-darkmode: url("../images/icon/red/darkmode.svg");
+  --icon-lightmode: url("../images/icon/red/lightmode.svg");
+  --icon-mypage: url("../images/icon/red/mypage.svg");
+  --icon-menu01: url("../images/icon/red/menu01.svg");
+  --icon-menu02: url("../images/icon/red/menu02.svg");
+  --icon-menu03: url("../images/icon/red/menu03.svg");
+  --icon-menu04: url("../images/icon/red/menu04.svg");
+  --icon-menu05: url("../images/icon/red/menu05.svg");
+  --icon-menu06: url("../images/icon/red/menu06.svg");
+  --icon-menu07: url("../images/icon/red/menu07.svg");
+  --icon-menu08: url("../images/icon/red/menu08.svg");
+  --icon-menu09: url("../images/icon/red/menu09.svg");
+  --icon-menu10: url("../images/icon/red/menu10.svg");
+  --icon-menu11: url("../images/icon/red/menu11.svg");
+  --icon-arrow1: url("../images/icon/red/arrow1.svg");
+  --icon-close: url("../images/icon/red/close.svg");
+  --icon-edit: url("../images/icon/red/edit.svg");
+  --icon-logout: url("../images/icon/red/logout.svg");
+  --icon-maximize: url("../images/icon/red/maximize.svg");
+  --icon-trash: url("../images/icon/red/trash.svg");
+  --icon-menu_align_up: url("../images/icon/red/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/red/menu_align_down.svg");
 }
 [data-theme-color="black"] {
   --primary-color: #2c2e31;
   --secondary-color: #eee;
+  --icon-notice: url("../images/icon/black/notice.svg");
+  --icon-theme: url("../images/icon/black/theme.svg");
+  --icon-darkmode: url("../images/icon/black/darkmode.svg");
+  --icon-lightmode: url("../images/icon/black/lightmode.svg");
+  --icon-mypage: url("../images/icon/black/mypage.svg");
+  --icon-menu01: url("../images/icon/black/menu01.svg");
+  --icon-menu02: url("../images/icon/black/menu02.svg");
+  --icon-menu03: url("../images/icon/black/menu03.svg");
+  --icon-menu04: url("../images/icon/black/menu04.svg");
+  --icon-menu05: url("../images/icon/black/menu05.svg");
+  --icon-menu06: url("../images/icon/black/menu06.svg");
+  --icon-menu07: url("../images/icon/black/menu07.svg");
+  --icon-menu08: url("../images/icon/black/menu08.svg");
+  --icon-menu09: url("../images/icon/black/menu09.svg");
+  --icon-menu10: url("../images/icon/black/menu10.svg");
+  --icon-menu11: url("../images/icon/black/menu11.svg");
+  --icon-arrow1: url("../images/icon/black/arrow1.svg");
+  --icon-close: url("../images/icon/black/close.svg");
+  --icon-edit: url("../images/icon/black/edit.svg");
+  --icon-logout: url("../images/icon/black/logout.svg");
+  --icon-maximize: url("../images/icon/black/maximize.svg");
+  --icon-trash: url("../images/icon/black/trash.svg");
+  --icon-menu_align_up: url("../images/icon/black/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/black/menu_align_down.svg");
 }

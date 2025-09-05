@@ -57,12 +57,7 @@
         margin-left: 0.5rem;
         cursor: pointer;
         span {
-          @include svg-icon(
-            "../images/icon/search.svg",
-            1.2rem,
-            1.2rem,
-            var(--gray-0)
-          );
+          @include svg-icon("../images/icon/search_w.svg", 1.2rem, 1.2rem);
         }
       }
     }
@@ -88,23 +83,13 @@
       }
       &__tel {
         span {
-          @include svg-icon(
-            "../images/icon/tel.svg",
-            1.8rem,
-            1.8rem,
-            var(--gray-100)
-          );
+          @include svg-icon("../images/icon/tel.svg", 1.8rem, 1.8rem);
           margin-right: 0.5rem;
         }
       }
       &__email {
         span {
-          @include svg-icon(
-            "../images/icon/email.svg",
-            1.8rem,
-            1.8rem,
-            var(--gray-100)
-          );
+          @include svg-icon("../images/icon/email.svg", 1.8rem, 1.8rem);
           margin-right: 0.5rem;
         }
       }

@@ -19,16 +19,23 @@
 //   }
 // }
 
-@mixin svg-icon($path, $width, $height, $color: currentColor) {
+// @mixin svg-icon($path, $width, $height, $color: currentColor) {
+//   display: inline-block;
+//   width: $width;
+//   height: $height;
+
+//   background-color: $color;
+
+//   -webkit-mask: url(#{$path}) no-repeat center;
+//   -webkit-mask-size: contain;
+
+//   mask: url(#{$path}) no-repeat center;
+//   mask-size: contain;
+// }
+@mixin svg-icon($path, $width, $height) {
   display: inline-block;
   width: $width;
   height: $height;
-
-  background-color: $color;
-
-  -webkit-mask: url(#{$path}) no-repeat center;
-  -webkit-mask-size: contain;
-
-  mask: url(#{$path}) no-repeat center;
-  mask-size: contain;
+  background: url(#{$path}) no-repeat center;
+  background-size: contain;
 }

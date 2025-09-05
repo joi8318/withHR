@@ -441,6 +441,30 @@ template {
   --websize: 150rem;
   --text-small: 1.3rem;
   --base-round: 0.5rem;
+  --icon-notice: url("../images/icon/blue/notice.svg");
+  --icon-theme: url("../images/icon/blue/theme.svg");
+  --icon-darkmode: url("../images/icon/blue/darkmode.svg");
+  --icon-lightmode: url("../images/icon/blue/lightmode.svg");
+  --icon-mypage: url("../images/icon/blue/mypage.svg");
+  --icon-menu01: url("../images/icon/blue/menu01.svg");
+  --icon-menu02: url("../images/icon/blue/menu02.svg");
+  --icon-menu03: url("../images/icon/blue/menu03.svg");
+  --icon-menu04: url("../images/icon/blue/menu04.svg");
+  --icon-menu05: url("../images/icon/blue/menu05.svg");
+  --icon-menu06: url("../images/icon/blue/menu06.svg");
+  --icon-menu07: url("../images/icon/blue/menu07.svg");
+  --icon-menu08: url("../images/icon/blue/menu08.svg");
+  --icon-menu09: url("../images/icon/blue/menu09.svg");
+  --icon-menu10: url("../images/icon/blue/menu10.svg");
+  --icon-menu11: url("../images/icon/blue/menu11.svg");
+  --icon-arrow1: url("../images/icon/blue/arrow1.svg");
+  --icon-close: url("../images/icon/blue/close.svg");
+  --icon-edit: url("../images/icon/blue/edit.svg");
+  --icon-logout: url("../images/icon/blue/logout.svg");
+  --icon-maximize: url("../images/icon/blue/maximize.svg");
+  --icon-trash: url("../images/icon/blue/trash.svg");
+  --icon-menu_align_up: url("../images/icon/blue/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/blue/menu_align_down.svg");
 }
 
 [data-theme=dark] {
@@ -463,24 +487,120 @@ template {
 }
 
 /* 테마별 색상  */
-[data-theme-color=black] {
+[data-theme-color=blue] {
   --primary-color: #1277e7;
   --secondary-color: #e9f3ff;
+  --icon-notice: url("../images/icon/blue/notice.svg");
+  --icon-theme: url("../images/icon/blue/theme.svg");
+  --icon-darkmode: url("../images/icon/blue/darkmode.svg");
+  --icon-lightmode: url("../images/icon/blue/lightmode.svg");
+  --icon-mypage: url("../images/icon/blue/mypage.svg");
+  --icon-menu01: url("../images/icon/blue/menu01.svg");
+  --icon-menu02: url("../images/icon/blue/menu02.svg");
+  --icon-menu03: url("../images/icon/blue/menu03.svg");
+  --icon-menu04: url("../images/icon/blue/menu04.svg");
+  --icon-menu05: url("../images/icon/blue/menu05.svg");
+  --icon-menu06: url("../images/icon/blue/menu06.svg");
+  --icon-menu07: url("../images/icon/blue/menu07.svg");
+  --icon-menu08: url("../images/icon/blue/menu08.svg");
+  --icon-menu09: url("../images/icon/blue/menu09.svg");
+  --icon-menu10: url("../images/icon/blue/menu10.svg");
+  --icon-menu11: url("../images/icon/blue/menu11.svg");
+  --icon-arrow1: url("../images/icon/blue/arrow1.svg");
+  --icon-close: url("../images/icon/blue/close.svg");
+  --icon-edit: url("../images/icon/blue/edit.svg");
+  --icon-logout: url("../images/icon/blue/logout.svg");
+  --icon-maximize: url("../images/icon/blue/maximize.svg");
+  --icon-trash: url("../images/icon/blue/trash.svg");
+  --icon-menu_align_up: url("../images/icon/blue/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/blue/menu_align_down.svg");
 }
 
 [data-theme-color=green] {
   --primary-color: #44c378;
   --secondary-color: #eaf5e9;
+  --icon-notice: url("../images/icon/green/notice.svg");
+  --icon-theme: url("../images/icon/green/theme.svg");
+  --icon-darkmode: url("../images/icon/green/darkmode.svg");
+  --icon-lightmode: url("../images/icon/green/lightmode.svg");
+  --icon-mypage: url("../images/icon/green/mypage.svg");
+  --icon-menu01: url("../images/icon/green/menu01.svg");
+  --icon-menu02: url("../images/icon/green/menu02.svg");
+  --icon-menu03: url("../images/icon/green/menu03.svg");
+  --icon-menu04: url("../images/icon/green/menu04.svg");
+  --icon-menu05: url("../images/icon/green/menu05.svg");
+  --icon-menu06: url("../images/icon/green/menu06.svg");
+  --icon-menu07: url("../images/icon/green/menu07.svg");
+  --icon-menu08: url("../images/icon/green/menu08.svg");
+  --icon-menu09: url("../images/icon/green/menu09.svg");
+  --icon-menu10: url("../images/icon/green/menu10.svg");
+  --icon-menu11: url("../images/icon/green/menu11.svg");
+  --icon-arrow1: url("../images/icon/green/arrow1.svg");
+  --icon-close: url("../images/icon/green/close.svg");
+  --icon-edit: url("../images/icon/green/edit.svg");
+  --icon-logout: url("../images/icon/green/logout.svg");
+  --icon-maximize: url("../images/icon/green/maximize.svg");
+  --icon-trash: url("../images/icon/green/trash.svg");
+  --icon-menu_align_up: url("../images/icon/green/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/green/menu_align_down.svg");
 }
 
 [data-theme-color=red] {
   --primary-color: #e64f56;
   --secondary-color: #f5e9e9;
+  --icon-notice: url("../images/icon/red/notice.svg");
+  --icon-theme: url("../images/icon/red/theme.svg");
+  --icon-darkmode: url("../images/icon/red/darkmode.svg");
+  --icon-lightmode: url("../images/icon/red/lightmode.svg");
+  --icon-mypage: url("../images/icon/red/mypage.svg");
+  --icon-menu01: url("../images/icon/red/menu01.svg");
+  --icon-menu02: url("../images/icon/red/menu02.svg");
+  --icon-menu03: url("../images/icon/red/menu03.svg");
+  --icon-menu04: url("../images/icon/red/menu04.svg");
+  --icon-menu05: url("../images/icon/red/menu05.svg");
+  --icon-menu06: url("../images/icon/red/menu06.svg");
+  --icon-menu07: url("../images/icon/red/menu07.svg");
+  --icon-menu08: url("../images/icon/red/menu08.svg");
+  --icon-menu09: url("../images/icon/red/menu09.svg");
+  --icon-menu10: url("../images/icon/red/menu10.svg");
+  --icon-menu11: url("../images/icon/red/menu11.svg");
+  --icon-arrow1: url("../images/icon/red/arrow1.svg");
+  --icon-close: url("../images/icon/red/close.svg");
+  --icon-edit: url("../images/icon/red/edit.svg");
+  --icon-logout: url("../images/icon/red/logout.svg");
+  --icon-maximize: url("../images/icon/red/maximize.svg");
+  --icon-trash: url("../images/icon/red/trash.svg");
+  --icon-menu_align_up: url("../images/icon/red/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/red/menu_align_down.svg");
 }
 
 [data-theme-color=black] {
   --primary-color: #2c2e31;
   --secondary-color: #eee;
+  --icon-notice: url("../images/icon/black/notice.svg");
+  --icon-theme: url("../images/icon/black/theme.svg");
+  --icon-darkmode: url("../images/icon/black/darkmode.svg");
+  --icon-lightmode: url("../images/icon/black/lightmode.svg");
+  --icon-mypage: url("../images/icon/black/mypage.svg");
+  --icon-menu01: url("../images/icon/black/menu01.svg");
+  --icon-menu02: url("../images/icon/black/menu02.svg");
+  --icon-menu03: url("../images/icon/black/menu03.svg");
+  --icon-menu04: url("../images/icon/black/menu04.svg");
+  --icon-menu05: url("../images/icon/black/menu05.svg");
+  --icon-menu06: url("../images/icon/black/menu06.svg");
+  --icon-menu07: url("../images/icon/black/menu07.svg");
+  --icon-menu08: url("../images/icon/black/menu08.svg");
+  --icon-menu09: url("../images/icon/black/menu09.svg");
+  --icon-menu10: url("../images/icon/black/menu10.svg");
+  --icon-menu11: url("../images/icon/black/menu11.svg");
+  --icon-arrow1: url("../images/icon/black/arrow1.svg");
+  --icon-close: url("../images/icon/black/close.svg");
+  --icon-edit: url("../images/icon/black/edit.svg");
+  --icon-logout: url("../images/icon/black/logout.svg");
+  --icon-maximize: url("../images/icon/black/maximize.svg");
+  --icon-trash: url("../images/icon/black/trash.svg");
+  --icon-menu_align_up: url("../images/icon/black/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/black/menu_align_down.svg");
 }
 
 @font-face {
@@ -795,6 +915,30 @@ button {
   --websize: 150rem;
   --text-small: 1.3rem;
   --base-round: 0.5rem;
+  --icon-notice: url("../images/icon/blue/notice.svg");
+  --icon-theme: url("../images/icon/blue/theme.svg");
+  --icon-darkmode: url("../images/icon/blue/darkmode.svg");
+  --icon-lightmode: url("../images/icon/blue/lightmode.svg");
+  --icon-mypage: url("../images/icon/blue/mypage.svg");
+  --icon-menu01: url("../images/icon/blue/menu01.svg");
+  --icon-menu02: url("../images/icon/blue/menu02.svg");
+  --icon-menu03: url("../images/icon/blue/menu03.svg");
+  --icon-menu04: url("../images/icon/blue/menu04.svg");
+  --icon-menu05: url("../images/icon/blue/menu05.svg");
+  --icon-menu06: url("../images/icon/blue/menu06.svg");
+  --icon-menu07: url("../images/icon/blue/menu07.svg");
+  --icon-menu08: url("../images/icon/blue/menu08.svg");
+  --icon-menu09: url("../images/icon/blue/menu09.svg");
+  --icon-menu10: url("../images/icon/blue/menu10.svg");
+  --icon-menu11: url("../images/icon/blue/menu11.svg");
+  --icon-arrow1: url("../images/icon/blue/arrow1.svg");
+  --icon-close: url("../images/icon/blue/close.svg");
+  --icon-edit: url("../images/icon/blue/edit.svg");
+  --icon-logout: url("../images/icon/blue/logout.svg");
+  --icon-maximize: url("../images/icon/blue/maximize.svg");
+  --icon-trash: url("../images/icon/blue/trash.svg");
+  --icon-menu_align_up: url("../images/icon/blue/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/blue/menu_align_down.svg");
 }
 
 [data-theme=dark] {
@@ -817,24 +961,120 @@ button {
 }
 
 /* 테마별 색상  */
-[data-theme-color=black] {
+[data-theme-color=blue] {
   --primary-color: #1277e7;
   --secondary-color: #e9f3ff;
+  --icon-notice: url("../images/icon/blue/notice.svg");
+  --icon-theme: url("../images/icon/blue/theme.svg");
+  --icon-darkmode: url("../images/icon/blue/darkmode.svg");
+  --icon-lightmode: url("../images/icon/blue/lightmode.svg");
+  --icon-mypage: url("../images/icon/blue/mypage.svg");
+  --icon-menu01: url("../images/icon/blue/menu01.svg");
+  --icon-menu02: url("../images/icon/blue/menu02.svg");
+  --icon-menu03: url("../images/icon/blue/menu03.svg");
+  --icon-menu04: url("../images/icon/blue/menu04.svg");
+  --icon-menu05: url("../images/icon/blue/menu05.svg");
+  --icon-menu06: url("../images/icon/blue/menu06.svg");
+  --icon-menu07: url("../images/icon/blue/menu07.svg");
+  --icon-menu08: url("../images/icon/blue/menu08.svg");
+  --icon-menu09: url("../images/icon/blue/menu09.svg");
+  --icon-menu10: url("../images/icon/blue/menu10.svg");
+  --icon-menu11: url("../images/icon/blue/menu11.svg");
+  --icon-arrow1: url("../images/icon/blue/arrow1.svg");
+  --icon-close: url("../images/icon/blue/close.svg");
+  --icon-edit: url("../images/icon/blue/edit.svg");
+  --icon-logout: url("../images/icon/blue/logout.svg");
+  --icon-maximize: url("../images/icon/blue/maximize.svg");
+  --icon-trash: url("../images/icon/blue/trash.svg");
+  --icon-menu_align_up: url("../images/icon/blue/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/blue/menu_align_down.svg");
 }
 
 [data-theme-color=green] {
   --primary-color: #44c378;
   --secondary-color: #eaf5e9;
+  --icon-notice: url("../images/icon/green/notice.svg");
+  --icon-theme: url("../images/icon/green/theme.svg");
+  --icon-darkmode: url("../images/icon/green/darkmode.svg");
+  --icon-lightmode: url("../images/icon/green/lightmode.svg");
+  --icon-mypage: url("../images/icon/green/mypage.svg");
+  --icon-menu01: url("../images/icon/green/menu01.svg");
+  --icon-menu02: url("../images/icon/green/menu02.svg");
+  --icon-menu03: url("../images/icon/green/menu03.svg");
+  --icon-menu04: url("../images/icon/green/menu04.svg");
+  --icon-menu05: url("../images/icon/green/menu05.svg");
+  --icon-menu06: url("../images/icon/green/menu06.svg");
+  --icon-menu07: url("../images/icon/green/menu07.svg");
+  --icon-menu08: url("../images/icon/green/menu08.svg");
+  --icon-menu09: url("../images/icon/green/menu09.svg");
+  --icon-menu10: url("../images/icon/green/menu10.svg");
+  --icon-menu11: url("../images/icon/green/menu11.svg");
+  --icon-arrow1: url("../images/icon/green/arrow1.svg");
+  --icon-close: url("../images/icon/green/close.svg");
+  --icon-edit: url("../images/icon/green/edit.svg");
+  --icon-logout: url("../images/icon/green/logout.svg");
+  --icon-maximize: url("../images/icon/green/maximize.svg");
+  --icon-trash: url("../images/icon/green/trash.svg");
+  --icon-menu_align_up: url("../images/icon/green/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/green/menu_align_down.svg");
 }
 
 [data-theme-color=red] {
   --primary-color: #e64f56;
   --secondary-color: #f5e9e9;
+  --icon-notice: url("../images/icon/red/notice.svg");
+  --icon-theme: url("../images/icon/red/theme.svg");
+  --icon-darkmode: url("../images/icon/red/darkmode.svg");
+  --icon-lightmode: url("../images/icon/red/lightmode.svg");
+  --icon-mypage: url("../images/icon/red/mypage.svg");
+  --icon-menu01: url("../images/icon/red/menu01.svg");
+  --icon-menu02: url("../images/icon/red/menu02.svg");
+  --icon-menu03: url("../images/icon/red/menu03.svg");
+  --icon-menu04: url("../images/icon/red/menu04.svg");
+  --icon-menu05: url("../images/icon/red/menu05.svg");
+  --icon-menu06: url("../images/icon/red/menu06.svg");
+  --icon-menu07: url("../images/icon/red/menu07.svg");
+  --icon-menu08: url("../images/icon/red/menu08.svg");
+  --icon-menu09: url("../images/icon/red/menu09.svg");
+  --icon-menu10: url("../images/icon/red/menu10.svg");
+  --icon-menu11: url("../images/icon/red/menu11.svg");
+  --icon-arrow1: url("../images/icon/red/arrow1.svg");
+  --icon-close: url("../images/icon/red/close.svg");
+  --icon-edit: url("../images/icon/red/edit.svg");
+  --icon-logout: url("../images/icon/red/logout.svg");
+  --icon-maximize: url("../images/icon/red/maximize.svg");
+  --icon-trash: url("../images/icon/red/trash.svg");
+  --icon-menu_align_up: url("../images/icon/red/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/red/menu_align_down.svg");
 }
 
 [data-theme-color=black] {
   --primary-color: #2c2e31;
   --secondary-color: #eee;
+  --icon-notice: url("../images/icon/black/notice.svg");
+  --icon-theme: url("../images/icon/black/theme.svg");
+  --icon-darkmode: url("../images/icon/black/darkmode.svg");
+  --icon-lightmode: url("../images/icon/black/lightmode.svg");
+  --icon-mypage: url("../images/icon/black/mypage.svg");
+  --icon-menu01: url("../images/icon/black/menu01.svg");
+  --icon-menu02: url("../images/icon/black/menu02.svg");
+  --icon-menu03: url("../images/icon/black/menu03.svg");
+  --icon-menu04: url("../images/icon/black/menu04.svg");
+  --icon-menu05: url("../images/icon/black/menu05.svg");
+  --icon-menu06: url("../images/icon/black/menu06.svg");
+  --icon-menu07: url("../images/icon/black/menu07.svg");
+  --icon-menu08: url("../images/icon/black/menu08.svg");
+  --icon-menu09: url("../images/icon/black/menu09.svg");
+  --icon-menu10: url("../images/icon/black/menu10.svg");
+  --icon-menu11: url("../images/icon/black/menu11.svg");
+  --icon-arrow1: url("../images/icon/black/arrow1.svg");
+  --icon-close: url("../images/icon/black/close.svg");
+  --icon-edit: url("../images/icon/black/edit.svg");
+  --icon-logout: url("../images/icon/black/logout.svg");
+  --icon-maximize: url("../images/icon/black/maximize.svg");
+  --icon-trash: url("../images/icon/black/trash.svg");
+  --icon-menu_align_up: url("../images/icon/black/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/black/menu_align_down.svg");
 }
 
 #wrap {
@@ -900,11 +1140,6 @@ button {
 #header .util .authority-group:has(select:focus) {
   border-color: var(--primary-color);
 }
-#header .util .search-group:has(input:focus) .util__form-icon, #header .util .search-group:has(select:focus) .util__form-icon,
-#header .util .authority-group:has(input:focus) .util__form-icon,
-#header .util .authority-group:has(select:focus) .util__form-icon {
-  background-color: var(--primary-color);
-}
 #header .util .search-group {
   width: 21rem;
 }
@@ -912,23 +1147,15 @@ button {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: var(--gray-100);
-  -webkit-mask: url(../images/icon/search.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/search.svg) no-repeat center;
-          mask: url(../images/icon/search.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/search.svg) no-repeat center;
+  background-size: contain;
 }
 #header .util .authority-group .util__form-icon {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-color: var(--gray-100);
-  -webkit-mask: url(../images/icon/authority.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/authority.svg) no-repeat center;
-          mask: url(../images/icon/authority.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/authority.svg) no-repeat center;
+  background-size: contain;
 }
 #header .util__icons {
   display: flex;
@@ -951,63 +1178,55 @@ button {
   border-radius: 50%;
   border: 2px solid var(--gray-0);
 }
-#header .util__icons [class^=ico-]:hover {
-  background-color: var(--primary-color);
-}
 #header .util__icons .ico-notice {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-100);
-  -webkit-mask: url(../images/icon/notice.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/notice.svg) no-repeat center;
-          mask: url(../images/icon/notice.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/notice.svg) no-repeat center;
+  background-size: contain;
+}
+#header .util__icons .ico-notice:hover {
+  background-image: var(--icon-notice);
 }
 #header .util__icons .ico-theme {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-100);
-  -webkit-mask: url(../images/icon/theme.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/theme.svg) no-repeat center;
-          mask: url(../images/icon/theme.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/theme.svg) no-repeat center;
+  background-size: contain;
+}
+#header .util__icons .ico-theme:hover {
+  background-image: var(--icon-theme);
 }
 #header .util__icons .ico-darkmode {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-100);
-  -webkit-mask: url(../images/icon/darkmode.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/darkmode.svg) no-repeat center;
-          mask: url(../images/icon/darkmode.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/darkmode.svg) no-repeat center;
+  background-size: contain;
+}
+#header .util__icons .ico-darkmode:hover {
+  background-image: var(--icon-darkmode);
 }
 #header .util__icons .dark {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-100);
-  -webkit-mask: url(../images/icon/lightmode.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/lightmode.svg) no-repeat center;
-          mask: url(../images/icon/lightmode.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/lightmode.svg) no-repeat center;
+  background-size: contain;
+}
+#header .util__icons .dark:hover {
+  background-image: var(--icon-lightmode);
 }
 #header .util__icons .ico-mypage {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-100);
-  -webkit-mask: url(../images/icon/mypage.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/mypage.svg) no-repeat center;
-          mask: url(../images/icon/mypage.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/mypage.svg) no-repeat center;
+  background-size: contain;
+}
+#header .util__icons .ico-mypage:hover {
+  background-image: var(--icon-mypage);
 }
 
 #container {
@@ -1064,130 +1283,148 @@ button {
 #lnb .menu a:hover span {
   background-color: var(--gray-0);
 }
-#lnb .menu a.on span::after,
-#lnb .menu a:hover span::after {
-  background-color: var(--primary-color);
-}
 #lnb .menu .menu01 span::after {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-0);
-  -webkit-mask: url(../images/icon/menu01.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu01.svg) no-repeat center;
-          mask: url(../images/icon/menu01.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/menu01.svg) no-repeat center;
+  background-size: contain;
+}
+#lnb .menu .menu01:hover span::after {
+  background-image: var(--icon-menu01);
+}
+#lnb .menu .menu01.on span::after {
+  background-image: var(--icon-menu01);
 }
 #lnb .menu .menu02 span::after {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-0);
-  -webkit-mask: url(../images/icon/menu02.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu02.svg) no-repeat center;
-          mask: url(../images/icon/menu02.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/menu02.svg) no-repeat center;
+  background-size: contain;
+}
+#lnb .menu .menu02:hover span::after {
+  background-image: var(--icon-menu02);
+}
+#lnb .menu .menu02.on span::after {
+  background-image: var(--icon-menu02);
 }
 #lnb .menu .menu03 span::after {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-0);
-  -webkit-mask: url(../images/icon/menu03.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu03.svg) no-repeat center;
-          mask: url(../images/icon/menu03.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/menu03.svg) no-repeat center;
+  background-size: contain;
+}
+#lnb .menu .menu03:hover span::after {
+  background-image: var(--icon-menu03);
+}
+#lnb .menu .menu03.on span::after {
+  background-image: var(--icon-menu03);
 }
 #lnb .menu .menu04 span::after {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-0);
-  -webkit-mask: url(../images/icon/menu04.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu04.svg) no-repeat center;
-          mask: url(../images/icon/menu04.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/menu04.svg) no-repeat center;
+  background-size: contain;
+}
+#lnb .menu .menu04:hover span::after {
+  background-image: var(--icon-menu04);
+}
+#lnb .menu .menu04.on span::after {
+  background-image: var(--icon-menu04);
 }
 #lnb .menu .menu05 span::after {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-0);
-  -webkit-mask: url(../images/icon/menu05.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu05.svg) no-repeat center;
-          mask: url(../images/icon/menu05.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/menu05.svg) no-repeat center;
+  background-size: contain;
+}
+#lnb .menu .menu05:hover span::after {
+  background-image: var(--icon-menu05);
+}
+#lnb .menu .menu05.on span::after {
+  background-image: var(--icon-menu05);
 }
 #lnb .menu .menu06 span::after {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-0);
-  -webkit-mask: url(../images/icon/menu06.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu06.svg) no-repeat center;
-          mask: url(../images/icon/menu06.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/menu06.svg) no-repeat center;
+  background-size: contain;
+}
+#lnb .menu .menu06:hover span::after {
+  background-image: var(--icon-menu06);
+}
+#lnb .menu .menu06.on span::after {
+  background-image: var(--icon-menu06);
 }
 #lnb .menu .menu07 span::after {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-0);
-  -webkit-mask: url(../images/icon/menu07.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu07.svg) no-repeat center;
-          mask: url(../images/icon/menu07.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/menu07.svg) no-repeat center;
+  background-size: contain;
+}
+#lnb .menu .menu07:hover span::after {
+  background-image: var(--icon-menu07);
+}
+#lnb .menu .menu07.on span::after {
+  background-image: var(--icon-menu07);
 }
 #lnb .menu .menu08 span::after {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-0);
-  -webkit-mask: url(../images/icon/menu08.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu08.svg) no-repeat center;
-          mask: url(../images/icon/menu08.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/menu08.svg) no-repeat center;
+  background-size: contain;
+}
+#lnb .menu .menu08:hover span::after {
+  background-image: var(--icon-menu08);
+}
+#lnb .menu .menu08.on span::after {
+  background-image: var(--icon-menu08);
 }
 #lnb .menu .menu09 span::after {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-0);
-  -webkit-mask: url(../images/icon/menu09.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu09.svg) no-repeat center;
-          mask: url(../images/icon/menu09.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/menu09.svg) no-repeat center;
+  background-size: contain;
+}
+#lnb .menu .menu09:hover span::after {
+  background-image: var(--icon-menu09);
+}
+#lnb .menu .menu09.on span::after {
+  background-image: var(--icon-menu09);
 }
 #lnb .menu .menu10 span::after {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-0);
-  -webkit-mask: url(../images/icon/menu10.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu10.svg) no-repeat center;
-          mask: url(../images/icon/menu10.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/menu10.svg) no-repeat center;
+  background-size: contain;
+}
+#lnb .menu .menu10:hover span::after {
+  background-image: var(--icon-menu10);
+}
+#lnb .menu .menu10.on span::after {
+  background-image: var(--icon-menu10);
 }
 #lnb .menu .menu11 span::after {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--gray-0);
-  -webkit-mask: url(../images/icon/menu11.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu11.svg) no-repeat center;
-          mask: url(../images/icon/menu11.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/menu11.svg) no-repeat center;
+  background-size: contain;
+}
+#lnb .menu .menu11:hover span::after {
+  background-image: var(--icon-menu11);
+}
+#lnb .menu .menu11.on span::after {
+  background-image: var(--icon-menu11);
 }
 #lnb .smenu {
   width: 17rem;
@@ -1220,36 +1457,16 @@ button {
   display: inline-block;
   width: 0.9rem;
   height: 0.9rem;
-  background-color: var(--gray-60);
-  -webkit-mask: url(../images/icon/menu_align.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu_align.svg) no-repeat center;
-          mask: url(../images/icon/menu_align.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/menu_align.svg) no-repeat center;
+  background-size: contain;
 }
 #lnb .smenu__icons .align-close {
-  display: inline-block;
-  width: 0.9rem;
-  height: 0.9rem;
-  background-color: var(--primary-color);
-  -webkit-mask: url(../images/icon/menu_align_up.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu_align_up.svg) no-repeat center;
-          mask: url(../images/icon/menu_align_up.svg) no-repeat center;
-  mask-size: contain;
+  background-image: var(--icon-menu_align_up);
   width: 0.6rem;
   height: 1rem;
 }
 #lnb .smenu__icons .align-open {
-  display: inline-block;
-  width: 0.9rem;
-  height: 0.9rem;
-  background-color: var(--primary-color);
-  -webkit-mask: url(../images/icon/menu_align_down.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/menu_align_down.svg) no-repeat center;
-          mask: url(../images/icon/menu_align_down.svg) no-repeat center;
-  mask-size: contain;
+  background-image: var(--icon-menu_align_down);
   width: 0.6rem;
   height: 1rem;
 }
@@ -1317,18 +1534,14 @@ button {
   background-color: var(--gray-10);
 }
 #lnb .btn-smenu-fold:hover span {
-  background-color: var(--primary-color);
+  background-image: var(--icon-arrow1);
 }
 #lnb .btn-smenu-fold span {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: var(--gray-60);
-  -webkit-mask: url(../images/icon/arrow1.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/arrow1.svg) no-repeat center;
-          mask: url(../images/icon/arrow1.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/arrow1.svg) no-repeat center;
+  background-size: contain;
 }
 #lnb .btn-smenu-fold.off {
   top: 50%;
@@ -1379,19 +1592,15 @@ button {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: var(--gray-70);
-  -webkit-mask: url(../images/icon/close.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/close.svg) no-repeat center;
-          mask: url(../images/icon/close.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/close.svg) no-repeat center;
+  background-size: contain;
   margin-left: 1.5rem;
 }
 .top-tab__con li a:hover {
   color: var(--primary-color);
 }
 .top-tab__con li a:hover::after {
-  background-color: var(--primary-color);
+  background-image: var(--icon-close);
 }
 .top-tab__con li a.on {
   background-color: var(--gray-0);
@@ -1401,9 +1610,6 @@ button {
   margin: 0 0 0 -0.1rem;
   color: var(--gray-100);
   font-weight: 700;
-}
-.top-tab__con li a.on::after {
-  background-color: var(--gray-100);
 }
 .top-tab__con li:has(> a.on) {
   background: none;
@@ -1431,32 +1637,27 @@ button {
   pointer-events: none;
   opacity: 0.3;
 }
-.top-tab__btn a:hover {
-  background-color: var(--primary-color);
-}
 .top-tab__btn .btn-prev {
   display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: var(--gray-70);
-  -webkit-mask: url(../images/icon/arrow1.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/arrow1.svg) no-repeat center;
-          mask: url(../images/icon/arrow1.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/arrow1.svg) no-repeat center;
+  background-size: contain;
+}
+.top-tab__btn .btn-prev:hover {
+  background-image: var(--icon-arrow1);
 }
 .top-tab__btn .btn-next {
   display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: var(--gray-70);
-  -webkit-mask: url(../images/icon/arrow1.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/arrow1.svg) no-repeat center;
-          mask: url(../images/icon/arrow1.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/arrow1.svg) no-repeat center;
+  background-size: contain;
   transform: rotate(180deg);
   margin-left: 0.5rem;
+}
+.top-tab__btn .btn-next:hover {
+  background-image: var(--icon-arrow1);
 }
 .top-tab__btn.active li a {
   opacity: 1;
@@ -1498,12 +1699,8 @@ button {
   display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: var(--gray-100);
-  -webkit-mask: url(../images/icon/close.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/close.svg) no-repeat center;
-          mask: url(../images/icon/close.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/close.svg) no-repeat center;
+  background-size: contain;
 }
 
 .pop-theme {
@@ -1580,9 +1777,6 @@ button {
 .pop-mypage li:hover a {
   color: var(--primary-color);
 }
-.pop-mypage li:hover a span {
-  background-color: var(--primary-color);
-}
 .pop-mypage li:first-child {
   border-top: 1px solid var(--gray-50);
   margin-top: 1.2rem;
@@ -1592,25 +1786,23 @@ button {
   display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: var(--gray-100);
-  -webkit-mask: url(../images/icon/edit.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/edit.svg) no-repeat center;
-          mask: url(../images/icon/edit.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/edit.svg) no-repeat center;
+  background-size: contain;
   margin-right: 0.8rem;
+}
+.pop-mypage .btn-pw-modify:hover span {
+  background-image: var(--icon-edit);
 }
 .pop-mypage .btn-logout span {
   display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: var(--gray-100);
-  -webkit-mask: url(../images/icon/logout.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/logout.svg) no-repeat center;
-          mask: url(../images/icon/logout.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/logout.svg) no-repeat center;
+  background-size: contain;
   margin-right: 0.8rem;
+}
+.pop-mypage .btn-logout:hover span {
+  background-image: var(--icon-logout);
 }
 
 /* ---------------------- 기본 popup ---------------------- */
@@ -1629,7 +1821,7 @@ button {
 }
 
 .pop-wrap {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: fixed;
   top: 50%;
@@ -1668,29 +1860,21 @@ button {
   display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: var(--gray-60);
-  -webkit-mask: url(../images/icon/close.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/close.svg) no-repeat center;
-          mask: url(../images/icon/close.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/close.svg) no-repeat center;
+  background-size: contain;
 }
 .pop-header .pop-close:hover {
-  background-color: var(--gray-100);
+  background-image: var(--icon-close);
 }
 .pop-header .pop-maximize {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: var(--gray-60);
-  -webkit-mask: url(../images/icon/maximize.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/maximize.svg) no-repeat center;
-          mask: url(../images/icon/maximize.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/maximize.svg) no-repeat center;
+  background-size: contain;
 }
 .pop-header .pop-maximize:hover {
-  background-color: var(--gray-100);
+  background-image: var(--icon-maximize);
 }
 
 #noticePop {
@@ -1755,16 +1939,12 @@ button {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-color: var(--gray-60);
-  -webkit-mask: url(../images/icon/trash.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/trash.svg) no-repeat center;
-          mask: url(../images/icon/trash.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/trash.svg) no-repeat center;
+  background-size: contain;
   display: block;
 }
 #noticePop .notice-box__con .text-wrap .btn-individual-delete:hover {
-  background-color: var(--primary-color);
+  background-image: var(--icon-trash);
 }
 #noticePop .notice-box__con .text-wrap:hover p {
   color: var(--primary-color);
@@ -1795,6 +1975,30 @@ button {
   --websize: 150rem;
   --text-small: 1.3rem;
   --base-round: 0.5rem;
+  --icon-notice: url("../images/icon/blue/notice.svg");
+  --icon-theme: url("../images/icon/blue/theme.svg");
+  --icon-darkmode: url("../images/icon/blue/darkmode.svg");
+  --icon-lightmode: url("../images/icon/blue/lightmode.svg");
+  --icon-mypage: url("../images/icon/blue/mypage.svg");
+  --icon-menu01: url("../images/icon/blue/menu01.svg");
+  --icon-menu02: url("../images/icon/blue/menu02.svg");
+  --icon-menu03: url("../images/icon/blue/menu03.svg");
+  --icon-menu04: url("../images/icon/blue/menu04.svg");
+  --icon-menu05: url("../images/icon/blue/menu05.svg");
+  --icon-menu06: url("../images/icon/blue/menu06.svg");
+  --icon-menu07: url("../images/icon/blue/menu07.svg");
+  --icon-menu08: url("../images/icon/blue/menu08.svg");
+  --icon-menu09: url("../images/icon/blue/menu09.svg");
+  --icon-menu10: url("../images/icon/blue/menu10.svg");
+  --icon-menu11: url("../images/icon/blue/menu11.svg");
+  --icon-arrow1: url("../images/icon/blue/arrow1.svg");
+  --icon-close: url("../images/icon/blue/close.svg");
+  --icon-edit: url("../images/icon/blue/edit.svg");
+  --icon-logout: url("../images/icon/blue/logout.svg");
+  --icon-maximize: url("../images/icon/blue/maximize.svg");
+  --icon-trash: url("../images/icon/blue/trash.svg");
+  --icon-menu_align_up: url("../images/icon/blue/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/blue/menu_align_down.svg");
 }
 
 [data-theme=dark] {
@@ -1817,24 +2021,120 @@ button {
 }
 
 /* 테마별 색상  */
-[data-theme-color=black] {
+[data-theme-color=blue] {
   --primary-color: #1277e7;
   --secondary-color: #e9f3ff;
+  --icon-notice: url("../images/icon/blue/notice.svg");
+  --icon-theme: url("../images/icon/blue/theme.svg");
+  --icon-darkmode: url("../images/icon/blue/darkmode.svg");
+  --icon-lightmode: url("../images/icon/blue/lightmode.svg");
+  --icon-mypage: url("../images/icon/blue/mypage.svg");
+  --icon-menu01: url("../images/icon/blue/menu01.svg");
+  --icon-menu02: url("../images/icon/blue/menu02.svg");
+  --icon-menu03: url("../images/icon/blue/menu03.svg");
+  --icon-menu04: url("../images/icon/blue/menu04.svg");
+  --icon-menu05: url("../images/icon/blue/menu05.svg");
+  --icon-menu06: url("../images/icon/blue/menu06.svg");
+  --icon-menu07: url("../images/icon/blue/menu07.svg");
+  --icon-menu08: url("../images/icon/blue/menu08.svg");
+  --icon-menu09: url("../images/icon/blue/menu09.svg");
+  --icon-menu10: url("../images/icon/blue/menu10.svg");
+  --icon-menu11: url("../images/icon/blue/menu11.svg");
+  --icon-arrow1: url("../images/icon/blue/arrow1.svg");
+  --icon-close: url("../images/icon/blue/close.svg");
+  --icon-edit: url("../images/icon/blue/edit.svg");
+  --icon-logout: url("../images/icon/blue/logout.svg");
+  --icon-maximize: url("../images/icon/blue/maximize.svg");
+  --icon-trash: url("../images/icon/blue/trash.svg");
+  --icon-menu_align_up: url("../images/icon/blue/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/blue/menu_align_down.svg");
 }
 
 [data-theme-color=green] {
   --primary-color: #44c378;
   --secondary-color: #eaf5e9;
+  --icon-notice: url("../images/icon/green/notice.svg");
+  --icon-theme: url("../images/icon/green/theme.svg");
+  --icon-darkmode: url("../images/icon/green/darkmode.svg");
+  --icon-lightmode: url("../images/icon/green/lightmode.svg");
+  --icon-mypage: url("../images/icon/green/mypage.svg");
+  --icon-menu01: url("../images/icon/green/menu01.svg");
+  --icon-menu02: url("../images/icon/green/menu02.svg");
+  --icon-menu03: url("../images/icon/green/menu03.svg");
+  --icon-menu04: url("../images/icon/green/menu04.svg");
+  --icon-menu05: url("../images/icon/green/menu05.svg");
+  --icon-menu06: url("../images/icon/green/menu06.svg");
+  --icon-menu07: url("../images/icon/green/menu07.svg");
+  --icon-menu08: url("../images/icon/green/menu08.svg");
+  --icon-menu09: url("../images/icon/green/menu09.svg");
+  --icon-menu10: url("../images/icon/green/menu10.svg");
+  --icon-menu11: url("../images/icon/green/menu11.svg");
+  --icon-arrow1: url("../images/icon/green/arrow1.svg");
+  --icon-close: url("../images/icon/green/close.svg");
+  --icon-edit: url("../images/icon/green/edit.svg");
+  --icon-logout: url("../images/icon/green/logout.svg");
+  --icon-maximize: url("../images/icon/green/maximize.svg");
+  --icon-trash: url("../images/icon/green/trash.svg");
+  --icon-menu_align_up: url("../images/icon/green/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/green/menu_align_down.svg");
 }
 
 [data-theme-color=red] {
   --primary-color: #e64f56;
   --secondary-color: #f5e9e9;
+  --icon-notice: url("../images/icon/red/notice.svg");
+  --icon-theme: url("../images/icon/red/theme.svg");
+  --icon-darkmode: url("../images/icon/red/darkmode.svg");
+  --icon-lightmode: url("../images/icon/red/lightmode.svg");
+  --icon-mypage: url("../images/icon/red/mypage.svg");
+  --icon-menu01: url("../images/icon/red/menu01.svg");
+  --icon-menu02: url("../images/icon/red/menu02.svg");
+  --icon-menu03: url("../images/icon/red/menu03.svg");
+  --icon-menu04: url("../images/icon/red/menu04.svg");
+  --icon-menu05: url("../images/icon/red/menu05.svg");
+  --icon-menu06: url("../images/icon/red/menu06.svg");
+  --icon-menu07: url("../images/icon/red/menu07.svg");
+  --icon-menu08: url("../images/icon/red/menu08.svg");
+  --icon-menu09: url("../images/icon/red/menu09.svg");
+  --icon-menu10: url("../images/icon/red/menu10.svg");
+  --icon-menu11: url("../images/icon/red/menu11.svg");
+  --icon-arrow1: url("../images/icon/red/arrow1.svg");
+  --icon-close: url("../images/icon/red/close.svg");
+  --icon-edit: url("../images/icon/red/edit.svg");
+  --icon-logout: url("../images/icon/red/logout.svg");
+  --icon-maximize: url("../images/icon/red/maximize.svg");
+  --icon-trash: url("../images/icon/red/trash.svg");
+  --icon-menu_align_up: url("../images/icon/red/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/red/menu_align_down.svg");
 }
 
 [data-theme-color=black] {
   --primary-color: #2c2e31;
   --secondary-color: #eee;
+  --icon-notice: url("../images/icon/black/notice.svg");
+  --icon-theme: url("../images/icon/black/theme.svg");
+  --icon-darkmode: url("../images/icon/black/darkmode.svg");
+  --icon-lightmode: url("../images/icon/black/lightmode.svg");
+  --icon-mypage: url("../images/icon/black/mypage.svg");
+  --icon-menu01: url("../images/icon/black/menu01.svg");
+  --icon-menu02: url("../images/icon/black/menu02.svg");
+  --icon-menu03: url("../images/icon/black/menu03.svg");
+  --icon-menu04: url("../images/icon/black/menu04.svg");
+  --icon-menu05: url("../images/icon/black/menu05.svg");
+  --icon-menu06: url("../images/icon/black/menu06.svg");
+  --icon-menu07: url("../images/icon/black/menu07.svg");
+  --icon-menu08: url("../images/icon/black/menu08.svg");
+  --icon-menu09: url("../images/icon/black/menu09.svg");
+  --icon-menu10: url("../images/icon/black/menu10.svg");
+  --icon-menu11: url("../images/icon/black/menu11.svg");
+  --icon-arrow1: url("../images/icon/black/arrow1.svg");
+  --icon-close: url("../images/icon/black/close.svg");
+  --icon-edit: url("../images/icon/black/edit.svg");
+  --icon-logout: url("../images/icon/black/logout.svg");
+  --icon-maximize: url("../images/icon/black/maximize.svg");
+  --icon-trash: url("../images/icon/black/trash.svg");
+  --icon-menu_align_up: url("../images/icon/black/menu_align_up.svg");
+  --icon-menu_align_down: url("../images/icon/black/menu_align_down.svg");
 }
 
 .hr-wrap {
@@ -1898,12 +2198,8 @@ button {
   display: inline-block;
   width: 1.2rem;
   height: 1.2rem;
-  background-color: var(--gray-0);
-  -webkit-mask: url(../images/icon/search.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/search.svg) no-repeat center;
-          mask: url(../images/icon/search.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/search_w.svg) no-repeat center;
+  background-size: contain;
 }
 .hr-wrap__intro .hr-contact {
   display: flex;
@@ -1930,24 +2226,16 @@ button {
   display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: var(--gray-100);
-  -webkit-mask: url(../images/icon/tel.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/tel.svg) no-repeat center;
-          mask: url(../images/icon/tel.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/tel.svg) no-repeat center;
+  background-size: contain;
   margin-right: 0.5rem;
 }
 .hr-wrap__intro .hr-contact__email span {
   display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: var(--gray-100);
-  -webkit-mask: url(../images/icon/email.svg) no-repeat center;
-  -webkit-mask-size: contain;
-  -webkit-mask: url(../images/icon/email.svg) no-repeat center;
-          mask: url(../images/icon/email.svg) no-repeat center;
-  mask-size: contain;
+  background: url(../images/icon/email.svg) no-repeat center;
+  background-size: contain;
   margin-right: 0.5rem;
 }
 .hr-wrap__info {
@@ -2089,24 +2377,64 @@ button {
 [data-theme=dark] #header h1 a {
   background: url("../images/dark/logo.png") left 50% no-repeat;
 }
+[data-theme=dark] #header .util .search-group .util__form-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../images/icon/dark/search.svg) no-repeat center;
+  background-size: contain;
+}
+[data-theme=dark] #header .util .authority-group .util__form-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/icon/dark/authority.svg) no-repeat center;
+  background-size: contain;
+}
+[data-theme=dark] #header .util__icons .ico-notice {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../images/icon/dark/notice.svg) no-repeat center;
+  background-size: contain;
+}
+[data-theme=dark] #header .util__icons .ico-theme {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../images/icon/dark/theme.svg) no-repeat center;
+  background-size: contain;
+}
+[data-theme=dark] #header .util__icons .ico-darkmode {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../images/icon/dark/darkmode.svg) no-repeat center;
+  background-size: contain;
+}
+[data-theme=dark] #header .util__icons .dark {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../images/icon/lightmode.svg) no-repeat center;
+  background-size: contain;
+}
+[data-theme=dark] #header .util__icons .dark:hover {
+  background-image: var(--icon-lightmode);
+}
+[data-theme=dark] #header .util__icons .ico-mypage {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../images/icon/dark/mypage.svg) no-repeat center;
+  background-size: contain;
+}
 [data-theme=dark] #lnb .menu {
   background-color: var(--gray-0);
   border-right: 1px solid var(--gray-50);
 }
 [data-theme=dark] #lnb .menu a {
   color: var(--gray-100);
-}
-[data-theme=dark] #lnb .menu a.on span,
-[data-theme=dark] #lnb .menu a:hover span {
-  background-color: var(--primary-color);
-}
-[data-theme=dark] #lnb .menu a.on span::after,
-[data-theme=dark] #lnb .menu a:hover span::after {
-  background-color: var(--gray-100);
-}
-[data-theme=dark] #lnb .menu [class^=menu0] span::after,
-[data-theme=dark] #lnb .menu [class^=menu1] span::after {
-  background-color: var(--gray-100);
 }
 [data-theme=dark] .top-tab__con li {
   background: url("../images/dark/txt_line.png") right 50% no-repeat;
@@ -2121,10 +2449,28 @@ button {
   color: var(--gray-100);
 }
 [data-theme=dark] .hr-wrap__intro .hr-situation__search span {
-  background-color: var(--gray-100);
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: url(../images/icon/dark/search.svg) no-repeat center;
+  background-size: contain;
 }
 [data-theme=dark] .hr-wrap__intro .hr-contact p {
   background: url("../images/dark/txt_line.png") right 50% no-repeat;
+}
+[data-theme=dark] .hr-wrap__intro .hr-contact__tel span {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url(../images/icon/dark/tel.svg) no-repeat center;
+  background-size: contain;
+}
+[data-theme=dark] .hr-wrap__intro .hr-contact__email span {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url(../images/icon/dark/email.svg) no-repeat center;
+  background-size: contain;
 }
 [data-theme=dark] .write-wrap {
   border-color: var(--gray-60);
