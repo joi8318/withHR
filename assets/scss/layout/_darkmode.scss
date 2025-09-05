@@ -1,0 +1,118 @@
+[data-theme="dark"] {
+  input,
+  select {
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--gray-100);
+  }
+  .datepicker {
+    background: url("../images/dark/ico_calendar.png") calc(100% - 0.5rem) 50%
+      no-repeat;
+    &[disabled] {
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)
+        ),
+        url("../images/dark/ico_calendar.png");
+    }
+  }
+  option {
+    background-color: var(--gray-40);
+  }
+
+  #header {
+    h1 {
+      a {
+        background: url("../images/dark/logo.png") left 50% no-repeat;
+      }
+    }
+  }
+
+  #lnb {
+    .menu {
+      background-color: var(--gray-0);
+      border-right: 1px solid var(--gray-50);
+      a {
+        color: var(--gray-100);
+      }
+      a.on,
+      a:hover {
+        span {
+          background-color: var(--primary-color);
+          &::after {
+            background-color: var(--gray-100);
+          }
+        }
+      }
+      [class^="menu0"],
+      [class^="menu1"] {
+        & span::after {
+          background-color: var(--gray-100);
+        }
+      }
+    }
+  }
+
+  .top-tab {
+    &__con {
+      li {
+        background: url("../images/dark/txt_line.png") right 50% no-repeat;
+      }
+    }
+    &__btn {
+      li {
+        background: url("../images/dark/txt_line.png") right 50% no-repeat;
+      }
+    }
+  }
+
+  .hr-wrap {
+    &__intro {
+      .hr-situation {
+        .tenure {
+          color: var(--gray-100);
+        }
+        .etc {
+          color: var(--gray-100);
+        }
+        &__search {
+          span {
+            background-color: var(--gray-100);
+          }
+        }
+      }
+      .hr-contact {
+        p {
+          background: url("../images/dark/txt_line.png") right 50% no-repeat;
+        }
+      }
+    }
+  }
+  .write-wrap {
+    border-color: var(--gray-60);
+  }
+  .pop-small {
+    border: 1px solid var(--gray-50);
+  }
+
+  .pop-theme {
+    .theme-setting {
+      .blue {
+        background: url("../images/dark/theme_blue.png") 50% 50% no-repeat;
+      }
+      .green {
+        background: url("../images/dark/theme_green.png") 50% 50% no-repeat;
+      }
+      .red {
+        background: url("../images/dark/theme_red.png") 50% 50% no-repeat;
+      }
+      .black {
+        background: url("../images/dark/theme_black.png") 50% 50% no-repeat;
+      }
+    }
+  }
+  .pop-tab {
+    a.on {
+      background-color: var(--gray-40);
+    }
+  }
+}

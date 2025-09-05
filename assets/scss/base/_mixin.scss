@@ -1,0 +1,34 @@
+// @mixin svg-bg($path, $width, $height, $color: currentColor) {
+//   display: inline-block;
+//   width: $width;
+//   height: $height;
+
+//   background: url(#{$path}) no-repeat center;
+//   background-size: contain;
+
+//   -webkit-mask-image: none;
+//   mask-image: none;
+
+//   color: $color;
+//   fill: $color;
+//   stroke: $color;
+
+//   svg {
+//     fill: inherit;
+//     stroke: inherit;
+//   }
+// }
+
+@mixin svg-icon($path, $width, $height, $color: currentColor) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+
+  background-color: $color;
+
+  -webkit-mask: url(#{$path}) no-repeat center;
+  -webkit-mask-size: contain;
+
+  mask: url(#{$path}) no-repeat center;
+  mask-size: contain;
+}
