@@ -328,79 +328,58 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   autoInput.addEventListener("input", resizeAutoInput);
 
-  // ---------------------- 테마설정/다크모드 ---------------------
-
-  // --- 테마 관리 ---
-  const themeItems = document.querySelectorAll(".theme-setting li");
-
-  // JS에서 테마별 색상 정의
-  const themes = {
-    BLUE: { primary: "#1277e7", secondary: "#23385e", red: "#E64F56" },
-    GREEN: { primary: "#44C378", secondary: "#EAF5E9", red: "#E64F56" },
-    RED: { primary: "#E64F56", secondary: "#F5E9E9", red: "#E64F56" },
-    BLACK: { primary: "#AAA", secondary: "#EEE", red: "#E64F56" },
-  };
+  // ---------------------- 테마설정/다크모드 --------------------- //
+  const themeItems = document.querySelectorAll(".theme-setting .theme-item");
 
   function applyTheme(themeName) {
-    const selectedTheme = themes[themeName];
-    if (!selectedTheme) return;
-
-    document.documentElement.style.setProperty(
-      "--primary-color",
-      selectedTheme.primary
-    );
-    document.documentElement.style.setProperty(
-      "--secondary-color",
-      selectedTheme.secondary
-    );
-    document.documentElement.style.setProperty(
-      "--red-color",
-      selectedTheme.red
-    );
-
-    localStorage.setItem("theme", themeName);
+    document.documentElement.dataset.themeColor = themeName.toLowerCase(); // 색상 테마
+    localStorage.setItem("themeColor", themeName);
   }
 
+  // 컬러 버튼 클릭
   themeItems.forEach((item) => {
     item.addEventListener("click", (e) => {
       e.preventDefault();
       themeItems.forEach((i) => i.classList.remove("on"));
       item.classList.add("on");
 
-      const themeName = item.querySelector("p").textContent.toUpperCase();
+      const themeName = item.querySelector("p").textContent;
       applyTheme(themeName);
     });
   });
 
-  // 새로고침 시 저장된 테마 적용
-  const savedTheme = localStorage.getItem("theme");
+  // 새로고침 시 저장된 테마 복원
+  const savedTheme = localStorage.getItem("themeColor");
   if (savedTheme) {
     applyTheme(savedTheme);
     themeItems.forEach((i) => {
-      const name = i.querySelector("p").textContent.toUpperCase();
+      const name = i.querySelector("p").textContent;
       i.classList.toggle("on", name === savedTheme);
     });
   }
 
-  // --- 다크모드 토글 ---
+  // -------------------
+  // 다크모드 적용
+  // -------------------
   const darkToggle = document.querySelector("#darkmode-toggle");
   const darkIcon = darkToggle.querySelector(".ico-darkmode");
   const darkText = darkToggle.querySelector(".tooltip-text");
 
   function applyDarkMode(isDark) {
-    document.documentElement.dataset.theme = isDark ? "dark" : "light";
+    document.documentElement.dataset.theme = isDark ? "dark" : "light"; // 모드
     darkText.textContent = isDark ? "라이트모드" : "다크모드";
     darkIcon.classList.toggle("dark", isDark);
     localStorage.setItem("darkMode", isDark);
   }
 
+  // 다크모드 토글
   darkToggle.addEventListener("click", (e) => {
     e.preventDefault();
     const isDark = document.documentElement.dataset.theme !== "dark";
     applyDarkMode(isDark);
   });
 
-  // 새로고침 시 다크모드 상태 유지
+  // 새로고침 시 상태 유지
   const savedDark = localStorage.getItem("darkMode") === "true";
   applyDarkMode(savedDark);
 });

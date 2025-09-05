@@ -28,3 +28,26 @@
   --gray-100: #ffffff;
   --red-color: #e64f56;
 }
+
+[data-theme="dark"][data-theme-color="black"] {
+  --primary-color: #aaa;
+  --secondary-color: #eee;
+}
+
+/* 테마별 색상  */
+[data-theme-color="black"] {
+  --primary-color: #1277e7;
+  --secondary-color: #e9f3ff;
+}
+[data-theme-color="green"] {
+  --primary-color: #44c378;
+  --secondary-color: #eaf5e9;
+}
+[data-theme-color="red"] {
+  --primary-color: #e64f56;
+  --secondary-color: #f5e9e9;
+}
+[data-theme-color="black"] {
+  --primary-color: #2c2e31;
+  --secondary-color: #eee;
+}
