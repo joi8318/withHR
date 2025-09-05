@@ -69,6 +69,15 @@
         color: var(--gray-100);
       }
     }
+    .smenu {
+      &__con {
+        .depth3 {
+          .on {
+            background-color: #565c62;
+          }
+        }
+      }
+    }
   }
 
   .top-tab {

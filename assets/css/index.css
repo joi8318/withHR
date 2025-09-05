@@ -2469,6 +2469,9 @@ button {
 [data-theme=dark] #lnb .menu a {
   color: var(--gray-100);
 }
+[data-theme=dark] #lnb .smenu__con .depth3 .on {
+  background-color: #565c62;
+}
 [data-theme=dark] .top-tab__con li {
   background: url("../images/dark/txt_line.png") right 50% no-repeat;
 }

@@ -12,7 +12,7 @@
 }
 .-selected-.air-datepicker-cell.-year-.-other-decade-,
 .-selected-.air-datepicker-cell.-day-.-other-month- {
-  color: #fff;
+  color: var(--gray-0);
   background: var(--adp-background-color-selected-other-month);
 }
 .-selected-.-focus-.air-datepicker-cell.-year-.-other-decade-,
@@ -45,7 +45,8 @@
   font-weight: 600;
 }
 .air-datepicker-cell.-focus- {
-  background: var(--adp-cell-background-color-hover);
+  background-color: var(--gray-60);
+  color: var(--gray-0);
 }
 .air-datepicker-cell.-current- {
   background-color: var(--gray-60);
@@ -93,12 +94,12 @@
   border-radius: var(--adp-cell-border-radius);
 }
 .air-datepicker-cell.-selected- {
-  color: #fff;
+  color: var(--gray-0);
   border: none;
   background: var(--gray-100);
 }
 .air-datepicker-cell.-selected-.-current- {
-  color: #fff;
+  color: var(--gray-0);
   background: var(--gray-100);
 }
 .air-datepicker-cell.-selected-.-focus- {
@@ -204,7 +205,7 @@
   margin-left: 0.3em;
 }
 .air-datepicker-nav--title:hover {
-  background: var(--adp-background-color-hover);
+  background: var(--gray-50);
 }
 .air-datepicker-nav--title:active {
   background: var(--adp-background-color-active);
@@ -361,7 +362,7 @@
   width: 12px;
   border-radius: 3px;
   border: 1px solid var(--adp-time-track-color);
-  background: #fff;
+  color: var(--gray-0);
   cursor: pointer;
   -webkit-transition: background var(--adp-transition-duration);
   transition: background var(--adp-transition-duration);
@@ -372,7 +373,7 @@
   width: 12px;
   border-radius: 3px;
   border: 1px solid var(--adp-time-track-color);
-  background: #fff;
+  color: var(--gray-0);
   cursor: pointer;
   -moz-transition: background var(--adp-transition-duration);
   transition: background var(--adp-transition-duration);
@@ -383,7 +384,7 @@
   width: 12px;
   border-radius: 3px;
   border: 1px solid var(--adp-time-track-color);
-  background: #fff;
+  color: var(--gray-0);
   cursor: pointer;
   -ms-transition: background var(--adp-transition-duration);
   transition: background var(--adp-transition-duration);
@@ -582,11 +583,12 @@
   width: var(--adp-pointer-size);
   height: var(--adp-pointer-size);
   z-index: -1;
+  display: none;
 }
 .air-datepicker--pointer:after {
   content: "";
   position: absolute;
-  background: #fff;
+  color: var(--gray-0);
   border-top: 1px solid var(--adp-border-color-inline);
   border-right: 1px solid var(--adp-border-color-inline);
   border-top-right-radius: var(--adp-poiner-border-radius);
