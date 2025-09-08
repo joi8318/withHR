@@ -273,13 +273,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     tabCon.querySelectorAll("li").forEach((tabItem) => {
-      const menu = tabItem.querySelector(".top-tab_menu");
+      const menu = tabItem.querySelector(".top-tab__menu");
 
       tabItem.addEventListener("contextmenu", (e) => {
         e.preventDefault(); // 브라우저 기본 우클릭 방지
         if (!menu) return;
 
-        document.querySelectorAll(".top-tab_menu").forEach((m) => {
+        document.querySelectorAll(".top-tab__menu").forEach((m) => {
           m.style.display = "none";
         });
 
@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         menu.style.display = "block";
         menu.style.position = "absolute";
-        menu.style.left = liRect.left - tabRect.left + 50 + "px";
+        menu.style.left = liRect.left - tabRect.left + 30 + "px";
         menu.style.top = liRect.bottom - tabRect.top - 5 + "px";
         menu.style.zIndex = 9999;
       });
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 메뉴 외부 클릭 시 메뉴 닫기
     document.addEventListener("click", (e) => {
-      document.querySelectorAll(".top-tab_menu").forEach((menu) => {
+      document.querySelectorAll(".top-tab__menu").forEach((menu) => {
         if (
           !menu.contains(e.target) &&
           !menu.parentElement.querySelector("a").contains(e.target)
