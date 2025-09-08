@@ -28,7 +28,7 @@
       align-items: center;
       &__name {
         input {
-          font-size: 2.8rem;
+          font-size: 2.6rem;
           font-weight: 600;
           border: none;
           max-width: 20rem;
@@ -72,7 +72,7 @@
         align-items: center;
         background: url("../images/txt_line.png") right 50% no-repeat;
         padding-right: 1rem;
-        margin-left: 1rem;
+        margin-right: 1rem;
         &:last-child {
           background: none;
           padding-right: 0;
@@ -92,6 +92,14 @@
           @include svg-icon("../images/icon/email.svg", 1.8rem, 1.8rem);
           margin-right: 0.5rem;
         }
+      }
+    }
+  }
+  &__intro.st02 {
+    min-width: 32rem;
+    .hr-contact {
+      p {
+        margin-bottom: 0.3rem;
       }
     }
   }
@@ -137,6 +145,7 @@
       padding: 1.5rem 2rem;
       display: flex;
       flex-wrap: wrap;
+      border-radius: 0 0 var(--base-round) var(--base-round);
       li {
         width: 25%;
         display: flex;
@@ -162,6 +171,18 @@
         width: calc(100% - 9rem);
         overflow-wrap: break-word;
         word-wrap: break-word;
+      }
+    }
+  }
+  &__info.st02 {
+    flex: 2.5;
+    .hr-info-rep {
+      padding: 2rem;
+    }
+    .hr-info-con {
+      padding: 0.8rem 2rem;
+      li {
+        width: 20%;
       }
     }
   }

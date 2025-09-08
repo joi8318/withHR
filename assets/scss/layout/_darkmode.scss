@@ -41,12 +41,21 @@
       &__icons {
         .ico-notice {
           @include svg-icon("../images/icon/dark/notice.svg", 2.5rem, 2.5rem);
+          &:hover {
+            background-image: var(--icon-notice);
+          }
         }
         .ico-theme {
           @include svg-icon("../images/icon/dark/theme.svg", 2.5rem, 2.5rem);
+          &:hover {
+            background-image: var(--icon-theme);
+          }
         }
         .ico-darkmode {
           @include svg-icon("../images/icon/dark/darkmode.svg", 2.5rem, 2.5rem);
+          &:hover {
+            background-image: var(--icon-darkmode);
+          }
         }
         .dark {
           @include svg-icon("../images/icon/lightmode.svg", 2.5rem, 2.5rem);
@@ -56,6 +65,9 @@
         }
         .ico-mypage {
           @include svg-icon("../images/icon/dark/mypage.svg", 2.5rem, 2.5rem);
+          &:hover {
+            background-image: var(--icon-mypage);
+          }
         }
       }
     }

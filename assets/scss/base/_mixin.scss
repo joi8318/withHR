@@ -1,41 +1,32 @@
-// @mixin svg-bg($path, $width, $height, $color: currentColor) {
-//   display: inline-block;
-//   width: $width;
-//   height: $height;
-
-//   background: url(#{$path}) no-repeat center;
-//   background-size: contain;
-
-//   -webkit-mask-image: none;
-//   mask-image: none;
-
-//   color: $color;
-//   fill: $color;
-//   stroke: $color;
-
-//   svg {
-//     fill: inherit;
-//     stroke: inherit;
-//   }
-// }
-
-// @mixin svg-icon($path, $width, $height, $color: currentColor) {
-//   display: inline-block;
-//   width: $width;
-//   height: $height;
-
-//   background-color: $color;
-
-//   -webkit-mask: url(#{$path}) no-repeat center;
-//   -webkit-mask-size: contain;
-
-//   mask: url(#{$path}) no-repeat center;
-//   mask-size: contain;
-// }
 @mixin svg-icon($path, $width, $height) {
   display: inline-block;
   width: $width;
   height: $height;
   background: url(#{$path}) no-repeat center;
   background-size: contain;
+}
+
+$bi-font-family: "bootstrap-icons";
+
+@mixin boots-icon($icon-unicode, $size: 1.5rem, $color: #2c2e31) {
+  font-family: $bi-font-family;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  line-height: 1;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: $icon-unicode;
+  font-size: $size;
+  color: $color;
+  width: $size;
+  height: $size;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s;
 }

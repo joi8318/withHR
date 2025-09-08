@@ -319,13 +319,14 @@
     width: 17rem;
     height: 100%;
     border-right: 1px solid var(--gray-50);
-    overflow: hidden;
+    overflow-y: auto;
     &__icons {
       border-bottom: 1px solid var(--gray-50);
       padding-inline: 1rem;
       position: sticky;
       top: 0;
       left: 0;
+      background-color: var(--gray-0);
       a {
         margin-right: 0.5rem;
         display: inline-flex;
@@ -405,7 +406,7 @@
     }
   }
   .btn-smenu-fold {
-    width: 1.8rem;
+    width: 1.5rem;
     height: 3.4rem;
     border: 1px solid var(--gray-50);
     position: absolute;
@@ -428,7 +429,7 @@
   }
   .btn-smenu-fold.off {
     top: 50%;
-    right: -1.7rem;
+    right: -1.4rem;
     border-left: none;
     span {
       transform: rotate(180deg);
@@ -459,6 +460,12 @@
     li {
       flex: 0 0 auto;
       background: url("../images/txt_line.png") right 50% no-repeat;
+      position: relative;
+      &:first-child {
+        a.on {
+          margin-left: 0;
+        }
+      }
       a {
         color: var(--gray-70);
         font-size: var(--text-small);
@@ -532,6 +539,43 @@
   &__btn.active li a {
     opacity: 1;
     pointer-events: auto;
+  }
+  .top-tab_menu {
+    background-color: var(--gray-10);
+    border-radius: var(--base-round);
+    border: 1px solid var(--gray-50);
+    display: none;
+    padding: 1rem 0;
+    a {
+      display: flex;
+      align-items: center;
+      color: var(--gray-70);
+      font-size: var(--text-small);
+      padding: 0.7rem 1.5rem;
+      &::before {
+        content: "";
+        margin-right: 0.5rem;
+      }
+      &:hover {
+        color: var(--primary-color);
+        background-color: var(--gray-40);
+        &::before {
+          color: var(--primary-color);
+        }
+      }
+    }
+    .fixed::before {
+      @include boots-icon("\F4ED", 1.3rem, var(--gray-70));
+    }
+    .delete::before {
+      @include boots-icon("\F5DE", 1.3rem, var(--gray-70));
+    }
+    .reload::before {
+      @include boots-icon("\F130", 1.3rem, var(--gray-70));
+    }
+    .other-close::before {
+      @include boots-icon("\F799", 1.3rem, var(--gray-70));
+    }
   }
 }
 .cont-wrap {
@@ -722,6 +766,9 @@
     &:hover {
       background-image: var(--icon-maximize);
     }
+  }
+  .tooltip-text {
+    bottom: calc(-100% - 1.5rem);
   }
 }
 #noticePop {

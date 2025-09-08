@@ -205,7 +205,16 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.onclick = () => closeLayerPopup(pop);
     });
     if (maxBtn) {
-      maxBtn.onclick = () => pop.classList.toggle("maximized");
+      maxBtn.onclick = () => {
+        const isMaximized = pop.classList.toggle("maximized");
+        const tooltipText = maxBtn.querySelector(".tooltip-text");
+
+        if (isMaximized) {
+          if (tooltipText) tooltipText.textContent = "이전 크기로";
+        } else {
+          if (tooltipText) tooltipText.textContent = "최대화";
+        }
+      };
     }
   }
 
@@ -238,7 +247,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnPrev = topTab.querySelector(".btn-prev");
     const btnNext = topTab.querySelector(".btn-next");
 
-    // 스크롤 상태 확인
     function checkOverflow() {
       const isOverflow = tabCon.scrollWidth > tabCon.clientWidth;
       btnWrap.classList.toggle("active", isOverflow);
@@ -252,7 +260,6 @@ document.addEventListener("DOMContentLoaded", () => {
         tabCon.scrollLeft < maxScroll ? "auto" : "none";
     }
 
-    // prev/next 클릭
     btnPrev.addEventListener("click", () => {
       const tabWidth = tabCon.querySelector("li")?.offsetWidth || 100;
       tabCon.scrollLeft -= tabWidth;
@@ -263,6 +270,44 @@ document.addEventListener("DOMContentLoaded", () => {
       const tabWidth = tabCon.querySelector("li")?.offsetWidth || 100;
       tabCon.scrollLeft += tabWidth;
       setTimeout(checkOverflow, 100);
+    });
+
+    tabCon.querySelectorAll("li").forEach((tabItem) => {
+      const menu = tabItem.querySelector(".top-tab_menu");
+
+      tabItem.addEventListener("contextmenu", (e) => {
+        e.preventDefault(); // 브라우저 기본 우클릭 방지
+        if (!menu) return;
+
+        document.querySelectorAll(".top-tab_menu").forEach((m) => {
+          m.style.display = "none";
+        });
+
+        if (menu.parentElement !== topTab) {
+          topTab.appendChild(menu);
+        }
+
+        const liRect = tabItem.getBoundingClientRect();
+        const tabRect = topTab.getBoundingClientRect();
+
+        menu.style.display = "block";
+        menu.style.position = "absolute";
+        menu.style.left = liRect.left - tabRect.left + 50 + "px";
+        menu.style.top = liRect.bottom - tabRect.top - 5 + "px";
+        menu.style.zIndex = 9999;
+      });
+    });
+
+    // 메뉴 외부 클릭 시 메뉴 닫기
+    document.addEventListener("click", (e) => {
+      document.querySelectorAll(".top-tab_menu").forEach((menu) => {
+        if (
+          !menu.contains(e.target) &&
+          !menu.parentElement.querySelector("a").contains(e.target)
+        ) {
+          menu.style.display = "none";
+        }
+      });
     });
 
     window.addEventListener("resize", checkOverflow);
@@ -286,13 +331,11 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       if (idx === 0) {
-        // 전체 탭 → 전부 보이기 + notice-all 클래스 추가
         noticeBoxes.forEach((box) => {
           box.style.display = "block";
           box.classList.add("notice-all");
         });
       } else {
-        // 해당 순번만 보이기 (idx-1 = noticeBox 순번)
         const targetBox = noticeBoxes[idx - 1];
         if (targetBox) {
           targetBox.style.display = "block";
