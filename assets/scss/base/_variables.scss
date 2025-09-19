@@ -1,6 +1,7 @@
 :root {
   --primary-color: #1277e7;
   --secondary-color: #e9f3ff;
+  --bg-color: #f5f9fe;
   --gray-0: #fff;
   --gray-10: #fafafa;
   --gray-20: #f4f5f6;
@@ -13,6 +14,8 @@
   --websize: 150rem;
   --text-small: 1.3rem;
   --base-round: 0.5rem;
+  --pop-round: 1rem;
+  --bi-font-family: "bootstrap-icons";
   --icon-notice: url("../images/icon/blue/notice.svg");
   --icon-theme: url("../images/icon/blue/theme.svg");
   --icon-darkmode: url("../images/icon/blue/darkmode.svg");
@@ -41,7 +44,8 @@
 
 [data-theme="dark"] {
   --primary-color: #1277e7;
-  --secondary-color: #23385e;
+  --secondary-color: #21252a;
+  --bg-color: #3b4147;
   --gray-0: #2d333a;
   --gray-10: #3b4147;
   --gray-20: #161b21;
@@ -55,7 +59,11 @@
 
 [data-theme="dark"][data-theme-color="black"] {
   --primary-color: #aaa;
-  --secondary-color: #eee;
+  --secondary-color: #21252a;
+  --icon-notice: url("../images/icon/dark/notice_on.svg");
+  --icon-theme: url("../images/icon/dark/theme_on.svg");
+  --icon-lightmode: url("../images/icon/dark/lightmode_on.svg");
+  --icon-mypage: url("../images/icon/dark/mypage_on.svg");
   --icon-menu01: url("../images/icon/menu01.svg");
   --icon-menu02: url("../images/icon/menu02.svg");
   --icon-menu03: url("../images/icon/menu03.svg");
@@ -73,6 +81,7 @@
 [data-theme-color="blue"] {
   --primary-color: #1277e7;
   --secondary-color: #e9f3ff;
+  --bg-color: #f5f9fe;
   --icon-notice: url("../images/icon/blue/notice.svg");
   --icon-theme: url("../images/icon/blue/theme.svg");
   --icon-darkmode: url("../images/icon/blue/darkmode.svg");
@@ -100,7 +109,8 @@
 }
 [data-theme-color="green"] {
   --primary-color: #44c378;
-  --secondary-color: #eaf5e9;
+  --secondary-color: #eafff0;
+  --bg-color: #f4fef7;
   --icon-notice: url("../images/icon/green/notice.svg");
   --icon-theme: url("../images/icon/green/theme.svg");
   --icon-darkmode: url("../images/icon/green/darkmode.svg");
@@ -128,7 +138,8 @@
 }
 [data-theme-color="red"] {
   --primary-color: #e64f56;
-  --secondary-color: #f5e9e9;
+  --secondary-color: #fff1f1;
+  --bg-color: #fff8f8;
   --icon-notice: url("../images/icon/red/notice.svg");
   --icon-theme: url("../images/icon/red/theme.svg");
   --icon-darkmode: url("../images/icon/red/darkmode.svg");
@@ -157,6 +168,7 @@
 [data-theme-color="black"] {
   --primary-color: #2c2e31;
   --secondary-color: #eee;
+  --bg-color: #f6f6f6;
   --icon-notice: url("../images/icon/black/notice.svg");
   --icon-theme: url("../images/icon/black/theme.svg");
   --icon-darkmode: url("../images/icon/black/darkmode.svg");
@@ -181,4 +193,7 @@
   --icon-trash: url("../images/icon/black/trash.svg");
   --icon-menu_align_up: url("../images/icon/black/menu_align_up.svg");
   --icon-menu_align_down: url("../images/icon/black/menu_align_down.svg");
+  --icon-company: url("../images/icon/black/company.svg");
+  --icon-user: url("../images/icon/black/user.svg");
+  --icon-password: url("../images/black/blue/password.svg");
 }

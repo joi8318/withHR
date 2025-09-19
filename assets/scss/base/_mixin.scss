@@ -6,12 +6,19 @@
   background-size: contain;
 }
 
-$bi-font-family: "bootstrap-icons";
+@mixin svg-icon-bg($path, $width, $height) {
+  content: "";
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background: url(#{$path}) no-repeat center;
+  background-size: contain;
+}
 
 @mixin boots-icon($icon-unicode, $size: 1.5rem, $color: #2c2e31) {
-  font-family: $bi-font-family;
+  font-family: var(--bi-font-family);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   speak: none;
   display: inline-block;
   text-decoration: inherit;

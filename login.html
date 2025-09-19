@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/air-datepicker.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css" />
+    <script type="text/javascript" src="assets/js/global.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+        <div id="contents">
+          <!-- 내용 들어갑니다 S -->
+          <div class="login-wrap">
+            <div class="login-wrap__con">
+              <h2>
+                <a><em class="text-hidden">로고</em></a>
+              </h2>
+              <div class="login-form">
+                <p class="company">
+                  <select>
+                    <option>회사를 선택해주세요</option>
+                  </select>
+                </p>
+                <p class="user"><input type="text" placeholder="아이디를 입력해주세요"></p>
+                <p class="password"><input type="password" placeholder="비밀번호를 입력해주세요"></p>
+              </div>
+              <div class="login-id-save">
+                <p>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" checked />
+                    <span></span>
+                    아이디 저장
+                  </label>
+                </p>
+                <a class="find-pw btn-pop-open" data-target="#findpwPop">비밀번호 찾기</a>
+              </div>
+              <button type="button" class="btn-login">로그인</button>
+            </div>
+            <div class="login-wrap__img">
+              <em class="text-hidden">배경이미지 들어갑니다(파일명:login_img.png)</em>
+            </div>
+          </div>
+          <!-- //내용 들어갑니다 E -->
+        </div>
+        <!-- //container E -->
+      </section>
+    </div>
+    <!-- //wrap E -->
+    <!-- 비밀번호 찾기 팝업 S -->
+    <div id="findpwPop" class="pop-wrap">
+      <div class="pop-header">
+        <div class="btn-wrap btn-right">
+          <h3>비밀번호 찾기</h3>
+          <button class="pop-maximize tooltip">
+            <span class="tooltip-text">최대화</span>
+          </button>
+          <button class="pop-close btn-pop-close tooltip">
+            <span class="tooltip-text">닫기</span>
+          </button>
+        </div>
+      </div>
+      <div class="pop-body">
+        <div class="form-wrap">
+          <p class="name"><input type="text" placeholder="성명을 입력해주세요"></p>
+          <p class="employee-number"><input type="text" placeholder="사번을 입력해주세요"></p>
+          <p class="email"><input type="password" placeholder="이메일 입력해주세요"></p>
+        </div>
+        <div class="guide-text">
+        인사시스템에 <span class="text-point">등록된 e-mail주소로 발송</span>됩니다.<br>
+        메일주소가 등록되지 않은 경우 인사 담당자에게 문의 주십시오.
+        </div>
+      </div>
+      <div class="pop-footer btn-wrap btn-center">
+        <button class="btn-point">임시 비밀번호 발송</button>
+        <button class="btn-line btn-pop-close">취소</button>
+      </div>
+    </div>
+    <!-- //비밀번호 찾기 팝업 E -->
+    <div class="dimmed"></div>
+  </body>
+</html>

@@ -140,6 +140,20 @@
   .write-wrap {
     border-color: var(--gray-60);
   }
+  .search-wrap {
+    background-color: #3b4147;
+  }
+
+  .list-wrap {
+    table td {
+      &:hover {
+        background-color: #21252a;
+      }
+    }
+    table tr.selected {
+      background-color: #21252a;
+    }
+  }
   .pop-small {
     border: 1px solid var(--gray-50);
   }
