@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>근태캘린더</title>
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/air-datepicker.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+    <script type="text/javascript" src="../assets/js/global.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header S -->
+      <header id="header">
+        <h1>
+          <a><em class="text-hidden">로고</em></a>
+        </h1>
+        <ul class="util">
+          <li>
+            <!-- 임직원 검색 -->
+            <div class="search-group">
+              <span class="util__form-icon"></span>
+              <input type="search" placeholder="임직원 및 메뉴(기능) 검색" />
+            </div>
+          </li>
+          <li>
+            <!-- 권한 변경 -->
+            <div class="authority-group">
+              <span class="util__form-icon"></span>
+              <select>
+                <option>권한 변경</option>
+                <option>관리자(ADMIN)</option>
+                <option>총괄담당자</option>
+                <option>인사담당자</option>
+                <option>교육담당자</option>
+                <option>성과담당자</option>
+                <option>근태담당자</option>
+                <option>급여담당자</option>
+              </select>
+            </div>
+          </li>
+          <li class="util__icons">
+            <a class="tooltip btn-pop-open" data-target="#noticePop">
+              <div class="ico-notice"></div>
+              <span class="util__icons__on"></span>
+              <div class="tooltip-text">알려드립니다</div>
+            </a>
+            <a class="tooltip btn-pop-small-open" data-target="#themePop">
+              <div class="ico-theme"></div>
+              <div class="tooltip-text">테마설정</div>
+            </a>
+            <a class="tooltip" id="darkmode-toggle">
+              <div class="ico-darkmode"></div>
+              <div class="tooltip-text">다크모드</div>
+            </a>
+            <a class="tooltip btn-pop-small-open" data-target="#mypagePop">
+              <div class="ico-mypage"></div>
+              <div class="tooltip-text">마이페이지</div>
+            </a>
+          </li>
+        </ul>
+        <!-- 테마설정 팝업 S -->
+        <div id="themePop" class="pop-theme pop-small">
+          <h4>테마설정</h4>
+          <a class="pop-close"><em class="text-hidden">팝업닫기</em></a>
+          <ul class="theme-setting">
+            <li class="theme-item on">
+              <a class="blue"></a>
+              <p>BLUE</p>
+            </li>
+            <li class="theme-item">
+              <a class="green"></a>
+              <p>GREEN</p>
+            </li>
+            <li class="theme-item">
+              <a class="red"></a>
+              <p>RED</p>
+            </li>
+            <li class="theme-item">
+              <a class="black"></a>
+              <p>BLACK</p>
+            </li>
+          </ul>
+        </div>
+        <!-- //테마설정 팝업 E -->
+        <!-- 마이페이지 팝업 S -->
+        <div id="mypagePop" class="pop-mypage pop-small">
+          <h4>마이페이지</h4>
+          <a class="pop-close"><em class="text-hidden">팝업닫기</em></a>
+          <ul>
+            <li>
+              <a class="btn-pw-modify"><span></span>비밀번호 변경</a>
+            </li>
+            <li>
+              <a class="btn-logout"><span></span>로그아웃</a>
+            </li>
+          </ul>
+        </div>
+        <!-- //mypagePop 팝업 E -->
+      </header>
+      <!-- //header E -->
+      <!-- lnb S -->
+      <section id="container">
+        <aside id="lnb">
+          <!-- 1depth S -->
+          <div class="menu">
+            <a class="menu01 on">
+              <span></span>
+              <p>인사관리</p>
+            </a>
+            <a class="menu02">
+              <span></span>
+              <p>조직관리</p>
+            </a>
+            <a class="menu03">
+              <span></span>
+              <p>성과관리</p>
+            </a>
+            <a class="menu04">
+              <span></span>
+              <p>경력개발</p>
+            </a>
+            <a class="menu05">
+              <span></span>
+              <p>인재관리</p>
+            </a>
+            <a class="menu06">
+              <span></span>
+              <p>급여관리</p>
+            </a>
+            <a class="menu07">
+              <span></span>
+              <p>근태관리</p>
+            </a>
+            <a class="menu08">
+              <span></span>
+              <p>복리후생</p>
+            </a>
+            <a class="menu09">
+              <span></span>
+              <p>신청결재</p>
+            </a>
+            <a class="menu10">
+              <span></span>
+              <p>통계</p>
+            </a>
+            <a class="menu11">
+              <span></span>
+              <p>설정</p>
+            </a>
+          </div>
+          <!-- //1depth E -->
+          <!-- 2depth S -->
+          <a class="btn-smenu-fold tooltip">
+            <span></span>
+            <div class="tooltip-text">접기</div>
+          </a>
+          <div class="smenu">
+            <div class="smenu__icons">
+              <a class="smenu-all-close tooltip">
+                <span class="smenu-align"></span
+                ><span class="align-close"></span>
+                <div class="tooltip-text">메뉴 접기</div>
+              </a>
+              <a class="smenu-all-open tooltip">
+                <span class="smenu-align"></span
+                ><span class="align-open"></span>
+                <div class="tooltip-text">메뉴 펼치기</div>
+              </a>
+            </div>
+            <ul class="smenu__con">
+              <li>
+                <a class="depth2 has-child">인사정보</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a class="on">인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+              <li>
+                <a class="depth2 has-child">사원정보변경</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a>인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+              <li>
+                <a class="depth2">인사정보 관리</a>
+              </li>
+              <li>
+                <a class="depth2 has-child">인사기록카드</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a>인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+              <li>
+                <a class="depth2">발령정보</a>
+              </li>
+              <li>
+                <a class="depth2">전자계약서</a>
+              </li>
+              <li>
+                <a class="depth2 has-child">포상징계 관리</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a>인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+              <li>
+                <a class="depth2">산재관리</a>
+              </li>
+              <li>
+                <a class="depth2 has-child">인원마감</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a>인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- //2depth E -->
+        </aside>
+        <!-- //lnb E -->
+        <div id="contents">
+          <!-- 상단탭 S -->
+          <div class="top-tab">
+            <ul class="top-tab__con">
+              <li>
+                <a class="on">근태캘린더</a>
+                <div class="top-tab__menu">
+                  <a class="fixed">탭 고정하기</a>
+                  <a class="reload">새로고침</a>
+                  <a class="delete">삭제</a>
+                  <a class="other-close">다른 탭닫기</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="top-tab__btn">
+              <li>
+                <a class="btn-prev"><em class="text-hidden">이전으로</em></a>
+              </li>
+              <li>
+                <a class="btn-next"><em class="text-hidden">다음으로</em></a>
+              </li>
+            </ul>
+          </div>
+          <!-- //상단탭 E -->
+          <!-- 내용 들어갑니다 S -->
+          <div class="cont-title-have-wrap">
+            <!-- 타이틀 영역 S -->
+            <div class="title-wrap">
+              <!-- title -->
+              <div class="btn-wrap btn-right">
+                <h3>근태캘린더</h3>
+                <button class="btn-white">휴가 신청</button>
+                <button class="btn-white">근무 신청</button>
+                <button class="btn-white">근무스케쥴 신청</button>
+                <button class="btn-white">출퇴근시간 변경신청</button>
+                <div class="switch-wrap mal10">
+                  팀원보기
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- //타이틀 영역 E -->
+            <div class="cont-title-have">
+              <div class="calendar-wrap">
+                <!-- 달력 top 영역 S -->
+                <div class="calendar-wrap__title">
+                  <!-- 날짜표시 -->
+                  <div class="date">
+                    <strong>2025.09</strong>
+                    <div class="btn-wrap btn-left">
+                      <button class="btn-white btn-prev-month">
+                        <em class="text-hidden">이전달</em>
+                      </button>
+                      <button class="btn-white btn-next-month">
+                        <em class="text-hidden">다음달</em>
+                      </button>
+                      <button class="btn-white">이번달</button>
+                    </div>
+                  </div>
+                  <!-- 달력현황 -->
+                  <div class="calendar-blt">
+                    <div class="primary">
+                      <span>총근무</span>
+                      <span class="text-point"><strong>12</strong>시간</span>
+                    </div>
+                    <div class="primary">
+                      <span>총계획</span>
+                      <span><strong>16</strong>시간</span>
+                    </div>
+                    <div class="primary">
+                      <span>기본</span>
+                      <span><strong>18</strong>시간</span>
+                    </div>
+                    <div class="primary">
+                      <span>연장</span>
+                      <span><strong>-2</strong>시간</span>
+                    </div>
+                    <div class="yellow mal20">
+                      <span>잔여연차</span>
+                      <span class="text-yellow"><strong>8.125</strong>일</span>
+                    </div>
+                    <div class="yellow">
+                      <span>총연차</span>
+                      <span><strong>16</strong>일</span>
+                    </div>
+                    <div class="yellow">
+                      <span>사용</span>
+                      <span><strong>7.875</strong>일</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- //달력 top 영역 E -->
+                <!-- 달력 영역 S -->
+                <div class="calendar-wrap__con">
+                  <div class="calendar-header">
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day">FRI</div>
+                    <div class="day">SAT</div>
+                  </div>
+                  <div class="calendar-body">
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day" data-date="1">1</div>
+                    <div class="calendar-day" data-date="2">2</div>
+                    <div class="calendar-day" data-date="3">3</div>
+                    <div class="calendar-day" data-date="4">4</div>
+                    <div class="calendar-day" data-date="5">5</div>
+                    <div class="calendar-day" data-date="6">6</div>
+                    <div class="calendar-day" data-date="7">7</div>
+                    <div class="calendar-day" data-date="8">8</div>
+                    <div class="calendar-day" data-date="9">9</div>
+                    <div class="calendar-day" data-date="10">10</div>
+                    <div class="calendar-day" data-date="11">11</div>
+                    <div class="calendar-day" data-date="12">12</div>
+                    <div class="calendar-day" data-date="13">13</div>
+                    <div class="calendar-day" data-date="14">14</div>
+                    <div class="calendar-day" data-date="15">15</div>
+                    <div class="calendar-day" data-date="16">16</div>
+                    <div class="calendar-day" data-date="17">17</div>
+                    <div class="calendar-day" data-date="18">18</div>
+                    <div class="calendar-day" data-date="19">19</div>
+                    <div class="calendar-day" data-date="20">20</div>
+                    <div class="calendar-day" data-date="21">21</div>
+                    <div class="calendar-day" data-date="22">22</div>
+                    <div class="calendar-day" data-date="23">23</div>
+                    <div class="calendar-day" data-date="24">24</div>
+                    <div class="calendar-day" data-date="25">25</div>
+                    <div class="calendar-day" data-date="26">26</div>
+                    <div class="calendar-day" data-date="27">27</div>
+                    <div class="calendar-day" data-date="28">28</div>
+                    <div class="calendar-day" data-date="29">29</div>
+                    <div class="calendar-day" data-date="30">30</div>
+                    <div class="calendar-day" data-date="31">31</div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                  </div>
+                <!-- //달력 영역 E -->
+              </div>
+              <!-- //calendar-wrap E -->
+            </div>
+            <!-- //cont-title-have E -->
+          </div>
+          <!-- //내용 들어갑니다 E -->
+        </div>
+        <!-- //container E -->
+      </section>
+    </div>
+    <!-- //wrap E -->
+    <script>
+     const colorMap = {
+      blue: "#1277e7",
+      red: "#e64f56",
+      green: "#44c378",
+      yellow: "#f3c950"
+    };
+
+    let eventsByDate = {}; // 날짜별 이벤트 저장
+
+    function addEventToCalendar(startDate, endDate, eventText, eventColor) {
+      for (let d = startDate; d <= endDate; d++) {
+        if (!eventsByDate[d]) eventsByDate[d] = [];
+        eventsByDate[d].push({
+          startDate,
+          endDate,
+          text: eventText,
+          color: eventColor,
+          length: endDate - startDate + 1
+        });
+      }
+    }
+
+    function renderEvents() {
+      const BASE_TOP = 2.8;
+      const ROW_HEIGHT = 2.6;
+
+      for (let date in eventsByDate) {
+        const sortedEvents = eventsByDate[date].sort((a, b) => b.length - a.length);
+        let rowIndex = 0;
+
+        sortedEvents.forEach(evt => {
+          const cell = document.querySelector(`[data-date="${date}"]`);
+          if (!cell) return;
+
+          const eventDiv = document.createElement("div");
+          eventDiv.classList.add("event", evt.color);
+
+          if (date == evt.startDate) {
+            eventDiv.textContent = evt.text;
+            eventDiv.style.borderLeft = `3px solid ${colorMap[evt.color]}`;
+          }
+
+          eventDiv.style.top = `${BASE_TOP + rowIndex * ROW_HEIGHT}rem`;
+
+          cell.appendChild(eventDiv);
+          rowIndex++;
+        });
+      }
+    }
+
+    // 달력 일정 입력영역(같은 날짜에 일정이 여러개인 경우 기간이 긴 순서대로 나옴)
+    addEventToCalendar(5, 5, "10:00 ~ 17:30", "blue");
+    addEventToCalendar(11, 12, "[결재처리중] 연차", "green");
+    addEventToCalendar(15, 16, "[처리완료] 19:00 ~ 00:30(연장)", "yellow");
+    addEventToCalendar(25, 25, "공휴일", "red");
+    addEventToCalendar(25, 25, "[결재처리중] 연차", "green");
+    addEventToCalendar(25, 29, "[처리완료] 19:00 ~ 00:30(연장)", "yellow");
+    addEventToCalendar(25, 25, "10:00 ~ 17:30", "blue");
+    addEventToCalendar(29, 29, "[결재처리중] 연차", "green");
+    addEventToCalendar(29, 29, "공휴일", "red");
+
+    renderEvents();
+    </script>
+  </body>
+</html>

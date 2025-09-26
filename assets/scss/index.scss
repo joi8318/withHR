@@ -1,6 +1,6 @@
-@import "base/reset";
-@import "base/common";
-@import "layout/layout";
-@import "layout/popup";
-@import "layout/content";
-@import "layout/darkmode";
+@use "base/index" as *;
+@use "layout/main";
+@use "layout/layout";
+@use "layout/popup";
+@use "layout/content";
+@use "layout/darkmode";

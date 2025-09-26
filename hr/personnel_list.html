@@ -1039,26 +1039,22 @@
         const value = this.value;
         if (!value) return;
 
-        // 이미 선택된 값이면 추가하지 않음
         if (
           [...selectedTags.children].some((tag) => tag.dataset.value === value)
         )
           return;
 
-        // 선택된 값 태그 생성
         const tag = document.createElement("div");
         tag.className = "tag";
         tag.dataset.value = value;
         tag.innerHTML = `${value} <button>&times;</button>`;
         selectedTags.appendChild(tag);
 
-        // 삭제 버튼
         tag.querySelector("button").addEventListener("click", () => {
           tag.remove();
         });
 
-        // 선택 후 select 안 글자 없애기
-        this.selectedIndex = 0; // 첫 번째 placeholder 옵션으로 되돌림
+        this.selectedIndex = 0;
       });
     </script>
   </body>

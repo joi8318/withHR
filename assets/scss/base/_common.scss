@@ -1,4 +1,4 @@
-@use "./variables" as *;
+@use "variables" as *;
 @font-face {
   font-family: "Pretendard";
   font-weight: 300;
@@ -94,6 +94,9 @@ a {
 .border-top-none {
   border-top: none !important;
 }
+.w120 {
+  width: 12rem !important;
+}
 
 /* ---------------------- form ---------------------- */
 input,
@@ -184,6 +187,92 @@ textarea {
   }
 }
 
+.custom-radio {
+  display: inline-flex;
+  align-items: end;
+  cursor: pointer;
+  margin-block: 0.5rem;
+
+  input {
+    display: none;
+  }
+
+  span {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--gray-50);
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    background-color: var(--gray-0);
+  }
+
+  input:checked + span {
+    border: 5px solid var(--primary-color);
+  }
+
+  input:disabled + span {
+    background-color: var(--gray-20);
+    border: 5px solid var(--gray-50);
+    cursor: not-allowed;
+
+    &::after {
+      display: block;
+      background-color: var(--gray-50);
+    }
+  }
+}
+
+.switch-wrap {
+  display: flex;
+  align-items: center;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4.5rem;
+  height: 2.5rem;
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 1.3rem;
+  margin-left: 0.5rem;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 50%;
+    left: 0.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--gray-0);
+    transition: 0.3s;
+  }
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+  transform: translate(1.8rem, -50%);
+}
+
 .datepicker {
   background: url("../images/ico_calendar.png") calc(100% - 0.5rem) 50%
     no-repeat;
@@ -218,6 +307,9 @@ strong {
 }
 .text-point {
   color: var(--primary-color) !important;
+}
+.text-yellow {
+  color: #e3aa08;
 }
 h1 {
   margin-left: 3rem;
@@ -288,7 +380,7 @@ h5 {
   &::before {
     content: "*";
     font-weight: 700;
-    color: #e64f56;
+    color: var(--red-color);
     display: inline-flex;
     margin-right: 0.2rem;
     transform: translateY(0.2rem);
@@ -344,7 +436,18 @@ h5 {
 .mal10 {
   margin-left: 1rem !important;
 }
-
+.mal20 {
+  margin-left: 2rem !important;
+}
+.mar10 {
+  margin-right: 1rem !important;
+}
+.mar20 {
+  margin-right: 2rem !important;
+}
+.mar30 {
+  margin-right: 3rem !important;
+}
 /* ---------------------- tootip ---------------------- */
 .tooltip {
   position: relative;
@@ -387,6 +490,7 @@ h5 {
 .tab-wrap {
   border-bottom: 1px solid var(--gray-50);
   display: flex;
+  margin-left: 0.1rem;
   li {
     border: 1px solid var(--gray-50);
     border-top-width: 0.3rem;
@@ -405,6 +509,12 @@ h5 {
     border-bottom-color: var(--gray-0);
     position: relative;
   }
+}
+.tab-pane {
+  display: none;
+}
+.tab-pane.on {
+  display: block;
 }
 .pop-tab {
   display: flex;
@@ -460,6 +570,14 @@ button {
       color: var(--primary-color);
     }
   }
+  .btn-point-line {
+    border: 1px solid var(--primary-color);
+    padding: 1rem 2rem 0.8rem;
+    color: var(--primary-color);
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
   .btn-point {
     background-color: var(--gray-100);
     border: 1px solid var(--gray-100);
@@ -486,6 +604,14 @@ button {
     &:hover {
       background-color: var(--gray-100);
     }
+  }
+  .btn-short-line {
+    display: inline-flex;
+    align-items: center;
+    height: 2rem;
+    width: 0.1rem;
+    background-color: var(--gray-50);
+    margin: 0 1.5rem;
   }
 }
 .pop-wrap {

@@ -1,0 +1,112 @@
+@use "../base/index" as *;
+.main {
+  width: 122rem;
+  margin: 2rem auto;
+  display: flex;
+  max-height: calc(100% - 3.2rem);
+  height: calc(100% - 3.2rem);
+  min-height: 0;
+  overflow-y: auto;
+
+  &__center {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(120px, auto);
+    gap: 2rem;
+  }
+
+  &__right {
+    width: 32rem;
+    flex-shrink: 0;
+  }
+}
+.main__left {
+  width: 28rem;
+  flex-shrink: 0;
+  background: url("../images/main_bg.png") right top no-repeat;
+  border: 1px solid var(--gray-50);
+  border-radius: var(--base-round);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .slogan {
+    margin: 4rem 3rem 0;
+    strong {
+      font-size: 3.5rem;
+      font-weight: 700;
+      display: block;
+      word-break: keep-all;
+      line-height: 1.1;
+    }
+    span {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      font-weight: 300;
+      display: block;
+      word-break: keep-all;
+    }
+  }
+  .myinfo {
+    &__photo {
+      display: flex;
+      align-items: center;
+      margin: 0 2rem;
+      .photo img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+      }
+      .name {
+        margin-left: 1.5rem;
+        strong {
+          font-size: 2.4rem;
+          font-weight: 700;
+          display: block;
+        }
+        span {
+          margin-top: 0.5rem;
+          font-weight: 300;
+          display: block;
+        }
+      }
+    }
+    &__count {
+      background-color: var(--gray-0);
+      border-radius: var(--base-round);
+      margin: 2rem 1rem;
+      display: flex;
+      .count {
+        padding-block: 2rem;
+        flex: 1;
+        text-align: center;
+        strong {
+          margin-top: 1rem;
+          display: block;
+          text-align: center;
+        }
+        span {
+          margin-top: 0.5rem;
+          font-weight: 700;
+          display: block;
+          text-align: center;
+        }
+      }
+      .personnel {
+        &::before {
+          @include boots-icon("\F4CF", 1.8rem, var(--gray-100));
+        }
+      }
+      .tenure {
+        &::before {
+          @include boots-icon("\F1CC", 1.8rem, var(--gray-100));
+        }
+      }
+      .absence {
+        &::before {
+          @include boots-icon("\F2E0", 1.8rem, var(--gray-100));
+        }
+      }
+    }
+  }
+}

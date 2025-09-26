@@ -1,5 +1,4 @@
-@use "../base/mixin" as *;
-
+@use "../base/index" as *;
 [data-theme="dark"] {
   input,
   select {
@@ -105,6 +104,12 @@
     }
   }
 
+  .main {
+    &__left {
+      background: url("../images/dark/main_bg.png") right top no-repeat;
+    }
+  }
+
   .hr-wrap {
     &__intro {
       .hr-situation {
@@ -152,6 +157,28 @@
     }
     table tr.selected {
       background-color: #21252a;
+    }
+  }
+
+  .calendar-wrap {
+    &__title {
+      .calendar-blt {
+        .yellow {
+          background-color: #161b21;
+        }
+      }
+    }
+    .event.blue {
+      background-color: #012247;
+    }
+    .event.green {
+      background-color: #074117;
+    }
+    .event.red {
+      background-color: #5c1e1e;
+    }
+    .event.yellow {
+      background-color: #423205;
     }
   }
   .pop-small {

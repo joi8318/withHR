@@ -276,6 +276,21 @@ document.addEventListener("DOMContentLoaded", () => {
     checkOverflow();
   });
 
+  // ====================== 기본탭 ======================
+  const baseTabs = document.querySelectorAll(".tab-wrap li");
+  const baseTabContents = document.querySelectorAll(".tab-pane");
+
+  baseTabs.forEach((tab, index) => {
+    tab.addEventListener("click", function () {
+      baseTabs.forEach((t) => t.classList.remove("on"));
+      baseTabContents.forEach((content) => content.classList.remove("on"));
+
+      tab.classList.add("on");
+
+      baseTabContents[index].classList.add("on");
+    });
+  });
+
   // ====================== 팝업-알림탭 ======================
   const tabs = document.querySelectorAll(".pop-tab a");
   const noticeBoxes = document.querySelectorAll(".notice-box");
@@ -340,10 +355,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ====================== 테마 / 다크모드 ======================
   const themeItems = document.querySelectorAll(".theme-setting .theme-item");
+
   const applyTheme = (themeName) => {
     document.documentElement.dataset.themeColor = themeName.toLowerCase();
     localStorage.setItem("themeColor", themeName);
   };
+
   themeItems.forEach((item) => {
     item.addEventListener("click", (e) => {
       e.preventDefault();
@@ -353,14 +370,18 @@ document.addEventListener("DOMContentLoaded", () => {
       applyTheme(themeName);
     });
   });
-  const savedTheme = localStorage.getItem("themeColor");
-  if (savedTheme) {
-    applyTheme(savedTheme);
-    themeItems.forEach((i) => {
-      const name = i.querySelector("p").textContent;
-      i.classList.toggle("on", name === savedTheme);
-    });
-  }
+
+  const savedTheme = localStorage.getItem("themeColor") || "blue"; // blue를 기본값으로 사용
+  applyTheme(savedTheme);
+
+  themeItems.forEach((i) => {
+    const name = i.querySelector("p").textContent;
+    if (name === savedTheme) {
+      i.classList.add("on");
+    } else {
+      i.classList.remove("on");
+    }
+  });
 
   const darkToggle = document.querySelector("#darkmode-toggle");
   const darkIcon = darkToggle?.querySelector(".ico-darkmode");

@@ -1,6 +1,4 @@
-@use "../base/variables" as *;
-@use "../base/mixin" as *;
-
+@use "../base/index" as *;
 #wrap {
   min-width: var(--websize);
   background-color: var(--gray-20);
@@ -485,6 +483,8 @@
         margin: 0 0 0 -0.1rem;
         color: var(--gray-100);
         font-weight: 700;
+        position: relative;
+        z-index: 1;
       }
       &:has(> a.on) {
         background: none;
@@ -544,7 +544,7 @@
       align-items: center;
       color: var(--gray-70);
       font-size: var(--text-small);
-      padding: 0.7rem 1.5rem;
+      padding: 0.7rem 2rem;
       &::before {
         content: "";
         margin-right: 0.5rem;
@@ -579,8 +579,52 @@
   height: calc(100% - 3.2rem);
   min-height: 0;
   overflow-y: auto;
+  position: relative;
 }
 .cont-wrap-100 {
   display: flex;
   flex-direction: column;
+}
+.cont-left {
+  width: 32rem;
+  background-color: var(--gray-10);
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-right: 1px solid var(--gray-50);
+  float: left;
+  overflow-y: auto;
+  padding-inline: 2rem;
+}
+.cont-right {
+  width: calc(100% - 32rem);
+  height: 100%;
+  float: right;
+  overflow-y: auto;
+  margin-left: 2rem;
+}
+
+.cont-title-have-wrap {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100% - 3.2rem);
+  height: calc(100% - 3.2rem);
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.title-wrap {
+  padding: 2rem;
+  border-top: 1px solid var(--gray-50);
+  border-bottom: 1px solid var(--gray-50);
+  background-color: var(--gray-0);
+}
+
+.cont-title-have {
+  flex: 1;
+  background-color: var(--gray-0);
+  border-top: 1px solid var(--gray-50);
+  padding: 2rem;
+  margin-top: 2rem;
 }
