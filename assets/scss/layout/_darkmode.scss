@@ -181,6 +181,22 @@
       background-color: #423205;
     }
   }
+  .calendar {
+    &__right {
+      .birthday {
+        background-color: #21252a;
+      }
+      .holiday {
+        background-color: #21252a;
+      }
+      .attendance {
+        background-color: #21252a;
+      }
+      .schedule {
+        background-color: #21252a;
+      }
+    }
+  }
   .pop-small {
     border: 1px solid var(--gray-50);
   }

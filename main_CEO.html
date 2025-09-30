@@ -152,103 +152,20 @@
             </a>
           </div>
           <!-- //1depth E -->
-          <!-- 2depth S -->
-          <a class="btn-smenu-fold tooltip">
-            <span></span>
-            <div class="tooltip-text">접기</div>
-          </a>
-          <div class="smenu">
-            <div class="smenu__icons">
-              <a class="smenu-all-close tooltip">
-                <span class="smenu-align"></span
-                ><span class="align-close"></span>
-                <div class="tooltip-text">메뉴 접기</div>
-              </a>
-              <a class="smenu-all-open tooltip">
-                <span class="smenu-align"></span
-                ><span class="align-open"></span>
-                <div class="tooltip-text">메뉴 펼치기</div>
-              </a>
-            </div>
-            <ul class="smenu__con">
-              <li>
-                <a class="depth2 has-child">인사정보</a>
-                <div class="depth3">
-                  <a>인사기본</a>
-                  <a class="on">인사기본(조직별)</a>
-                  <a>인원명부 항목관리</a>
-                  <a>인원명부</a>
-                  <a>인사정보복사</a>
-                </div>
-              </li>
-              <li>
-                <a class="depth2 has-child">사원정보변경</a>
-                <div class="depth3">
-                  <a>인사기본</a>
-                  <a>인사기본(조직별)</a>
-                  <a>인원명부 항목관리</a>
-                  <a>인원명부</a>
-                  <a>인사정보복사</a>
-                </div>
-              </li>
-              <li>
-                <a class="depth2">인사정보 관리</a>
-              </li>
-              <li>
-                <a class="depth2 has-child">인사기록카드</a>
-                <div class="depth3">
-                  <a>인사기본</a>
-                  <a>인사기본(조직별)</a>
-                  <a>인원명부 항목관리</a>
-                  <a>인원명부</a>
-                  <a>인사정보복사</a>
-                </div>
-              </li>
-              <li>
-                <a class="depth2">발령정보</a>
-              </li>
-              <li>
-                <a class="depth2">전자계약서</a>
-              </li>
-              <li>
-                <a class="depth2 has-child">포상징계 관리</a>
-                <div class="depth3">
-                  <a>인사기본</a>
-                  <a>인사기본(조직별)</a>
-                  <a>인원명부 항목관리</a>
-                  <a>인원명부</a>
-                  <a>인사정보복사</a>
-                </div>
-              </li>
-              <li>
-                <a class="depth2">산재관리</a>
-              </li>
-              <li>
-                <a class="depth2 has-child">인원마감</a>
-                <div class="depth3">
-                  <a>인사기본</a>
-                  <a>인사기본(조직별)</a>
-                  <a>인원명부 항목관리</a>
-                  <a>인원명부</a>
-                  <a>인사정보복사</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- //2depth E -->
         </aside>
         <!-- //lnb E -->
         <div id="contents">
           <!-- 내용 들어갑니다 S -->
           <main class="main">
-            <div class="main__left">
+            <div class="main__ceo_left">
               <!-- 슬로건 -->
               <div class="slogan">
                 <strong>GROWING TOGETHER WHITH HR</strong>
                 <span>함께하는 HR, 함께하는 성장</span>
               </div>
-              <!-- 기본정보 -->
+              <!-- 개인정보 S -->
               <div class="myinfo">
+                <!-- 사진/이름 -->
                 <div class="myinfo__photo">
                   <div class="photo">
                     <img src="../assets/images/sample.png" />
@@ -258,25 +175,509 @@
                     <span>CEO</span>
                   </div>
                 </div>
+                <!-- 인원체크 -->
                 <div class="myinfo__count">
-                  <div class="count personnel">
-                    <strong>총 인원</strong>
+                  <div class="count">
+                    <strong class="personnel">총 인원</strong>
                     <span>150명</span>
                   </div>
-                  <div class="count tenure">
-                    <strong>재직</strong>
+                  <div class="count">
+                    <strong class="tenure">재직</strong>
                     <span>175명</span>
                   </div>
-                  <div class="count absence">
-                    <strong>휴직</strong>
+                  <div class="count">
+                    <strong class="absence">휴직</strong>
                     <span>23명</span>
                   </div>
                 </div>
-                <div class="myinfo__graph">ddddd</div>
+                <!-- 그래프 -->
+                <div class="myinfo__graph">
+                  <div class="graph">
+                    <strong>Today 부재중</strong>
+                    <div class="graph-wrap">
+                      <div class="graph-bg">
+                        <span style="width: 20%"></span>
+                      </div>
+                      26명
+                    </div>
+                  </div>
+                  <div class="graph">
+                    <strong>OnBoarding</strong>
+                    <div class="graph-wrap">
+                      <div class="graph-bg">
+                        <span style="width: 49%"></span>
+                      </div>
+                      49%
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!-- //개인정보 E -->
+              <!-- 결재문서 S -->
+              <div class="main__ceo_bottom main-box payment-box">
+                <div class="payment-box__title">
+                  <h5>결재할 문서</h5>
+                  <strong>3건</strong>
+                  <div class="btn-group">
+                    <a class="prev"><em class="text-hidden">이전으로</em></a>
+                    <a class="next"><em class="text-hidden">다음으로</em></a>
+                  </div>
+                </div>
+                <div class="payment-box__con">
+                  <a class="content">
+                    <strong>1퇴직원 작성/신청</strong>
+                    <div class="date">
+                      <span>2025-09-08</span>
+                      <span class="name">홍길동</span>
+                    </div>
+                    <span class="status">수신처리중</span>
+                  </a>
+                  <a class="content">
+                    <strong>2재직증명(한글)</strong>
+                    <div class="date">
+                      <span>2025-09-08</span>
+                      <span class="name">안지영</span>
+                    </div>
+                    <span class="status">결재진행중</span>
+                  </a>
+                  <a class="content">
+                    <strong>3재직증명(한글)</strong>
+                    <div class="date">
+                      <span>2025-09-08</span>
+                      <span class="name">김하늘</span>
+                    </div>
+                    <span class="status">수신처리중</span>
+                  </a>
+                </div>
+              </div>
+              <!-- //결재문서 E -->
             </div>
-            <div class="main__center"></div>
-            <div class="main__right"></div>
+            <div class="main__ceo_center">
+              <!-- 달력 및 근태현황 S -->
+              <div class="main-box calendar">
+                <div class="calendar__left">
+                  <div class="title">
+                    <strong>2025.09</strong>
+                    <div class="calendar-btn">
+                      <a class="prev tooltip">
+                        <div class="tooltip-text">이전달</div>
+                      </a>
+                      <a class="next tooltip">
+                        <div class="tooltip-text">다음달</div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- 달력 영역 S -->
+                  <div class="main-calendar-wrap">
+                    <div class="main-calendar-header">
+                      <span>S</span>
+                      <span>M</span>
+                      <span>T</span>
+                      <span>W</span>
+                      <span>T</span>
+                      <span>F</span>
+                      <span>S</span>
+                    </div>
+                    <div class="main-calendar-body">
+                      <div class="calendar-day"></div>
+                      <div class="calendar-day" data-date="1">1</div>
+                      <div class="calendar-day" data-date="2">2</div>
+                      <div class="calendar-day" data-date="3">3</div>
+                      <div class="calendar-day" data-date="4">
+                        4
+                        <div class="event-group">
+                          <span class="birthday"></span>
+                          <span class="schedule"></span>
+                        </div>
+                      </div>
+                      <div class="calendar-day" data-date="5">5</div>
+                      <div class="calendar-day" data-date="6">6</div>
+                      <div class="calendar-day" data-date="7">7</div>
+                      <div class="calendar-day" data-date="8">8</div>
+                      <div class="calendar-day" data-date="9">9</div>
+                      <div class="calendar-day" data-date="10">10</div>
+                      <div class="calendar-day" data-date="11">11</div>
+                      <div class="calendar-day" data-date="12">12</div>
+                      <div class="calendar-day" data-date="13">13</div>
+                      <div class="calendar-day" data-date="14">14</div>
+                      <div class="calendar-day" data-date="15">15</div>
+                      <div class="calendar-day" data-date="16">
+                        16
+                        <div class="event-group">
+                          <span class="attendance"></span>
+                          <span class="holiday"></span>
+                          <span class="schedule"></span>
+                        </div>
+                      </div>
+                      <div class="calendar-day on" data-date="17">17</div>
+                      <div class="calendar-day" data-date="18">18</div>
+                      <div class="calendar-day" data-date="19">19</div>
+                      <div class="calendar-day" data-date="20">20</div>
+                      <div class="calendar-day" data-date="21">21</div>
+                      <div class="calendar-day" data-date="22">22</div>
+                      <div class="calendar-day" data-date="23">23</div>
+                      <div class="calendar-day" data-date="24">24</div>
+                      <div class="calendar-day" data-date="25">25</div>
+                      <div class="calendar-day" data-date="26">26</div>
+                      <div class="calendar-day" data-date="27">27</div>
+                      <div class="calendar-day" data-date="28">28</div>
+                      <div class="calendar-day" data-date="29">29</div>
+                      <div class="calendar-day" data-date="30">30</div>
+                      <div class="calendar-day" data-date="31">31</div>
+                      <div class="calendar-day"></div>
+                      <div class="calendar-day"></div>
+                      <div class="calendar-day"></div>
+                    </div>
+                  </div>
+                  <!-- //달력 영역 E -->
+                </div>
+                <!-- 팀원 근태 현황 S -->
+                <div class="calendar__right">
+                  <h5 class="mat30">팀원 근태 현황</h5>
+                  <ul class="attendance-list">
+                    <li>
+                      <span class="holiday">공휴일</span>
+                      <strong>0건</strong>
+                    </li>
+                    <li>
+                      <span class="birthday">생일</span>
+                      <strong>13건</strong>
+                    </li>
+                    <li>
+                      <span class="attendance">근태</span>
+                      <strong>3건</strong>
+                    </li>
+                    <li>
+                      <span class="schedule">일정</span>
+                      <strong>25건</strong>
+                    </li>
+                  </ul>
+                </div>
+                <!-- //팀원 근태 현황 E -->
+              </div>
+              <!-- //달력 및 근태현황 E -->
+              <!-- 급여명세서 -->
+              <div class="main-box banner">
+                <h5>급여명세서</h5>
+                <a class="btn-notice">2025.03 미지급</a>
+              </div>
+              <!-- WithHR Way NOTE -->
+              <div class="main-box banner">
+                <h5>WithHR Way NOTE</h5>
+                <a class="btn-notice">당월 0건</a>
+              </div>
+              <!-- 퇴직현황 S -->
+              <div class="main-box retirement">
+                <h5 class="title-center">퇴직 현황(정규직)</h5>
+                <span class="text-standard mat10">기준 : 년</span>
+                <a class="btn-main-go tooltip"
+                  ><span class="tooltip-text">바로가기</span></a
+                >
+                <div class="retirement__con">
+                  <div class="graph-wrap">
+                    <span>전사</span>
+                    <div class="graph-bg">
+                      <span style="width: 3.5%"></span>
+                    </div>
+                    <strong>3.5%</strong>
+                  </div>
+                  <div class="graph-wrap">
+                    <span>HR본부</span>
+                    <div class="graph-bg">
+                      <span style="width: 0%"></span>
+                    </div>
+                    <strong>0%</strong>
+                  </div>
+                  <div class="graph-wrap">
+                    <span>점포</span>
+                    <div class="graph-bg">
+                      <span style="width: 20%"></span>
+                    </div>
+                    <strong>20%</strong>
+                  </div>
+                </div>
+              </div>
+              <!-- //퇴직현황 E -->
+              <!-- 연차 사용율 S -->
+              <div class="main-box retirement">
+                <select>
+                  <option>연차 사용율(정규직)</option>
+                  <option>연차 사용율(계약직)</option>
+                </select>
+                <span class="text-standard mat10">기준 : 년</span>
+                <div class="retirement__con">
+                  <div class="graph-wrap">
+                    <span>WithHR</span>
+                    <div class="graph-bg">
+                      <span style="width: 75%"></span>
+                    </div>
+                    <strong>75%</strong>
+                  </div>
+                  <div class="graph-wrap">
+                    <span>HR본부</span>
+                    <div class="graph-bg">
+                      <span style="width: 30%"></span>
+                    </div>
+                    <strong>30%</strong>
+                  </div>
+                </div>
+              </div>
+              <!-- //연차 사용율 E -->
+            </div>
+            <!-- 조직도 S -->
+            <div class="main__ceo_right main-box">
+              <!-- title 영역 S -->
+              <div class="organization-title">
+                <div class="title-blt-item">
+                  <a data-target="organization-type">
+                    <span class="txt">조직유형</span>
+                    <span class="number">4</span>
+                  </a>
+                  <div class="title-blt-box organization-type">
+                    <p>
+                      <span>사업/본부</span>
+                      <strong>1</strong>
+                    </p>
+                    <p>
+                      <span>부문</span>
+                      <strong>1</strong>
+                    </p>
+                    <p>
+                      <span>팀</span>
+                      <strong>13</strong>
+                    </p>
+                    <p>
+                      <span>파트/점포(수)</span>
+                      <strong>7</strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="title-blt-item">
+                  <a data-target="employee-type">
+                    <span class="txt">사업구분</span>
+                    <span class="number">4</span>
+                  </a>
+                  <div class="title-blt-box employee-type">
+                    <p>
+                      <span>임원</span>
+                      <strong>2</strong>
+                    </p>
+                    <p>
+                      <span>정규직</span>
+                      <strong>63</strong>
+                    </p>
+                    <p>
+                      <span>계약직</span>
+                      <strong>13</strong>
+                    </p>
+                    <p>
+                      <span>인턴</span>
+                      <strong>7</strong>
+                    </p>
+                    <p>
+                      <span>파견직</span>
+                      <strong>5</strong>
+                    </p>
+                    <p>
+                      <span>부담당</span>
+                      <strong>5</strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="switch-wrap mal10">
+                  조직원 포함
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+              <!-- //title 영역 E -->
+              <!-- 팀1 S -->
+              <div class="organization-box">
+                <a class="btn-expand tooltip">
+                  <span class="tooltip-text">전체보기</span>
+                </a>
+                <div class="organization-box__title">HR본부</div>
+                <ul class="organization-box__list">
+                  <li class="leader">
+                    <div class="photo">
+                      <img src="assets/images/sample.png" />
+                    </div>
+                    <div class="name"><strong>민아영</strong>본부장</div>
+                    <div class="btn-group">
+                      <span class="event1"></span>
+                      <span class="event2"></span>
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>박윤철</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>최도준</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event-birthday">D-DAY</span>
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>장윤솔</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>하은영</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event2"></span>
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //팀1 E -->
+              <!-- 팀2 S -->
+              <div class="organization-box">
+                <a class="btn-expand tooltip">
+                  <span class="tooltip-text">전체보기</span>
+                </a>
+                <div class="organization-box__title">인사전략팀</div>
+                <ul class="organization-box__list">
+                  <li class="leader">
+                    <div class="photo">
+                      <img src="assets/images/sample.png" />
+                    </div>
+                    <div class="name"><strong>김석호</strong>팀장</div>
+                    <div class="btn-group">
+                      <span class="event-birthday">D-7</span>
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>박윤철</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>최도준</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event-birthday">D-DAY</span>
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>장윤솔</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>하은영</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event2"></span>
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //팀2 E -->
+              <!-- 팀3 S -->
+              <div class="organization-box">
+                <a class="btn-expand tooltip">
+                  <span class="tooltip-text">전체보기</span>
+                </a>
+                <div class="organization-box__title">커머스 피플 지원팀</div>
+                <ul class="organization-box__list">
+                  <li class="leader">
+                    <div class="photo">
+                      <img src="assets/images/sample.png" />
+                    </div>
+                    <div class="name"><strong>권성규</strong>팀장</div>
+                    <div class="btn-group">
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>박윤철</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>최도준</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event-birthday">D-DAY</span>
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>장윤솔</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>하은영</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event2"></span>
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //팀3 E -->
+              <!-- 팀4 S -->
+              <div class="organization-box">
+                <a class="btn-expand tooltip">
+                  <span class="tooltip-text">전체보기</span>
+                </a>
+                <div class="organization-box__title">인사부문</div>
+                <ul class="organization-box__list">
+                  <li class="leader">
+                    <div class="photo">
+                      <img src="assets/images/sample.png" />
+                    </div>
+                    <div class="name"><strong>김일건</strong>팀장</div>
+                    <div class="btn-group">
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>박윤철</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>최도준</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event-birthday">D-DAY</span>
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>장윤솔</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                  <li>
+                    <strong>하은영</strong> 매니저
+                    <div class="btn-group">
+                      <span class="event2"></span>
+                      <span class="event-teams"></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //팀4 E -->
+            </div>
+            <!-- //조직도 E -->
           </main>
           <!-- //내용 들어갑니다 E -->
         </div>
@@ -285,4 +686,79 @@
     </div>
     <!-- //wrap E -->
   </body>
+  <script>
+    //사업구분 마우스오버시
+    document.querySelectorAll(".title-blt-item").forEach((item) => {
+      const box = item.querySelector(".title-blt-box");
+
+      item.addEventListener("mouseenter", () => {
+        // 모든 박스 숨기기
+        document
+          .querySelectorAll(".title-blt-box")
+          .forEach((b) => (b.style.display = "none"));
+        box.style.display = "block";
+      });
+
+      item.addEventListener("mouseleave", () => {
+        box.style.display = "none";
+      });
+    });
+
+    //팀원 접고 펼치기
+    document
+      .querySelectorAll(".organization-box .btn-expand")
+      .forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const box = this.closest(".organization-box");
+          const tooltip = this.querySelector(".tooltip-text");
+
+          const isOpen = box.classList.toggle("on");
+          this.classList.toggle("fold", isOpen);
+
+          if (isOpen) {
+            tooltip.textContent = "접기";
+          } else {
+            tooltip.textContent = "전체보기";
+          }
+        });
+      });
+
+    //결재할문서 슬라이드
+    document.addEventListener("DOMContentLoaded", function () {
+      const container = document.querySelector(".payment-box__con");
+      const contents = container.querySelectorAll(".content");
+      const prevBtn = document.querySelector(".payment-box .prev");
+      const nextBtn = document.querySelector(".payment-box .next");
+
+      let startIndex = 0;
+      const visibleCount = 2;
+
+      function render() {
+        contents.forEach((item, idx) => {
+          if (idx >= startIndex && idx < startIndex + visibleCount) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      }
+
+      prevBtn.addEventListener("click", () => {
+        if (startIndex > 0) {
+          startIndex--;
+          render();
+        }
+      });
+
+      nextBtn.addEventListener("click", () => {
+        if (startIndex < contents.length - visibleCount) {
+          startIndex++;
+          render();
+        }
+      });
+      render();
+    });
+  </script>
 </html>
