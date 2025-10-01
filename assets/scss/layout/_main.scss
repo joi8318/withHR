@@ -11,8 +11,7 @@
     width: 28rem;
     min-height: 66rem;
     height: calc(100% - 14rem);
-    max-height: 72.3rem;
-    background: url("../images/main_bg.png") right top no-repeat;
+    background: #e3eefa url("../images/main_bg.png") right top no-repeat;
     border: 1px solid var(--gray-50);
     border-radius: var(--base-round);
     display: flex;
@@ -25,7 +24,7 @@
     flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 28rem minmax(10rem, 16.3rem) 24rem;
+    grid-template-rows: 28rem minmax(10rem, 1fr) 24rem;
     gap: 2rem;
     margin-inline: 2rem;
     height: calc(100% - 14rem);
@@ -46,13 +45,13 @@
   }
   &__left {
     width: 40rem;
-    background: url("../images/main_bg.png") right top no-repeat;
+    background: #e3eefa url("../images/main_bg.png") right top no-repeat;
     border: 1px solid var(--gray-50);
     border-radius: var(--base-round);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 6rem 4rem 4rem;
+    padding: 6rem 4rem 2rem;
   }
   &__right {
     flex: 1;
@@ -145,6 +144,22 @@
         font-weight: 700;
         display: block;
         text-align: center;
+      }
+    }
+    a:hover {
+      strong {
+        color: var(--primary-color);
+        &::before {
+          color: var(--primary-color);
+        }
+      }
+      span {
+        color: var(--primary-color);
+      }
+      .notice {
+        &::before {
+          background-image: var(--icon-notice);
+        }
       }
     }
     .personnel {
@@ -388,7 +403,7 @@
     grid-column: 1 / span 4;
     &__left {
       width: 50%;
-      padding: 3rem 6rem;
+      padding: 3rem 5rem;
     }
     &__right {
       width: 50%;
@@ -844,8 +859,11 @@
 .application-list {
   grid-column: span 2;
   &__title {
-    margin-top: 5rem;
     text-align: center;
+    height: 9.5rem;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
     strong {
       margin-top: 0.5rem;
       font-size: 3rem;
@@ -853,13 +871,19 @@
     }
   }
   &__con {
-    height: 8.5rem;
-    overflow-y: auto;
-    margin: 4rem 4rem 0;
+    height: calc(100% - 9.5rem);
+    display: flex;
+    align-items: center;
+    .content-group {
+      height: 8.5rem;
+      overflow-y: auto;
+      margin: 4rem;
+      width: 100%;
+    }
     .content {
       display: flex;
       justify-content: space-between;
-      margin-block: 0.4rem;
+      margin-block: 0.5rem;
       strong {
         &::before {
           content: "";
@@ -893,8 +917,11 @@
 .statistic-list {
   grid-column: span 2;
   &__title {
-    margin-top: 5rem;
     text-align: center;
+    height: 9.5rem;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
     strong {
       margin-top: 0.5rem;
       font-size: 3rem;
@@ -902,8 +929,15 @@
     }
   }
   &__con {
-    height: 8.5rem;
-    margin: 5rem 4rem 0;
+    height: calc(100% - 9.5rem);
+    display: flex;
+    align-items: center;
+    .content-group {
+      height: 8.5rem;
+      overflow-y: auto;
+      margin: 4rem;
+      width: 100%;
+    }
     .graph-wrap {
       display: flex;
       align-items: center;
@@ -946,6 +980,7 @@
         justify-content: end;
         font-weight: 600;
         color: var(--gray-60);
+        padding-right: 0.5rem;
         strong {
           color: var(--primary-color);
           font-weight: 600;

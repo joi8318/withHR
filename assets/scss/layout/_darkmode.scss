@@ -106,7 +106,19 @@
 
   .main {
     &__left {
-      background: url("../images/dark/main_bg.png") right top no-repeat;
+      background: #1f2a36 url("../images/dark/main_bg.png") right top no-repeat;
+      .notice {
+        &::before {
+          @include svg-icon-bg(
+            "../images/icon/dark/notice.svg",
+            2.3rem,
+            2.3rem
+          );
+        }
+      }
+    }
+    &__ceo_left {
+      background: #1f2a36 url("../images/dark/main_bg.png") right top no-repeat;
     }
   }
 
