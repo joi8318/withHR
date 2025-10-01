@@ -664,6 +664,7 @@ body {
   color: var(--gray-100);
   font-size: 1.5rem;
   font-weight: 400;
+  overflow-y: hidden;
 }
 
 a {
@@ -2437,6 +2438,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-shrink: 0;
 }
 #header .util {
   display: flex;
@@ -3122,16 +3124,17 @@ button {
   background-color: var(--gray-0);
   border-top: 1px solid var(--gray-50);
   padding: 2rem;
-  max-height: calc(100% - 3.2rem);
-  height: calc(100% - 3.2rem);
-  min-height: 0;
   overflow-y: auto;
   position: relative;
+  height: calc(100vh - 10rem);
 }
 
 .cont-wrap-100 {
   display: flex;
   flex-direction: column;
+  max-height: calc(100vh - 10rem);
+  min-height: 0;
+  overflow-y: hidden;
 }
 
 .cont-left {
@@ -4150,6 +4153,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  flex-shrink: 0;
 }
 .search-wrap .search-con {
   display: grid;

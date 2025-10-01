@@ -391,6 +391,7 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  flex-shrink: 0;
   .search-con {
     display: grid;
     gap: 1rem 2rem;
