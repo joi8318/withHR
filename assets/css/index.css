@@ -2626,6 +2626,8 @@ button {
   padding-top: 1rem;
   position: relative;
   z-index: 1;
+  overflow-y: auto;
+  height: calc(100vh - 6.7rem);
 }
 #lnb .menu a {
   display: block;
@@ -2804,9 +2806,7 @@ button {
 }
 #lnb .smenu {
   width: 17rem;
-  height: 100%;
   border-right: 1px solid var(--gray-50);
-  overflow-y: auto;
 }
 #lnb .smenu__icons {
   border-bottom: 1px solid var(--gray-50);
@@ -2849,6 +2849,7 @@ button {
 }
 #lnb .smenu__con {
   overflow-y: auto;
+  height: calc(100vh - 10rem);
 }
 #lnb .smenu__con .depth2 {
   display: block;

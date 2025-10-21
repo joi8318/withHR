@@ -131,6 +131,8 @@
     padding-top: 1rem;
     position: relative;
     z-index: 1;
+    overflow-y: auto;
+    height: calc(100vh - 6.7rem);
     a {
       display: block;
       text-align: center;
@@ -308,9 +310,7 @@
   }
   .smenu {
     width: 17rem;
-    height: 100%;
     border-right: 1px solid var(--gray-50);
-    overflow-y: auto;
     &__icons {
       border-bottom: 1px solid var(--gray-50);
       padding-inline: 1rem;
@@ -348,6 +348,7 @@
     }
     &__con {
       overflow-y: auto;
+      height: calc(100vh - 10rem);
       .depth2 {
         display: block;
         border-bottom: 1px solid var(--gray-40);
