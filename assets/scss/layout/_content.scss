@@ -300,6 +300,7 @@
     border-right: 1px solid var(--gray-50);
     border-left: 1px solid var(--gray-50);
     text-align: left;
+    min-width: 14rem;
     &:first-child {
       border-left: none;
     }
@@ -405,6 +406,7 @@
         min-width: 8rem;
         display: inline-flex;
         align-items: center;
+        white-space: nowrap;
         &::before {
           content: "";
           width: 0.4rem;
@@ -414,6 +416,10 @@
           display: inline-flex;
           margin-right: 0.4rem;
         }
+      }
+      strong.width-auto {
+        min-width: auto;
+        margin-right: 1rem;
       }
       .search-form {
         width: 100%;
@@ -461,7 +467,35 @@
           line-height: 1.3;
         }
       }
+      .text-deco {
+        display: inline-block;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        border-radius: 50%;
+        font-size: 1.1rem;
+        font-weight: 700;
+        height: 2rem;
+        width: 2rem;
+        text-align: center;
+        line-height: 2rem;
+      }
     }
+  }
+  .search-con.columns7 {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(15rem, 1fr));
+  }
+  .search-con.columns7-auto {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(15rem, auto));
+  }
+  .search-con.columns6 {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(15rem, 1fr));
+  }
+  .search-con.columns6-auto {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(15rem, auto));
   }
   .search-con.columns5 {
     display: grid;
@@ -1051,6 +1085,146 @@
     }
     .event.yellow {
       background-color: #fff3d1;
+    }
+  }
+}
+
+/* ---------------------- 평가시행 ---------------------- */
+.evaluation-wrap {
+  display: flex;
+  flex: 1;
+}
+.evaluation-left {
+  width: 18rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  border-right: 1px solid var(--gray-50);
+  flex-shrink: 0;
+  &__menu a {
+    display: block;
+    height: 4rem;
+    border: 1px solid var(--gray-50);
+    line-height: 4rem;
+    padding-left: 1rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    &::after {
+      @include boots-icon("\F285", 1.3rem, var(--gray-50));
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__menu a.on,
+  &__menu a:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--gray-0);
+    &::after {
+      color: var(--gray-0);
+    }
+  }
+}
+.evaluation-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+.process-wrap {
+  display: flex;
+  justify-content: center;
+}
+.process {
+  display: flex;
+  align-items: center;
+  &__number {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--base-round);
+    background-color: var(--gray-60);
+    color: var(--gray-0);
+    text-align: center;
+    line-height: 2.5rem;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  &__text {
+    margin-right: 1rem;
+    color: var(--gray-70);
+    white-space: nowrap;
+  }
+  &__line {
+    margin-right: 1rem;
+    width: 8.5rem;
+    height: 0.2rem;
+    background-color: var(--gray-60);
+  }
+}
+.process.on {
+  .process__number {
+    background-color: var(--primary-color);
+  }
+  .process__text {
+    color: var(--primary-color);
+  }
+  .process__line {
+    background-color: var(--primary-color);
+  }
+}
+.headcount-check {
+  display: flex;
+  font-size: 1.3rem;
+  position: absolute;
+  left: 2rem;
+  strong {
+    border: 1px solid var(--gray-50);
+    height: 2.9rem;
+    background-color: var(--gray-10);
+    display: inline-flex;
+    padding-inline: 1.5rem;
+    align-items: center;
+    margin-left: -1px;
+    font-weight: 600;
+    &:first-child {
+      border-radius: var(--base-round) 0 0 var(--base-round);
+    }
+  }
+  span {
+    display: inline-flex;
+    padding-inline: 1.5rem;
+    align-items: center;
+    border: 1px solid var(--gray-50);
+    height: 2.9rem;
+    margin-left: -1px;
+    font-weight: 600;
+    &:last-child {
+      border-radius: 0 var(--base-round) var(--base-round) 0;
+    }
+  }
+  .total {
+    &::before {
+      @include boots-icon("\F4CF", 1.4rem, var(--gray-100));
+      margin-right: 0.5rem;
+      font-weight: 400;
+    }
+  }
+  .exclude {
+    &::before {
+      @include boots-icon("\F89F", 1.4rem, var(--gray-100));
+      margin-right: 0.5rem;
+      font-weight: 400;
+    }
+  }
+  .transfer {
+    &::before {
+      @include boots-icon("\F136", 1.3rem, var(--gray-100));
+      margin-right: 0.5rem;
+      font-weight: 400;
     }
   }
 }

@@ -95,8 +95,17 @@ a {
 .border-top-none {
   border-top: none !important;
 }
+.w80 {
+  width: 8rem !important;
+}
 .w120 {
   width: 12rem !important;
+}
+.w150 {
+  width: 15rem !important;
+}
+.flex-auto {
+  flex: none !important;
 }
 
 /* ---------------------- form ---------------------- */
@@ -232,7 +241,7 @@ textarea {
 .switch {
   position: relative;
   display: inline-block;
-  width: 4.5rem;
+  width: 4.8rem;
   height: 2.5rem;
   input {
     opacity: 0;
@@ -248,7 +257,7 @@ textarea {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--gray-50);
   transition: 0.4s;
   border-radius: 1.3rem;
   margin-left: 0.5rem;
@@ -259,7 +268,7 @@ textarea {
     width: 1.7rem;
     border-radius: 50%;
     left: 0.3rem;
-    top: calc(50% - 1px);
+    top: calc(50% - 0.5px);
     transform: translateY(-50%);
     background-color: var(--gray-0);
     transition: 0.3s;
@@ -271,7 +280,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translate(1.7rem, -50%);
+  transform: translate(1.8rem, -50%);
 }
 
 .datepicker {
@@ -279,6 +288,7 @@ input:checked + .slider:before {
     no-repeat;
   padding-right: 3rem !important;
   min-width: 12rem;
+  cursor: pointer;
   &[disabled] {
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.6),
@@ -451,6 +461,21 @@ h5 {
 }
 .mar30 {
   margin-right: 3rem !important;
+}
+.mab10 {
+  margin-bottom: 1rem !important;
+}
+.mab20 {
+  margin-bottom: 2rem !important;
+}
+.mab30 {
+  margin-bottom: 3rem !important;
+}
+.mab40 {
+  margin-bottom: 4rem !important;
+}
+.mab50 {
+  margin-bottom: 5rem !important;
 }
 /* ---------------------- tootip ---------------------- */
 .tooltip {

@@ -132,5 +132,8 @@ html[data-theme="dark"][data-theme-color="black"] {
   --icon-theme: url("../images/icon/dark/theme_on.svg");
   --icon-lightmode: url("../images/icon/dark/lightmode_on.svg");
   --icon-mypage: url("../images/icon/dark/mypage_on.svg");
+  --icon-menu_align_up: url("../images/icon/black/menu_align_up2.svg");
+  --icon-menu_align_down: url("../images/icon/black/menu_align_down2.svg");
+  --primary-color: #fff;
   @include generate-menu-icons("icon");
 }

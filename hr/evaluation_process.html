@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>평가프로세스</title>
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/air-datepicker.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+    <script type="text/javascript" src="../assets/js/global.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header S -->
+      <header id="header">
+        <h1>
+          <a><em class="text-hidden">로고</em></a>
+        </h1>
+        <ul class="util">
+          <li>
+            <!-- 임직원 검색 -->
+            <div class="search-group">
+              <span class="util__form-icon"></span>
+              <input type="search" placeholder="임직원 및 메뉴(기능) 검색" />
+            </div>
+          </li>
+          <li>
+            <!-- 권한 변경 -->
+            <div class="authority-group">
+              <span class="util__form-icon"></span>
+              <select>
+                <option>권한 변경</option>
+                <option>관리자(ADMIN)</option>
+                <option>총괄담당자</option>
+                <option>인사담당자</option>
+                <option>교육담당자</option>
+                <option>성과담당자</option>
+                <option>근태담당자</option>
+                <option>급여담당자</option>
+              </select>
+            </div>
+          </li>
+          <li class="util__icons">
+            <a class="tooltip btn-pop-open" data-target="#noticePop">
+              <div class="ico-notice"></div>
+              <span class="util__icons__on"></span>
+              <div class="tooltip-text">알려드립니다</div>
+            </a>
+            <a class="tooltip btn-pop-small-open" data-target="#themePop">
+              <div class="ico-theme"></div>
+              <div class="tooltip-text">테마설정</div>
+            </a>
+            <a class="tooltip" id="darkmode-toggle">
+              <div class="ico-darkmode"></div>
+              <div class="tooltip-text">다크모드</div>
+            </a>
+            <a class="tooltip btn-pop-small-open" data-target="#mypagePop">
+              <div class="ico-mypage"></div>
+              <div class="tooltip-text">마이페이지</div>
+            </a>
+          </li>
+        </ul>
+        <!-- 테마설정 팝업 S -->
+        <div id="themePop" class="pop-theme pop-small">
+          <h4>테마설정</h4>
+          <a class="pop-close"><em class="text-hidden">팝업닫기</em></a>
+          <ul class="theme-setting">
+            <li class="theme-item on">
+              <a class="blue"></a>
+              <p>BLUE</p>
+            </li>
+            <li class="theme-item">
+              <a class="green"></a>
+              <p>GREEN</p>
+            </li>
+            <li class="theme-item">
+              <a class="red"></a>
+              <p>RED</p>
+            </li>
+            <li class="theme-item">
+              <a class="black"></a>
+              <p>BLACK</p>
+            </li>
+          </ul>
+        </div>
+        <!-- //테마설정 팝업 E -->
+        <!-- 마이페이지 팝업 S -->
+        <div id="mypagePop" class="pop-mypage pop-small">
+          <h4>마이페이지</h4>
+          <a class="pop-close"><em class="text-hidden">팝업닫기</em></a>
+          <ul>
+            <li>
+              <a class="btn-pw-modify"><span></span>비밀번호 변경</a>
+            </li>
+            <li>
+              <a class="btn-logout"><span></span>로그아웃</a>
+            </li>
+          </ul>
+        </div>
+        <!-- //mypagePop 팝업 E -->
+      </header>
+      <!-- //header E -->
+      <!-- lnb S -->
+      <section id="container">
+        <aside id="lnb">
+          <!-- 1depth S -->
+          <div class="menu">
+            <a class="menu01 on">
+              <span></span>
+              <p>인사관리</p>
+            </a>
+            <a class="menu02">
+              <span></span>
+              <p>조직관리</p>
+            </a>
+            <a class="menu03">
+              <span></span>
+              <p>성과관리</p>
+            </a>
+            <a class="menu04">
+              <span></span>
+              <p>경력개발</p>
+            </a>
+            <a class="menu05">
+              <span></span>
+              <p>인재관리</p>
+            </a>
+            <a class="menu06">
+              <span></span>
+              <p>급여관리</p>
+            </a>
+            <a class="menu07">
+              <span></span>
+              <p>근태관리</p>
+            </a>
+            <a class="menu08">
+              <span></span>
+              <p>복리후생</p>
+            </a>
+            <a class="menu09">
+              <span></span>
+              <p>신청결재</p>
+            </a>
+            <a class="menu10">
+              <span></span>
+              <p>통계</p>
+            </a>
+            <a class="menu11">
+              <span></span>
+              <p>설정</p>
+            </a>
+          </div>
+          <!-- //1depth E -->
+          <!-- 2depth S -->
+          <a class="btn-smenu-fold tooltip">
+            <span></span>
+            <div class="tooltip-text">접기</div>
+          </a>
+          <div class="smenu">
+            <div class="smenu__icons">
+              <a class="smenu-all-close tooltip">
+                <span class="smenu-align"></span
+                ><span class="align-close"></span>
+                <div class="tooltip-text">메뉴 접기</div>
+              </a>
+              <a class="smenu-all-open tooltip">
+                <span class="smenu-align"></span
+                ><span class="align-open"></span>
+                <div class="tooltip-text">메뉴 펼치기</div>
+              </a>
+            </div>
+            <ul class="smenu__con">
+              <li>
+                <a class="depth2 has-child">인사정보</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a class="on">인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+              <li>
+                <a class="depth2 has-child">사원정보변경</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a>인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+              <li>
+                <a class="depth2">인사정보 관리</a>
+              </li>
+              <li>
+                <a class="depth2 has-child">인사기록카드</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a>인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+              <li>
+                <a class="depth2">발령정보</a>
+              </li>
+              <li>
+                <a class="depth2">전자계약서</a>
+              </li>
+              <li>
+                <a class="depth2 has-child">포상징계 관리</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a>인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+              <li>
+                <a class="depth2">산재관리</a>
+              </li>
+              <li>
+                <a class="depth2 has-child">인원마감</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a>인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- //2depth E -->
+        </aside>
+        <!-- //lnb E -->
+        <div id="contents">
+          <!-- 상단탭 S -->
+          <div class="top-tab">
+            <ul class="top-tab__con">
+              <li>
+                <a class="on">인원명부</a>
+                <div class="top-tab__menu">
+                  <a class="fixed">탭 고정하기</a>
+                  <a class="reload">새로고침</a>
+                  <a class="delete">삭제</a>
+                  <a class="other-close">다른 탭닫기</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="top-tab__btn">
+              <li>
+                <a class="btn-prev"><em class="text-hidden">이전으로</em></a>
+              </li>
+              <li>
+                <a class="btn-next"><em class="text-hidden">다음으로</em></a>
+              </li>
+            </ul>
+          </div>
+          <!-- //상단탭 E -->
+          <!-- 내용 들어갑니다 S -->
+          <div class="cont-wrap cont-wrap-100">
+            <!-- 검색 S -->
+            <div class="search-wrap mat20">
+              <!-- 한줄에 들어갈 갯수 설정 ex)columns5 columns4 columns3 / 가로값이 일정하지 않을경우 auto를 추가한다 ex) columns5-auto columns4-auto columns3-auto -->
+              <div class="search-con columns3">
+                <div class="search-con__field">
+                  <strong>평가명</strong>
+                  <div class="search-form">
+                    <select>
+                      <option>2025년 연말 업적 평가</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="search-btn-wrap btn-wrap">
+                <button type="button" class="btn-search btn-color-point">
+                  조회
+                </button>
+              </div>
+            </div>
+            <!-- //검색 E -->
+            <!-- process S -->
+            <div class="process-wrap mat40">
+              <a class="process on">
+                <span class="process__number">1</span>
+                <span class="process__text">대상자 정의</span>
+                <span class="process__line"></span>
+              </a>
+              <a class="process">
+                <span class="process__number">2</span>
+                <span class="process__text">목표등록</span>
+                <span class="process__line"></span>
+              </a>
+              <a class="process">
+                <span class="process__number">3</span>
+                <span class="process__text">중간점검</span>
+                <span class="process__line"></span>
+              </a>
+              <a class="process">
+                <span class="process__number">4</span>
+                <span class="process__text">평가시행</span>
+                <span class="process__line"></span>
+              </a>
+              <a class="process">
+                <span class="process__number">5</span>
+                <span class="process__text">평가계산</span>
+                <span class="process__line"></span>
+              </a>
+              <a class="process">
+                <span class="process__number">6</span>
+                <span class="process__text">평가조정</span>
+                <span class="process__line"></span>
+              </a>
+              <a class="process">
+                <span class="process__number">7</span>
+                <span class="process__text">이의제기</span>
+                <span class="process__line"></span>
+              </a>
+              <a class="process">
+                <span class="process__number">8</span>
+                <span class="process__text">평가 피드백</span>
+              </a>
+            </div>
+            <!-- //process E -->
+            <!-- title -->
+            <div class="btn-wrap btn-right mat40">
+              <div class="headcount-check">
+                <strong class="total">총인원</strong>
+                <span class="text-point">250명</span>
+                <strong class="exclude">제외</strong>
+                <span>5명</span>
+                <strong class="transfer">부서이동</strong>
+                <span>5명</span>
+              </div>
+              <button class="btn-point">대상자 생성</button>
+              <button class="btn-white">입력</button>
+              <button class="btn-white">저장</button>
+              <button class="btn-white">업로드</button>
+              <button class="btn-white">다운로드</button>
+            </div>
+            <!-- list table S -->
+            <div class="list-wrap mat10">
+              <div class="list-wrap__con">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>번호</th>
+                      <th>삭제</th>
+                      <th>상태</th>
+                      <th>선택</th>
+                      <th>사번</th>
+                      <th>성명</th>
+                      <th>평가부서</th>
+                      <th>가중치(%)</th>
+                      <th>직책</th>
+                      <th>직급</th>
+                      <th>입사일</th>
+                      <th>평가그룹</th>
+                      <th>부서성과그룹</th>
+                      <th>진행상태</th>
+                      <th>제외</th>
+                      <th>제외사유</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">1</td>
+                      <td class="text-center"></td>
+                      <td class="text-center"></td>
+                      <td class="text-center">
+                        <label class="custom-checkbox">
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </td>
+                      <td class="text-center">IM00005</td>
+                      <td class="text-center">전양철</td>
+                      <td>경영기획팀</td>
+                      <td class="text-center">100</td>
+                      <td class="text-center">부장</td>
+                      <td class="text-center"></td>
+                      <td class="text-center">2025-01-01</td>
+                      <td></td>
+                      <td></td>
+                      <td class="text-center"></td>
+                      <td class="text-center"></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="list-footer"><strong>24</strong>/2,086</div>
+            </div>
+            <!-- list table E -->
+          </div>
+          <!-- //내용 들어갑니다 E -->
+        </div>
+        <!-- //container E -->
+      </section>
+    </div>
+    <!-- //wrap E -->
+    <!-- AirDatepicker js -->
+    <script src="../assets/js/air-datepicker.js"></script>
+    <script>
+      document.querySelectorAll(".airdatepicker").forEach((input) => {
+        if (
+          !input ||
+          input.hasAttribute("readonly") ||
+          input.hasAttribute("disabled")
+        )
+          return;
+
+        input.setAttribute("readonly", true);
+
+        new AirDatepicker(input, {
+          // inline: true,
+          locale: {
+            days: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+            daysShort: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+            daysMin: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+            months: [
+              "1월",
+              "2월",
+              "3월",
+              "4월",
+              "5월",
+              "6월",
+              "7월",
+              "8월",
+              "9월",
+              "10월",
+              "11월",
+              "12월",
+            ],
+            monthsShort: [
+              "1월",
+              "2월",
+              "3월",
+              "4월",
+              "5월",
+              "6월",
+              "7월",
+              "8월",
+              "9월",
+              "10월",
+              "11월",
+              "12월",
+            ],
+            today: "오늘",
+            clear: "초기화",
+          },
+          dateFormat: "yyyy-MM-dd",
+          autoClose: true,
+          allowInput: false,
+          navTitles: { days: "yyyy MMMM" },
+          buttons: ["clear"],
+        });
+      });
+    </script>
+  </body>
+</html>

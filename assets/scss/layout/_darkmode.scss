@@ -5,6 +5,10 @@
     background-color: rgba(255, 255, 255, 0);
     color: var(--gray-100);
   }
+  select {
+    background: url("../images/blt_select_dark.png") no-repeat right 1.5rem
+      center;
+  }
   .datepicker {
     background: url("../images/dark/ico_calendar.png") calc(100% - 0.5rem) 50%
       no-repeat;
@@ -227,11 +231,35 @@
       .black {
         background: url("../images/dark/theme_black.png") 50% 50% no-repeat;
       }
+      .on {
+        a {
+          &::after {
+            background: var(--gray-70) url("../images/theme_check.png") 0.3rem
+              0.3rem no-repeat;
+          }
+        }
+        color: var(--primary-color);
+      }
     }
   }
   .pop-tab {
     a.on {
       background-color: var(--gray-40);
+    }
+  }
+}
+
+[data-theme="dark"][data-theme-color="black"] {
+  .search-wrap {
+    .search-btn-wrap {
+      border-left: 1px solid var(--gray-50);
+      padding-inline: 4rem;
+      flex: none;
+      .btn-search::before {
+        content: "";
+        margin-right: 0.4rem;
+        @include svg-icon("../images/icon/search.svg", 1.2rem, 1.2rem);
+      }
     }
   }
 }
