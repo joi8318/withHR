@@ -16,6 +16,7 @@ $menus: menu01, menu02, menu03, menu04, menu05, menu06, menu07, menu08, menu09,
   --gray-70: #757779;
   --gray-100: #2c2e31;
   --red-color: #e64f56;
+  --yellow-color: #f3c950;
   --websize: 160rem;
   --text-small: 1.3rem;
   --base-round: 0.5rem;
@@ -134,6 +135,8 @@ html[data-theme="dark"][data-theme-color="black"] {
   --icon-mypage: url("../images/icon/dark/mypage_on.svg");
   --icon-menu_align_up: url("../images/icon/black/menu_align_up2.svg");
   --icon-menu_align_down: url("../images/icon/black/menu_align_down2.svg");
+  --icon-close: url("../images/icon/black/close2.svg");
+  --icon-maximize: url("../images/icon/black/maximize2.svg");
   --primary-color: #fff;
   @include generate-menu-icons("icon");
 }

@@ -262,4 +262,16 @@
       }
     }
   }
+  .hr-wrap {
+    &__intro {
+      .hr-situation {
+        .tenure {
+          color: var(--gray-0);
+        }
+        .etc {
+          color: var(--gray-0);
+        }
+      }
+    }
+  }
 }

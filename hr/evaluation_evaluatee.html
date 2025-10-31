@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>평가시행</title>
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/air-datepicker.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+    <script type="text/javascript" src="../assets/js/global.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header S -->
+      <header id="header">
+        <h1>
+          <a><em class="text-hidden">로고</em></a>
+        </h1>
+        <ul class="util">
+          <li>
+            <!-- 임직원 검색 -->
+            <div class="search-group">
+              <span class="util__form-icon"></span>
+              <input type="search" placeholder="임직원 및 메뉴(기능) 검색" />
+            </div>
+          </li>
+          <li>
+            <!-- 권한 변경 -->
+            <div class="authority-group">
+              <span class="util__form-icon"></span>
+              <select>
+                <option>권한 변경</option>
+                <option>관리자(ADMIN)</option>
+                <option>총괄담당자</option>
+                <option>인사담당자</option>
+                <option>교육담당자</option>
+                <option>성과담당자</option>
+                <option>근태담당자</option>
+                <option>급여담당자</option>
+              </select>
+            </div>
+          </li>
+          <li class="util__icons">
+            <a class="tooltip btn-pop-open" data-target="#noticePop">
+              <div class="ico-notice"></div>
+              <span class="util__icons__on"></span>
+              <div class="tooltip-text">알려드립니다</div>
+            </a>
+            <a class="tooltip btn-pop-small-open" data-target="#themePop">
+              <div class="ico-theme"></div>
+              <div class="tooltip-text">테마설정</div>
+            </a>
+            <a class="tooltip" id="darkmode-toggle">
+              <div class="ico-darkmode"></div>
+              <div class="tooltip-text">다크모드</div>
+            </a>
+            <a class="tooltip btn-pop-small-open" data-target="#mypagePop">
+              <div class="ico-mypage"></div>
+              <div class="tooltip-text">마이페이지</div>
+            </a>
+          </li>
+        </ul>
+        <!-- 테마설정 팝업 S -->
+        <div id="themePop" class="pop-theme pop-small">
+          <h4>테마설정</h4>
+          <a class="pop-close"><em class="text-hidden">팝업닫기</em></a>
+          <ul class="theme-setting">
+            <li class="theme-item on">
+              <a class="blue"></a>
+              <p>BLUE</p>
+            </li>
+            <li class="theme-item">
+              <a class="green"></a>
+              <p>GREEN</p>
+            </li>
+            <li class="theme-item">
+              <a class="red"></a>
+              <p>RED</p>
+            </li>
+            <li class="theme-item">
+              <a class="black"></a>
+              <p>BLACK</p>
+            </li>
+          </ul>
+        </div>
+        <!-- //테마설정 팝업 E -->
+        <!-- 마이페이지 팝업 S -->
+        <div id="mypagePop" class="pop-mypage pop-small">
+          <h4>마이페이지</h4>
+          <a class="pop-close"><em class="text-hidden">팝업닫기</em></a>
+          <ul>
+            <li>
+              <a class="btn-pw-modify"><span></span>비밀번호 변경</a>
+            </li>
+            <li>
+              <a class="btn-logout"><span></span>로그아웃</a>
+            </li>
+          </ul>
+        </div>
+        <!-- //mypagePop 팝업 E -->
+      </header>
+      <!-- //header E -->
+      <!-- lnb S -->
+      <section id="container">
+        <aside id="lnb">
+          <!-- 1depth S -->
+          <div class="menu">
+            <a class="menu01 on">
+              <span></span>
+              <p>인사관리</p>
+            </a>
+            <a class="menu02">
+              <span></span>
+              <p>조직관리</p>
+            </a>
+            <a class="menu03">
+              <span></span>
+              <p>성과관리</p>
+            </a>
+            <a class="menu04">
+              <span></span>
+              <p>경력개발</p>
+            </a>
+            <a class="menu05">
+              <span></span>
+              <p>인재관리</p>
+            </a>
+            <a class="menu06">
+              <span></span>
+              <p>급여관리</p>
+            </a>
+            <a class="menu07">
+              <span></span>
+              <p>근태관리</p>
+            </a>
+            <a class="menu08">
+              <span></span>
+              <p>복리후생</p>
+            </a>
+            <a class="menu09">
+              <span></span>
+              <p>신청결재</p>
+            </a>
+            <a class="menu10">
+              <span></span>
+              <p>통계</p>
+            </a>
+            <a class="menu11">
+              <span></span>
+              <p>설정</p>
+            </a>
+          </div>
+          <!-- //1depth E -->
+          <!-- 2depth S -->
+          <a class="btn-smenu-fold tooltip">
+            <span></span>
+            <div class="tooltip-text">접기</div>
+          </a>
+          <div class="smenu">
+            <div class="smenu__icons">
+              <a class="smenu-all-close tooltip">
+                <span class="smenu-align"></span
+                ><span class="align-close"></span>
+                <div class="tooltip-text">메뉴 접기</div>
+              </a>
+              <a class="smenu-all-open tooltip">
+                <span class="smenu-align"></span
+                ><span class="align-open"></span>
+                <div class="tooltip-text">메뉴 펼치기</div>
+              </a>
+            </div>
+            <ul class="smenu__con">
+              <li>
+                <a class="depth2 has-child">인사정보</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a class="on">인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+              <li>
+                <a class="depth2 has-child">사원정보변경</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a>인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+              <li>
+                <a class="depth2">인사정보 관리</a>
+              </li>
+              <li>
+                <a class="depth2 has-child">인사기록카드</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a>인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+              <li>
+                <a class="depth2">발령정보</a>
+              </li>
+              <li>
+                <a class="depth2">전자계약서</a>
+              </li>
+              <li>
+                <a class="depth2 has-child">포상징계 관리</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a>인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+              <li>
+                <a class="depth2">산재관리</a>
+              </li>
+              <li>
+                <a class="depth2 has-child">인원마감</a>
+                <div class="depth3">
+                  <a>인사기본</a>
+                  <a>인사기본(조직별)</a>
+                  <a>인원명부 항목관리</a>
+                  <a>인원명부</a>
+                  <a>인사정보복사</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- //2depth E -->
+        </aside>
+        <!-- //lnb E -->
+        <div id="contents">
+          <!-- 상단탭 S -->
+          <div class="top-tab">
+            <ul class="top-tab__con">
+              <li>
+                <a class="on">평가시행</a>
+                <div class="top-tab__menu">
+                  <a class="fixed">탭 고정하기</a>
+                  <a class="reload">새로고침</a>
+                  <a class="delete">삭제</a>
+                  <a class="other-close">다른 탭닫기</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="top-tab__btn">
+              <li>
+                <a class="btn-prev"><em class="text-hidden">이전으로</em></a>
+              </li>
+              <li>
+                <a class="btn-next"><em class="text-hidden">다음으로</em></a>
+              </li>
+            </ul>
+          </div>
+          <!-- //상단탭 E -->
+          <!-- 내용 들어갑니다 S -->
+          <div class="cont-wrap">
+            <!-- 상단 개인정보 S -->
+            <div class="hr-wrap">
+              <!-- 사진 및 개인기본정보 S -->
+              <div class="hr-wrap__intro">
+                <ul>
+                  <li>
+                    <div class="hr-photo">
+                      <img src="../assets/images/sample.png" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="hr-situation">
+                      <p class="hr-situation__name">
+                        <input type="text" value="홍길동" id="auto-input" />
+                      </p>
+                      <p class="hr-situation__text tenure">재직</p>
+                      <!-- <p class="hr-situation__text etc">퇴사</p> -->
+                      <p class="hr-situation__search">
+                        <span><em class="text-hidden">검색하기</em></span>
+                      </p>
+                    </div>
+                    <div class="hr-contact">
+                      <p class="hr-contact__tel"><span></span>010-1234-5678</p>
+                      <p class="hr-contact__email">
+                        <span></span>hongkd@naver.com
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //사진 및 개인기본정보 E -->
+              <!-- 개인정보 S -->
+              <div class="hr-wrap__info">
+                <div class="hr-info-rep">
+                  <div class="hr-info-rep__con">
+                    <p class="text-wrap">
+                      <span>사번</span>
+                      <strong>101006</strong>
+                    </p>
+                  </div>
+                  <div class="hr-info-rep__con">
+                    <p class="text-wrap">
+                      <span>입사일</span>
+                      <strong>2009-02-01</strong>
+                    </p>
+                  </div>
+                  <div class="hr-info-rep__con">
+                    <p class="text-wrap">
+                      <span>퇴사일</span>
+                      <strong>-</strong>
+                    </p>
+                  </div>
+                  <div class="hr-info-rep__con">
+                    <p class="text-wrap">
+                      <span>생년월일</span>
+                      <strong>1980-11-11</strong>
+                    </p>
+                  </div>
+                  <div class="hr-info-rep__con">
+                    <p class="text-wrap">
+                      <span>사업단위</span>
+                      <strong>인사총무본부</strong>
+                    </p>
+                  </div>
+                </div>
+                <ul class="hr-info-con">
+                  <li>
+                    <strong>직책</strong>
+                    <p>본부장</p>
+                  </li>
+                  <li>
+                    <strong>부서</strong>
+                    <p>HR본부</p>
+                  </li>
+                  <li>
+                    <strong>직무</strong>
+                    <p>MD기획</p>
+                  </li>
+                  <li>
+                    <strong>사원구분</strong>
+                    <p>정규직</p>
+                  </li>
+                  <li>
+                    <strong>호칭</strong>
+                    <p>본부장</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- //개인정보 E -->
+            </div>
+            <!-- //상단 개인정보 E -->
+            <!-- tab S -->
+            <div class="tab-group">
+              <ul class="tab-wrap mat40">
+                <li class="on">피평가자<span class="number-box">1</span></li>
+                <li>평가자<span class="number-box">99</span></li>
+              </ul>
+              <div class="baseyear-wrap">
+                <span class="text-blt">기준년도</span>
+                <select>
+                  <option>2025년</option>
+                  <option>2024년</option>
+                  <option>2023년</option>
+                  <option>2022년</option>
+                  <option>2021년</option>
+                </select>
+              </div>
+            </div>
+            <!-- //tab E -->
+            <!-- tab01-피평가자 S -->
+            <div class="tab-pane on">
+              <!-- 목표등록 중간점검 S -->
+              <h3 class="mat30">목표등록 중간점검</h3>
+              <div class="goal-wrap">
+                <!-- box S -->
+                <div
+                  class="goal-wrap__box btn-pop-open"
+                  data-target="#evaluationNotSubmitPop"
+                >
+                  <div class="text-blt-group">
+                    <span class="text-box">중간점검</span>
+                  </div>
+                  <div class="goal-title">
+                    2025년 연말 업적평가(미제출) 클릭클릭
+                  </div>
+                  <div class="goal-text mat10">
+                    <p class="text-blt">작성기간: 2025.03.01 ~ 2025.03.10</p>
+                    <p class="text-blt">승인자: 인사팀 홍길동 팀장</p>
+                  </div>
+                  <div class="status-box">미제출</div>
+                </div>
+                <!-- //box E -->
+                <div
+                  class="goal-wrap__box goal-disable btn-pop-open"
+                  data-target="#evaluationUnderReviewAchievementPop"
+                >
+                  <div class="text-blt-group">
+                    <span class="text-box">중간점검</span>
+                  </div>
+                  <div class="goal-title">
+                    2025년 연말 업적평가(평가중) 클릭클릭
+                  </div>
+                  <div class="goal-text mat10">
+                    <p class="text-blt">작성기간: 2025.03.01 ~ 2025.03.10</p>
+                    <p class="text-blt">승인자: 인사팀 홍길동 팀장</p>
+                  </div>
+                  <div class="status-box">승인완료</div>
+                </div>
+                <div
+                  class="goal-wrap__box btn-pop-open"
+                  data-target="#evaluationUnderReviewCompetencyPop"
+                >
+                  <div class="text-blt-group">
+                    <span class="text-box">중간점검</span>
+                  </div>
+                  <div class="goal-title">2025년 연말 역량평가(평가중)</div>
+                  <div class="goal-text mat10">
+                    <p class="text-blt">작성기간: 2025.03.01 ~ 2025.03.10</p>
+                    <p class="text-blt">승인자: 인사팀 홍길동 팀장</p>
+                  </div>
+                  <div class="status-box">미제출</div>
+                </div>
+                <div class="goal-wrap__box">
+                  <div class="text-blt-group">
+                    <span class="text-box">중간점검</span>
+                  </div>
+                  <div class="goal-title">2025년 연말 업적평가</div>
+                  <div class="goal-text mat10">
+                    <p class="text-blt">작성기간: 2025.03.01 ~ 2025.03.10</p>
+                    <p class="text-blt">승인자: 인사팀 홍길동 팀장</p>
+                  </div>
+                  <div class="status-box">평가중</div>
+                </div>
+                <div class="goal-wrap__box">
+                  <div class="text-blt-group">
+                    <span class="text-box">중간점검</span>
+                  </div>
+                  <div class="goal-title">2025년 연말 업적평가</div>
+                  <div class="goal-text mat10">
+                    <p class="text-blt">작성기간: 2025.03.01 ~ 2025.03.10</p>
+                    <p class="text-blt">승인자: 인사팀 홍길동 팀장</p>
+                  </div>
+                  <div class="status-box">미제출</div>
+                </div>
+              </div>
+              <!-- //목표등록 중간점검 E -->
+              <hr class="goal-line" />
+              <!-- 평가 S -->
+              <h3 class="mat30">평가</h3>
+              <div class="goal-wrap">
+                <!-- box S -->
+                <div class="goal-wrap__box goal-wrap__box2">
+                  <div class="goal-title">2025년 연말 업적평가</div>
+                  <div class="goal-text">
+                    <p class="text-blt">평가기간: 2025.03.01 ~ 2025.03.10</p>
+                  </div>
+                  <div class="status-box">평가중</div>
+                </div>
+                <!-- //box E -->
+                <div class="goal-wrap__box goal-wrap__box2">
+                  <div class="goal-title">2025년 연말 업적평가</div>
+                  <div class="goal-text">
+                    <p class="text-blt">평가기간: 2025.03.01 ~ 2025.03.10</p>
+                  </div>
+                  <div class="status-box">평가완료</div>
+                </div>
+              </div>
+              <!-- //평가 E -->
+            </div>
+            <!-- //tab01-피평가자 E -->
+
+            <!-- tab02-평가자 S -->
+            <div class="tab-pane">
+              <!-- 목표등록 중간점검 S -->
+              <h3 class="mat30">목표등록 중간점검</h3>
+              <div class="goal-wrap">
+                <!-- box S -->
+                <div
+                  class="goal-wrap__box goal-wrap__box3 btn-pop-open"
+                  data-target="#evaluationGoalApprovaPop"
+                >
+                  <div class="text-blt-group">
+                    <span class="text-box">중간점검</span>
+                    <a
+                      class="text-box interview-text btn-pop-open"
+                      data-target="#evaluationInterviewCoachingPop"
+                      >면담 및 코칭</a
+                    >
+                  </div>
+                  <div class="goal-title">2025년 연말 업적평가(목표승인)</div>
+                  <div class="goal-text">
+                    <p class="text-blt">승인기간: 2025.03.01 ~ 2025.03.10</p>
+                  </div>
+                  <div class="status-box">승인</div>
+                  <div class="approver-wrap">
+                    <div class="approver-wrap__text">
+                      <div class="title">승인자</div>
+                      <div class="number"><strong>3</strong>/4</div>
+                    </div>
+                    <div class="approver-wrap__graph">
+                      <span class="on"></span>
+                      <span class="on"></span>
+                      <span class="on"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- //box E -->
+                <div class="goal-wrap__box goal-wrap__box3">
+                  <div class="text-blt-group">
+                    <span class="text-box">중간점검</span>
+                    <a class="text-box interview-text">면담 및 코칭</a>
+                  </div>
+                  <div class="goal-title">2025년 연말 업적평가</div>
+                  <div class="goal-text">
+                    <p class="text-blt">승인기간: 2025.03.01 ~ 2025.03.10</p>
+                  </div>
+                  <div class="status-box">승인</div>
+                  <div class="approver-wrap">
+                    <div class="approver-wrap__text">
+                      <div class="title">승인자</div>
+                      <div class="number"><strong>0</strong>/4</div>
+                    </div>
+                    <div class="approver-wrap__graph">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="goal-wrap__box goal-wrap__box3">
+                  <div class="text-blt-group">
+                    <span class="text-box">중간점검</span>
+                    <a class="text-box interview-text">면담 및 코칭</a>
+                  </div>
+                  <div class="goal-title">2025년 연말 업적평가</div>
+                  <div class="goal-text">
+                    <p class="text-blt">승인기간: 2025.03.01 ~ 2025.03.10</p>
+                  </div>
+                  <div class="status-box">승인</div>
+                  <div class="approver-wrap">
+                    <div class="approver-wrap__text">
+                      <div class="title">승인자</div>
+                      <div class="number"><strong>1</strong>/3</div>
+                    </div>
+                    <div class="approver-wrap__graph">
+                      <span class="on"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //목표등록 중간점검 E -->
+              <hr class="goal-line" />
+              <!-- 평가 S -->
+              <h3 class="mat30">평가</h3>
+              <div class="goal-wrap">
+                <!-- box S -->
+                <div class="goal-wrap__box goal-wrap__box3">
+                  <div class="goal-title">2025년 연말 업적평가</div>
+                  <div class="goal-text">
+                    <p class="text-blt">평가기간: 2025.03.01 ~ 2025.03.10</p>
+                  </div>
+                  <div class="status-box">평가</div>
+                  <div class="approver-wrap">
+                    <div class="approver-wrap__text">
+                      <div class="title">평가</div>
+                      <div class="number"><strong>2</strong>/4</div>
+                    </div>
+                    <div class="approver-wrap__graph">
+                      <span class="on"></span>
+                      <span class="on"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- //box E -->
+                <div class="goal-wrap__box goal-wrap__box3">
+                  <div class="goal-title">2025년 연말 업적평가</div>
+                  <div class="goal-text">
+                    <p class="text-blt">평가기간: 2025.03.01 ~ 2025.03.10</p>
+                  </div>
+                  <div class="status-box">평가</div>
+                  <div class="approver-wrap">
+                    <div class="approver-wrap__text">
+                      <div class="title">평가</div>
+                      <div class="number"><strong>4</strong>/5</div>
+                    </div>
+                    <div class="approver-wrap__graph">
+                      <span class="on"></span>
+                      <span class="on"></span>
+                      <span class="on"></span>
+                      <span class="on"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //평가 E -->
+            </div>
+            <!-- //tab02-평가자 E -->
+          </div>
+          <!-- //내용 들어갑니다 E -->
+        </div>
+        <!-- //container E -->
+      </section>
+    </div>
+    <!-- //wrap E -->
+
+    <!-- [팝업]2025년 연말 업적평가(미제출) S -->
+    <div id="evaluationNotSubmitPop" class="pop-wrap">
+      <div class="pop-header">
+        <div class="btn-wrap btn-right">
+          <h3>2025년 연말 업적평가<span class="text-box">미제출</span></h3>
+          <button class="pop-maximize tooltip">
+            <span class="tooltip-text">최대화</span>
+          </button>
+          <button class="pop-close btn-pop-close tooltip">
+            <span class="tooltip-text">닫기</span>
+          </button>
+        </div>
+      </div>
+      <div class="pop-body bg-round">
+        <!-- title -->
+        <div class="btn-wrap btn-right">
+          <button class="btn-point">부서목표 조회</button>
+          <button class="btn-white">저장</button>
+          <button class="btn-white">삭제</button>
+          <button class="btn-white">초기화</button>
+        </div>
+        <div class="evaluation-pop-wrap">
+          <!-- 왼쪽영역 S -->
+          <div class="evaluation-pop-left">
+            <a class="grade-box">
+              <span class="grade-box__title">1. 일반영업</span>
+              <span class="grade-box__percent">20%</span>
+            </a>
+            <a class="grade-box on">
+              <span class="grade-box__title">2. 외부영업</span>
+              <span class="grade-box__percent">30%</span>
+            </a>
+            <a class="grade-box">
+              <span class="grade-box__title">3. 마케팅</span>
+              <span class="grade-box__percent">30%</span>
+            </a>
+            <a class="grade-box">
+              <span class="grade-box__title">4. 전략영업</span>
+              <span class="grade-box__percent">100%</span>
+            </a>
+            <div class="total-weight-box">
+              <div class="total-weight-box__title">가중치 합계</div>
+              <div class="total-weight-box__con">100%</div>
+            </div>
+          </div>
+          <!-- //왼쪽영역 E -->
+          <!-- 오른쪽영역 S -->
+          <div class="evaluation-pop-right">
+            <!-- write table S -->
+            <div class="evaluation-pop-write">
+              <div class="write-wrap ma20">
+                <table>
+                  <colgroup>
+                    <col style="width: 14rem" />
+                    <col />
+                    <col style="width: 14rem" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th><span class="essential">목표구분</span></th>
+                      <td colspan="3">
+                        <select class="width-auto">
+                          <option>전략목표</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><span class="essential">평가항목</span></th>
+                      <td colspan="3">
+                        <input
+                          type="text"
+                          class="width-auto"
+                          value="외부영업"
+                          readonly
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><span class="essential">항목정의</span></th>
+                      <td colspan="3">
+                        <textarea style="height: 7.4rem" readonly>
+항목정의 들어갑니다.
+항목정의 들어갑니다.항목정의 들어갑니다.항목정의 들어갑니다.
+항목정의 들어갑니다.</textarea
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>기간</th>
+                      <td colspan="3">
+                        <fieldset class="form-group-wauto">
+                          <input
+                            type="text"
+                            class="w120 datepicker airdatepicker"
+                            value="2025-01-01"
+                            readonly
+                          />
+                          -
+                          <input
+                            type="text"
+                            class="w120 datepicker airdatepicker"
+                            value="2025-01-01"
+                            readonly
+                          />
+                        </fieldset>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><span class="essential">가중치</span></th>
+                      <td>
+                        <input
+                          type="text"
+                          class="w80 text-right"
+                          value="30"
+                          readonly
+                        />
+                        %
+                      </td>
+                      <th>순서</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="w80 text-right"
+                          value="10"
+                          readonly
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- write table E -->
+            <!-- 피평가자 의견 -->
+            <div class="evaluation-txtbox mat10">
+              <div class="evaluation-txtbox__title icon-feedback-base">
+                피평가자 의견
+              </div>
+              <div class="evaluation-txtbox__form">
+                <textarea class="auto-textarea" rows="1"></textarea>
+                <div class="btn-wrap btn-right mar10">
+                  <button type="button" class="btn-color-point">
+                    합의요청
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 합의자 의견 -->
+            <div class="evaluation-txtbox mat10">
+              <div class="evaluation-txtbox__title icon-feedback-base">
+                합의자 의견
+              </div>
+              <div class="evaluation-txtbox__form">
+                <textarea class="auto-textarea" rows="1" readonly>
+내용을 다시 충실하게 작성해서 요청하세요</textarea
+                >
+              </div>
+            </div>
+          </div>
+          <!-- //오른쪽영역 E -->
+        </div>
+      </div>
+    </div>
+    <!-- //[팝업] 2025년 연말 업적평가(미제출) E -->
+
+    <!-- [팝업]2025년 연말 업적평가(평가중) S -->
+    <div id="evaluationUnderReviewAchievementPop" class="pop-wrap">
+      <div class="pop-header">
+        <div class="btn-wrap btn-right">
+          <h3>2025년 연말 업적평가<span class="text-box">평가중</span></h3>
+          <button class="pop-maximize tooltip">
+            <span class="tooltip-text">최대화</span>
+          </button>
+          <button class="pop-close btn-pop-close tooltip">
+            <span class="tooltip-text">닫기</span>
+          </button>
+        </div>
+      </div>
+      <div class="pop-body">
+        <!-- title -->
+        <div class="btn-wrap btn-right">
+          <button class="btn-white">저장</button>
+        </div>
+        <div class="evaluation-pop-wrap">
+          <!-- 왼쪽영역 S -->
+          <div class="evaluation-pop-left">
+            <a class="grade-box">
+              <span class="grade-box__title">1. 일반영업</span>
+              <span class="grade-box__percent">20%</span>
+              <span class="grade-box__txt grade-c">C</span>
+            </a>
+            <a class="grade-box">
+              <span class="grade-box__title">2. 외부영업</span>
+              <span class="grade-box__percent">30%</span>
+              <span class="grade-box__txt grade-s">S</span>
+            </a>
+            <a class="grade-box on">
+              <span class="grade-box__title">3. 마케팅</span>
+              <span class="grade-box__percent">30%</span>
+              <span class="grade-box__txt grade-a">A</span>
+            </a>
+            <a class="grade-box">
+              <span class="grade-box__title">4. 전략영업</span>
+              <span class="grade-box__percent">20%</span>
+              <span class="grade-box__txt grade-b">B</span>
+            </a>
+          </div>
+          <!-- //왼쪽영역 E -->
+          <!-- 오른쪽영역 S -->
+          <div class="evaluation-pop-right">
+            <!-- write table S -->
+            <div class="evaluation-pop-write">
+              <div class="write-wrap ma20">
+                <table>
+                  <colgroup>
+                    <col style="width: 14rem" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>목표구분</th>
+                      <td>
+                        <select class="width-auto">
+                          <option>전략목표</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>평가항목</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="width-auto"
+                          value="마케팅"
+                          readonly
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>항목정의</th>
+                      <td>
+                        <textarea style="height: 7.4rem" readonly>
+항목정의 들어갑니다.
+항목정의 들어갑니다.항목정의 들어갑니다.항목정의 들어갑니다.
+항목정의 들어갑니다.</textarea
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>기간</th>
+                      <td>
+                        <fieldset class="form-group-wauto">
+                          <input
+                            type="text"
+                            class="w120 datepicker airdatepicker"
+                            value="2025-01-01"
+                            readonly
+                          />
+                          -
+                          <input
+                            type="text"
+                            class="w120 datepicker airdatepicker"
+                            value="2025-01-01"
+                            readonly
+                          />
+                        </fieldset>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>가중치</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="w80 text-right"
+                          value="30"
+                          readonly
+                        />
+                        %
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- write table E -->
+            <!-- 실적 -->
+            <div class="evaluation-txtbox mat10">
+              <div class="evaluation-txtbox__title icon-performance">실적</div>
+              <div class="evaluation-txtbox__form">
+                <textarea class="auto-textarea" rows="1" readonly>
+목표대비 89% 달성 하였습니다.</textarea
+                >
+              </div>
+            </div>
+            <!-- 평가 -->
+            <div class="evaluation-txtbox mat10">
+              <div class="evaluation-txtbox__title icon-evaluation">평가</div>
+              <div class="evaluation-txtbox__form grade-level">
+                <a class="grade-s on">S</a>
+                <a class="grade-a">A</a>
+                <a class="grade-b">B</a>
+                <a class="grade-c">C</a>
+                <a class="grade-d">D</a>
+              </div>
+            </div>
+          </div>
+          <!-- //오른쪽영역 E -->
+        </div>
+      </div>
+      <!-- 하단(종합평가)영역 S -->
+      <div class="evaluation-bottom">
+        <div class="evaluation-bottom-left">
+          <div class="evaluation-bottom__title icon-performance-rating">
+            평가등급
+          </div>
+          <div class="evaluation-bottom__con">
+            <div class="grade-level">
+              <a class="grade-s on">S</a>
+            </div>
+            <div class="number">87</div>
+          </div>
+        </div>
+        <div class="evaluation-bottom-right">
+          <div class="evaluation-bottom__title icon-feedback">종합의견</div>
+          <div class="evaluation-bottom__con evaluation-txtbox__form">
+            <textarea class="auto-textarea" rows="1" readonly>
+목표대비 89% 달성 하였습니다.목표대비 89% 달성 하였습니다.목표대비 89% 달성 하였습니다.목표대비 89% 달성 하였습니다.목표대비 89% 달성 하였습니다.목표대비 89% 달성 하였습니다.</textarea
+            >
+            <div class="btn-wrap btn-right mar10">
+              <button type="button" class="btn-color-point">평가완료</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //하단(종합평가)영역 E -->
+    </div>
+    <!-- //[팝업] 2025년 연말 업적평가(평가중) E -->
+
+    <!-- [팝업]2025년 연말 역량평가(평가중) S -->
+    <div id="evaluationUnderReviewCompetencyPop" class="pop-wrap">
+      <div class="pop-header">
+        <div class="btn-wrap btn-right">
+          <h3>2025년 연말 역량평가<span class="text-box">평가중</span></h3>
+          <button class="pop-maximize tooltip">
+            <span class="tooltip-text">최대화</span>
+          </button>
+          <button class="pop-close btn-pop-close tooltip">
+            <span class="tooltip-text">닫기</span>
+          </button>
+        </div>
+      </div>
+      <div class="pop-body">
+        <!-- title -->
+        <div class="btn-wrap btn-right">
+          <button class="btn-white">저장</button>
+        </div>
+        <div class="evaluation-pop-wrap">
+          <!-- 왼쪽영역 S -->
+          <div class="evaluation-pop-left">
+            <a class="grade-box on">
+              <span class="grade-box__title">1. 책임감</span>
+              <span class="grade-box__percent">20%</span>
+              <span class="grade-box__txt grade-c">C</span>
+            </a>
+            <a class="grade-box">
+              <span class="grade-box__title">2. 성실성</span>
+              <span class="grade-box__percent">30%</span>
+              <span class="grade-box__txt grade-s">S</span>
+            </a>
+            <a class="grade-box">
+              <span class="grade-box__title">3. 주인의식</span>
+              <span class="grade-box__percent">30%</span>
+              <span class="grade-box__txt grade-a">A</span>
+            </a>
+            <a class="grade-box">
+              <span class="grade-box__title">4. 업무전문성</span>
+              <span class="grade-box__percent">20%</span>
+              <span class="grade-box__txt grade-b">B</span>
+            </a>
+          </div>
+          <!-- //왼쪽영역 E -->
+          <!-- 오른쪽영역 S -->
+          <div class="evaluation-pop-right">
+            <!-- write table1 S -->
+            <div class="evaluation-pop-write">
+              <div class="write-wrap ma20">
+                <table>
+                  <colgroup>
+                    <col style="width: 14rem" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>역량구분</th>
+                      <td>
+                        <select class="width-auto">
+                          <option>공통역량</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>역량항목</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="width-auto"
+                          value="책임감"
+                          readonly
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>역량정의</th>
+                      <td>
+                        <textarea style="height: 7.4rem" readonly>
+항목정의 들어갑니다.
+항목정의 들어갑니다.항목정의 들어갑니다.항목정의 들어갑니다.
+항목정의 들어갑니다.</textarea
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 평가 -->
+              <div class="evaluation-txtbox position-bottom">
+                <div class="evaluation-txtbox__title icon-evaluation">평가</div>
+                <div class="evaluation-txtbox__form grade-level">
+                  <a class="grade-s">S</a>
+                  <a class="grade-a on">A</a>
+                  <a class="grade-b">B</a>
+                  <a class="grade-c">C</a>
+                  <a class="grade-d">D</a>
+                </div>
+              </div>
+            </div>
+            <!-- write table1 E -->
+
+            <!-- write table2 S -->
+            <div class="evaluation-pop-write">
+              <div class="write-wrap ma20">
+                <table>
+                  <colgroup>
+                    <col style="width: 14rem" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>역량구분</th>
+                      <td>
+                        <select class="width-auto">
+                          <option>공통역량</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>역량항목</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="width-auto"
+                          value="책임감"
+                          readonly
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>역량정의</th>
+                      <td>
+                        <textarea style="height: 7.4rem" readonly>
+항목정의 들어갑니다.
+항목정의 들어갑니다.항목정의 들어갑니다.항목정의 들어갑니다.
+항목정의 들어갑니다.</textarea
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 평가 -->
+              <div class="evaluation-txtbox position-bottom">
+                <div class="evaluation-txtbox__title icon-evaluation">평가</div>
+                <div class="evaluation-txtbox__form grade-level">
+                  <a class="grade-s">S</a>
+                  <a class="grade-a">A</a>
+                  <a class="grade-b on">B</a>
+                  <a class="grade-c">C</a>
+                  <a class="grade-d">D</a>
+                </div>
+              </div>
+            </div>
+            <!-- write table2 E -->
+          </div>
+          <!-- //오른쪽영역 E -->
+        </div>
+      </div>
+      <!-- 하단(종합평가)영역 S -->
+      <div class="evaluation-bottom">
+        <div class="evaluation-bottom-left">
+          <div class="evaluation-bottom__title icon-performance-rating">
+            평가등급
+          </div>
+          <div class="evaluation-bottom__con">
+            <div class="grade-level">
+              <a class="grade-a on">A</a>
+            </div>
+            <div class="number">87</div>
+          </div>
+        </div>
+        <div class="evaluation-bottom-right">
+          <div class="evaluation-bottom__title icon-feedback">종합의견</div>
+          <div class="evaluation-bottom__con evaluation-txtbox__form">
+            <textarea class="auto-textarea" rows="1" readonly>
+내년에는 더욱 열심히 하겠습니다.</textarea
+            >
+            <div class="btn-wrap btn-right mar10">
+              <button type="button" class="btn-color-point">평가완료</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //하단(종합평가)영역 E -->
+    </div>
+    <!-- //[팝업] 2025년 연말 역량평가(평가중) E -->
+
+    <!-- [팝업]2025년 연말 역량평가(피평가자-목표승인) S -->
+    <div id="evaluationGoalApprovaPop" class="pop-wrap">
+      <div class="pop-header">
+        <div class="btn-wrap btn-right">
+          <h3>2025년 연말 업적평가<span class="text-box">목표승인</span></h3>
+          <button class="pop-maximize tooltip">
+            <span class="tooltip-text">최대화</span>
+          </button>
+          <button class="pop-close btn-pop-close tooltip">
+            <span class="tooltip-text">닫기</span>
+          </button>
+        </div>
+      </div>
+      <div class="pop-body bg-round">
+        <!-- title -->
+        <div class="evaluation-pop-wrap">
+          <!-- 왼쪽영역 S -->
+          <div class="evaluation-pop-leftfull">
+            <a class="approver-pop-wrap status-done">
+              <div class="approver-pop-wrap__pic">
+                <div class="approver-photo">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="approver-info">
+                  <strong>부장 홍길동</strong>
+                  <span>인사팀 / 92.10.08</span>
+                </div>
+              </div>
+              <div class="approver-pop-wrap__status">
+                <span class="text-box">완료</span>
+              </div>
+            </a>
+            <a class="approver-pop-wrap status-done">
+              <div class="approver-pop-wrap__pic">
+                <div class="approver-photo">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="approver-info">
+                  <strong>부장 홍길동</strong>
+                  <span>인사팀 / 92.10.08</span>
+                </div>
+              </div>
+              <div class="approver-pop-wrap__status">
+                <span class="text-box">요청</span>
+              </div>
+            </a>
+            <a class="approver-pop-wrap status-rejected">
+              <div class="approver-pop-wrap__pic">
+                <div class="approver-photo">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="approver-info">
+                  <strong>대리 이영호</strong>
+                  <span>총무팀 / 92.10.08</span>
+                </div>
+              </div>
+              <div class="approver-pop-wrap__status">
+                <span class="text-box">반려</span>
+              </div>
+            </a>
+            <a class="approver-pop-wrap status-approval">
+              <div class="approver-pop-wrap__pic">
+                <div class="approver-photo">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="approver-info">
+                  <strong>대리 이영호</strong>
+                  <span>총무팀 / 92.10.08</span>
+                </div>
+              </div>
+              <div class="approver-pop-wrap__status">
+                <span class="text-box">승인</span>
+              </div>
+            </a>
+            <a class="approver-pop-wrap status-approval">
+              <div class="approver-pop-wrap__pic">
+                <div class="approver-photo">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="approver-info">
+                  <strong>대리 이영호</strong>
+                  <span>총무팀 / 92.10.08</span>
+                </div>
+              </div>
+              <div class="approver-pop-wrap__status">
+                <span class="text-box">승인</span>
+              </div>
+            </a>
+          </div>
+          <!-- //왼쪽영역 E -->
+          <!-- 오른쪽영역 S -->
+          <div class="evaluation-pop-rightfull">
+            <div class="dis-flex">
+              <div class="evaluation-pop-left w200">
+                <a class="grade-box on">
+                  <span class="grade-box__title"><em>1.</em> 전략목표</span>
+                  <span class="grade-box__percent">20%</span>
+                </a>
+                <a class="grade-box">
+                  <span class="grade-box__title"><em>2.</em> 외부영업</span>
+                  <span class="grade-box__percent">30%</span>
+                </a>
+                <a class="grade-box">
+                  <span class="grade-box__title"><em>3.</em> 마케팅</span>
+                  <span class="grade-box__percent">30%</span>
+                </a>
+                <a class="grade-box">
+                  <span class="grade-box__title"><em>4.</em> 전략영업</span>
+                  <span class="grade-box__percent">20%</span>
+                </a>
+                <div class="total-weight-box">
+                  <div class="total-weight-box__title">가중치 합계</div>
+                  <div class="total-weight-box__con">100%</div>
+                </div>
+              </div>
+              <!-- write table S -->
+              <div class="evaluation-pop-write flex-full mal10">
+                <div class="write-wrap ma20">
+                  <table>
+                    <colgroup>
+                      <col style="width: 14rem" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th><span class="essential">목표구분</span></th>
+                        <td>
+                          <select class="width-auto">
+                            <option>전략목표</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th><span class="essential">평가항목</span></th>
+                        <td colspan="3">
+                          <input
+                            type="text"
+                            class="width-auto"
+                            value="외부영업"
+                            readonly
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th><span class="essential">항목정의</span></th>
+                        <td>
+                          <textarea style="height: 7.4rem" readonly>
+항목정의 들어갑니다.
+항목정의 들어갑니다.항목정의 들어갑니다.항목정의 들어갑니다.
+항목정의 들어갑니다.</textarea
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>기간</th>
+                        <td>
+                          <fieldset class="form-group-wauto">
+                            <input
+                              type="text"
+                              class="w120 datepicker airdatepicker"
+                              value="2025-01-01"
+                              readonly
+                            />
+                            -
+                            <input
+                              type="text"
+                              class="w120 datepicker airdatepicker"
+                              value="2025-01-01"
+                              readonly
+                            />
+                          </fieldset>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th><span class="essential">가중치</span></th>
+                        <td>
+                          <input
+                            type="text"
+                            class="w80 text-right"
+                            value="30"
+                            readonly
+                          />
+                          %
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- write table E -->
+            </div>
+            <!-- 피평가자 의견 -->
+            <div class="evaluation-txtbox mat10">
+              <div class="evaluation-txtbox__title icon-feedback-base">
+                피평가자 의견
+              </div>
+              <div class="evaluation-txtbox__form">
+                <textarea class="auto-textarea" rows="1"></textarea>
+                <div class="btn-wrap btn-right mar10">
+                  <button type="button" class="btn-color-point">승인</button>
+                </div>
+              </div>
+            </div>
+            <!-- 합의자 의견 -->
+            <div class="evaluation-txtbox mat10">
+              <div class="evaluation-txtbox__title icon-feedback-base">
+                합의자 의견
+              </div>
+              <div class="evaluation-txtbox__form">
+                <textarea class="auto-textarea" rows="1"></textarea>
+                <div class="btn-wrap btn-right mar10">
+                  <button type="button" class="btn-yellow">반려</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //오른쪽영역 E -->
+        </div>
+      </div>
+    </div>
+    <!-- //[팝업] 2025년 연말 역량평가(피평가자-목표승인) E -->
+
+    <!-- [팝업]2025년 연말 역량평가(코칭 및 면담) S -->
+    <div id="evaluationInterviewCoachingPop" class="pop-wrap">
+      <div class="pop-header">
+        <div class="btn-wrap btn-right">
+          <h3>
+            2025년 연말 업적평가<span class="text-box">면담 및 코칭</span>
+          </h3>
+          <button class="pop-maximize tooltip">
+            <span class="tooltip-text">최대화</span>
+          </button>
+          <button class="pop-close btn-pop-close tooltip">
+            <span class="tooltip-text">닫기</span>
+          </button>
+        </div>
+      </div>
+      <div class="pop-body bg-round">
+        <div class="evaluation-pop-wrap">
+          <!-- 왼쪽영역 S -->
+          <div class="evaluation-pop-leftfull">
+            <a class="approver-pop-wrap">
+              <div class="approver-pop-wrap__pic">
+                <div class="approver-photo">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="approver-info">
+                  <strong>부장 홍길동</strong>
+                  <span>인사팀 / 92.10.08</span>
+                </div>
+              </div>
+              <div class="approver-pop-wrap__more">
+                <span class="text-hidden">바로가기</span>
+              </div>
+            </a>
+            <a class="approver-pop-wrap">
+              <div class="approver-pop-wrap__pic">
+                <div class="approver-photo">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="approver-info">
+                  <strong>부장 홍길동</strong>
+                  <span>인사팀 / 92.10.08</span>
+                </div>
+              </div>
+              <div class="approver-pop-wrap__more">
+                <span class="text-hidden">바로가기</span>
+              </div>
+            </a>
+            <a class="approver-pop-wrap on">
+              <div class="approver-pop-wrap__pic">
+                <div class="approver-photo">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="approver-info">
+                  <strong>대리 이영호</strong>
+                  <span>총무팀 / 92.10.08</span>
+                </div>
+              </div>
+              <div class="approver-pop-wrap__more">
+                <span class="text-hidden">바로가기</span>
+              </div>
+            </a>
+            <a class="approver-pop-wrap">
+              <div class="approver-pop-wrap__pic">
+                <div class="approver-photo">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="approver-info">
+                  <strong>대리 이영호</strong>
+                  <span>총무팀 / 92.10.08</span>
+                </div>
+              </div>
+              <div class="approver-pop-wrap__more">
+                <span class="text-hidden">바로가기</span>
+              </div>
+            </a>
+            <a class="approver-pop-wrap">
+              <div class="approver-pop-wrap__pic">
+                <div class="approver-photo">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="approver-info">
+                  <strong>대리 이영호</strong>
+                  <span>총무팀 / 92.10.08</span>
+                </div>
+              </div>
+              <div class="approver-pop-wrap__more">
+                <span class="text-hidden">바로가기</span>
+              </div>
+            </a>
+          </div>
+          <!-- //왼쪽영역 E -->
+          <!-- 오른쪽영역 S -->
+          <div class="evaluation-pop-rightfull coaching-pop-right">
+            <!-- 개인정보 S -->
+            <div class="hr-wrap__info hr-wrap-pop">
+              <div class="hr-pop-info">
+                <div class="hr-pop-info__pic">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="hr-pop-info__name">
+                  <strong>김영숙 과장</strong>
+                  <span>고객서비스 기획담당</span>
+                </div>
+              </div>
+              <div class="hr-info-rep">
+                <div class="hr-info-rep__con">
+                  <p class="text-wrap">
+                    <span>평가부서</span>
+                    <strong>영업관리팀</strong>
+                  </p>
+                </div>
+                <div class="hr-info-rep__con">
+                  <p class="text-wrap">
+                    <span>입사일</span>
+                    <strong>2009-02-01</strong>
+                  </p>
+                </div>
+                <div class="hr-info-rep__con">
+                  <p class="text-wrap">
+                    <span>피평가자그룹</span>
+                    <strong>인사팀</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- //개인정보 E -->
+            <!-- title -->
+            <div class="btn-wrap btn-right mat20">
+              <h5>Coaching 내역</h5>
+              <button class="btn-white">입력</button>
+              <button class="btn-point">저장</button>
+            </div>
+            <!-- list table S -->
+            <div class="list-wrap mat10">
+              <div class="list-wrap__con">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>삭제</th>
+                      <th>선택</th>
+                      <th><span class="essential">날짜</span></th>
+                      <th>장소</th>
+                      <th>내용</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">1</td>
+                      <td class="text-center">
+                        <label class="custom-checkbox">
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </td>
+                      <td class="text-center"></td>
+                      <td class="text-center">2025-07-01</td>
+                      <td>미팅룸</td>
+                      <td>
+                        주요이슈사안에 대해서 보고<br />
+                        ㅇㅇㅇ지원 부족에 따른 ㅁㅁㅁ의 필요성 요청<br />
+                        즉시, 대응이 가능한 방향으로 진행
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">1</td>
+                      <td class="text-center">
+                        <label class="custom-checkbox">
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </td>
+                      <td class="text-center"></td>
+                      <td class="text-center">2025-07-01</td>
+                      <td>미팅룸</td>
+                      <td>
+                        주요이슈사안에 대해서 보고<br />
+                        ㅇㅇㅇ지원 부족에 따른 ㅁㅁㅁ의 필요성 요청<br />
+                        즉시, 대응이 가능한 방향으로 진행
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="list-footer"><strong>24</strong>/2,086</div>
+            </div>
+            <!-- //list table E -->
+          </div>
+          <!-- //오른쪽영역 E -->
+        </div>
+      </div>
+    </div>
+    <!-- //[팝업] 2025년 연말 역량평가(코칭 및 면담) E -->
+    <div class="dimmed"></div>
+    <script>
+      //S-D 평가 클릭 관련
+      document.addEventListener("DOMContentLoaded", () => {
+        if (!document.querySelector(".grade-level")) return;
+
+        document.addEventListener("click", (e) => {
+          const target = e.target;
+
+          if (!target.matches(".grade-level a")) return;
+
+          const container = target.closest(".grade-level");
+          const currentOn = container.querySelector(".on");
+
+          if (target === currentOn) {
+            target.classList.remove("on");
+          } else {
+            if (currentOn) currentOn.classList.remove("on");
+            target.classList.add("on");
+          }
+        });
+      });
+
+      //textarea 높이 자동조절
+      (function () {
+        function adjustHeight(el) {
+          el.style.height = "auto";
+          el.style.height = Math.max(el.scrollHeight, 15) + "px";
+        }
+
+        const autoTextareas = document.querySelectorAll(".auto-textarea");
+
+        autoTextareas.forEach((ta) => {
+          ta.addEventListener("input", () => adjustHeight(ta));
+
+          adjustHeight(ta);
+        });
+
+        document.addEventListener("click", (e) => {
+          const btn = e.target.closest(".btn-pop-open");
+          if (!btn) return;
+          const target = document.querySelector(btn.dataset.target);
+          if (!target) return;
+
+          setTimeout(() => {
+            const tas = target.querySelectorAll(".auto-textarea");
+            tas.forEach((el) => adjustHeight(el));
+          }, 50);
+        });
+      })();
+
+      //textarea상태에 따라 부모 배경색 변경
+      document.querySelectorAll(".evaluation-txtbox__form").forEach((form) => {
+        const ta = form.querySelector(".auto-textarea");
+        if (!ta) return;
+
+        if (ta.hasAttribute("readonly")) {
+          form.classList.add("readonly");
+        } else {
+          form.classList.add("editable");
+        }
+
+        const observer = new MutationObserver(() => {
+          if (ta.hasAttribute("readonly")) {
+            form.classList.add("readonly");
+            form.classList.remove("editable");
+          } else {
+            form.classList.add("editable");
+            form.classList.remove("readonly");
+          }
+        });
+
+        observer.observe(ta, {
+          attributes: true,
+          attributeFilter: ["readonly"],
+        });
+      });
+    </script>
+  </body>
+</html>
