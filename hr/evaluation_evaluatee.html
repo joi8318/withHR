@@ -380,13 +380,13 @@
               <div class="goal-wrap">
                 <!-- box S -->
                 <div
-                  class="goal-wrap__box btn-pop-open"
-                  data-target="#evaluationNotSubmitPop"
-                >
+                  class="goal-wrap__box">
                   <div class="text-blt-group">
                     <span class="text-box">중간점검</span>
                   </div>
-                  <div class="goal-title">
+                  <div class="goal-title btn-pop-open"
+                  data-target="#evaluationNotSubmitPop"
+                >
                     2025년 연말 업적평가(미제출) 클릭클릭
                   </div>
                   <div class="goal-text mat10">
@@ -397,13 +397,13 @@
                 </div>
                 <!-- //box E -->
                 <div
-                  class="goal-wrap__box goal-disable btn-pop-open"
-                  data-target="#evaluationUnderReviewAchievementPop"
-                >
+                  class="goal-wrap__box goal-disable">
                   <div class="text-blt-group">
                     <span class="text-box">중간점검</span>
                   </div>
-                  <div class="goal-title">
+                  <div class="goal-title btn-pop-open"
+                  data-target="#evaluationUnderReviewAchievementPop"
+                >
                     2025년 연말 업적평가(평가중) 클릭클릭
                   </div>
                   <div class="goal-text mat10">
@@ -413,13 +413,13 @@
                   <div class="status-box">승인완료</div>
                 </div>
                 <div
-                  class="goal-wrap__box btn-pop-open"
-                  data-target="#evaluationUnderReviewCompetencyPop"
-                >
+                  class="goal-wrap__box">
                   <div class="text-blt-group">
                     <span class="text-box">중간점검</span>
                   </div>
-                  <div class="goal-title">2025년 연말 역량평가(평가중)</div>
+                  <div class="goal-title btn-pop-open"
+                  data-target="#evaluationUnderReviewCompetencyPop"
+                >2025년 연말 역량평가(평가중)</div>
                   <div class="goal-text mat10">
                     <p class="text-blt">작성기간: 2025.03.01 ~ 2025.03.10</p>
                     <p class="text-blt">승인자: 인사팀 홍길동 팀장</p>
@@ -482,9 +482,7 @@
               <div class="goal-wrap">
                 <!-- box S -->
                 <div
-                  class="goal-wrap__box goal-wrap__box3 btn-pop-open"
-                  data-target="#evaluationGoalApprovaPop"
-                >
+                  class="goal-wrap__box goal-wrap__box3">
                   <div class="text-blt-group">
                     <span class="text-box">중간점검</span>
                     <a
@@ -493,7 +491,8 @@
                       >면담 및 코칭</a
                     >
                   </div>
-                  <div class="goal-title">2025년 연말 업적평가(목표승인)</div>
+                  <div class="goal-title btn-pop-open"
+                  data-target="#evaluationGoalApprovaPop">2025년 연말 업적평가(목표승인)</div>
                   <div class="goal-text">
                     <p class="text-blt">승인기간: 2025.03.01 ~ 2025.03.10</p>
                   </div>
@@ -629,33 +628,40 @@
           </button>
         </div>
       </div>
-      <div class="pop-body bg-round">
+      <div class="pop-body cont-wrap-100 bg-round">
         <!-- title -->
         <div class="btn-wrap btn-right">
-          <button class="btn-point">부서목표 조회</button>
+          <button
+            class="btn-point btn-pop-open"
+            data-target="#departmentGoalsPop"
+          >
+            부서목표 조회
+          </button>
           <button class="btn-white">저장</button>
           <button class="btn-white">삭제</button>
           <button class="btn-white">초기화</button>
         </div>
-        <div class="evaluation-pop-wrap">
+        <div class="evaluation-pop-wrap mat10">
           <!-- 왼쪽영역 S -->
           <div class="evaluation-pop-left">
-            <a class="grade-box">
-              <span class="grade-box__title">1. 일반영업</span>
-              <span class="grade-box__percent">20%</span>
-            </a>
-            <a class="grade-box on">
-              <span class="grade-box__title">2. 외부영업</span>
-              <span class="grade-box__percent">30%</span>
-            </a>
-            <a class="grade-box">
-              <span class="grade-box__title">3. 마케팅</span>
-              <span class="grade-box__percent">30%</span>
-            </a>
-            <a class="grade-box">
-              <span class="grade-box__title">4. 전략영업</span>
-              <span class="grade-box__percent">100%</span>
-            </a>
+            <div class="grade-group">
+              <a class="grade-box">
+                <span class="grade-box__title">1. 일반영업</span>
+                <span class="grade-box__percent">20%</span>
+              </a>
+              <a class="grade-box on">
+                <span class="grade-box__title">2. 외부영업</span>
+                <span class="grade-box__percent">30%</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">3. 마케팅</span>
+                <span class="grade-box__percent">30%</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">4. 전략영업</span>
+                <span class="grade-box__percent">100%</span>
+              </a>
+            </div>
             <div class="total-weight-box">
               <div class="total-weight-box__title">가중치 합계</div>
               <div class="total-weight-box__con">100%</div>
@@ -782,6 +788,85 @@
     </div>
     <!-- //[팝업] 2025년 연말 업적평가(미제출) E -->
 
+    <!-- [팝업]기업영업팀목표 S -->
+    <div id="departmentGoalsPop" class="pop-wrap">
+      <div class="pop-header">
+        <div class="btn-wrap btn-right">
+          <h3>기업영업팀 목표</h3>
+          <button class="pop-maximize tooltip">
+            <span class="tooltip-text">최대화</span>
+          </button>
+          <button class="pop-close btn-pop-close tooltip">
+            <span class="tooltip-text">닫기</span>
+          </button>
+        </div>
+      </div>
+      <div class="pop-body bg-round cont-wrap-100">
+        <!-- title -->
+        <div class="btn-wrap btn-right mat20">
+          <button class="btn-point">목표연계</button>
+        </div>
+        <!-- list table S -->
+        <div class="list-wrap mat10">
+          <div class="list-wrap__con">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>선택</th>
+                  <th>목표</th>
+                  <th>시작일</th>
+                  <th>종료일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">1</td>
+                  <td class="text-center">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </td>
+                  <td>영업팀 목표 500억 달성영업팀 목표 500억 달성</td>
+                  <td class="text-center">2025.01.04</td>
+                  <td class="text-center">2025.01.04</td>
+                </tr>
+                <tr>
+                  <td class="text-center">2</td>
+                  <td class="text-center">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </td>
+                  <td>영업팀 목표 500억 달성영업팀 목표 500억 달성</td>
+                  <td class="text-center">2025.01.04</td>
+                  <td class="text-center">2025.01.04</td>
+                </tr>
+                <tr>
+                  <td class="text-center">3</td>
+                  <td class="text-center">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </td>
+                  <td>영업팀 목표 500억 달성영업팀 목표 500억 달성</td>
+                  <td class="text-center">2025.01.04</td>
+                  <td class="text-center">2025.01.04</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="list-footer"><strong>24</strong>/2,086</div>
+        </div>
+        <!-- //list table E -->
+        </div>
+      </div>
+    </div>
+    <!-- //[팝업] 기업영업팀목표 E -->
+
     <!-- [팝업]2025년 연말 업적평가(평가중) S -->
     <div id="evaluationUnderReviewAchievementPop" class="pop-wrap">
       <div class="pop-header">
@@ -795,34 +880,36 @@
           </button>
         </div>
       </div>
-      <div class="pop-body">
+      <div class="pop-body cont-wrap-100" style="max-height: calc(100vh - 20rem);">
         <!-- title -->
         <div class="btn-wrap btn-right">
           <button class="btn-white">저장</button>
         </div>
-        <div class="evaluation-pop-wrap">
+        <div class="evaluation-pop-wrap mat10">
           <!-- 왼쪽영역 S -->
           <div class="evaluation-pop-left">
-            <a class="grade-box">
-              <span class="grade-box__title">1. 일반영업</span>
-              <span class="grade-box__percent">20%</span>
-              <span class="grade-box__txt grade-c">C</span>
-            </a>
-            <a class="grade-box">
-              <span class="grade-box__title">2. 외부영업</span>
-              <span class="grade-box__percent">30%</span>
-              <span class="grade-box__txt grade-s">S</span>
-            </a>
-            <a class="grade-box on">
-              <span class="grade-box__title">3. 마케팅</span>
-              <span class="grade-box__percent">30%</span>
-              <span class="grade-box__txt grade-a">A</span>
-            </a>
-            <a class="grade-box">
-              <span class="grade-box__title">4. 전략영업</span>
-              <span class="grade-box__percent">20%</span>
-              <span class="grade-box__txt grade-b">B</span>
-            </a>
+            <div class="grade-group">
+              <a class="grade-box">
+                <span class="grade-box__title">1. 일반영업</span>
+                <span class="grade-box__percent">20%</span>
+                <span class="grade-box__txt grade-c">C</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">2. 외부영업</span>
+                <span class="grade-box__percent">30%</span>
+                <span class="grade-box__txt grade-s">S</span>
+              </a>
+              <a class="grade-box on">
+                <span class="grade-box__title">3. 마케팅</span>
+                <span class="grade-box__percent">30%</span>
+                <span class="grade-box__txt grade-a">A</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">4. 전략영업</span>
+                <span class="grade-box__percent">20%</span>
+                <span class="grade-box__txt grade-b">B</span>
+              </a>
+            </div>
           </div>
           <!-- //왼쪽영역 E -->
           <!-- 오른쪽영역 S -->
@@ -932,8 +1019,8 @@
           <div class="evaluation-bottom__title icon-performance-rating">
             평가등급
           </div>
-          <div class="evaluation-bottom__con">
-            <div class="grade-level">
+          <div class="evaluation-bottom__con grade-wrap">
+            <div class="grade-level not-link">
               <a class="grade-s on">S</a>
             </div>
             <div class="number">87</div>
@@ -968,34 +1055,36 @@
           </button>
         </div>
       </div>
-      <div class="pop-body">
+      <div class="pop-body cont-wrap-100">
         <!-- title -->
         <div class="btn-wrap btn-right">
           <button class="btn-white">저장</button>
         </div>
-        <div class="evaluation-pop-wrap">
+        <div class="evaluation-pop-wrap mat10">
           <!-- 왼쪽영역 S -->
           <div class="evaluation-pop-left">
-            <a class="grade-box on">
-              <span class="grade-box__title">1. 책임감</span>
-              <span class="grade-box__percent">20%</span>
-              <span class="grade-box__txt grade-c">C</span>
-            </a>
-            <a class="grade-box">
-              <span class="grade-box__title">2. 성실성</span>
-              <span class="grade-box__percent">30%</span>
-              <span class="grade-box__txt grade-s">S</span>
-            </a>
-            <a class="grade-box">
-              <span class="grade-box__title">3. 주인의식</span>
-              <span class="grade-box__percent">30%</span>
-              <span class="grade-box__txt grade-a">A</span>
-            </a>
-            <a class="grade-box">
-              <span class="grade-box__title">4. 업무전문성</span>
-              <span class="grade-box__percent">20%</span>
-              <span class="grade-box__txt grade-b">B</span>
-            </a>
+            <div class="grade-group">
+              <a class="grade-box on">
+                <span class="grade-box__title">1. 책임감</span>
+                <span class="grade-box__percent">20%</span>
+                <span class="grade-box__txt grade-c">C</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">2. 성실성</span>
+                <span class="grade-box__percent">30%</span>
+                <span class="grade-box__txt grade-s">S</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">3. 주인의식</span>
+                <span class="grade-box__percent">30%</span>
+                <span class="grade-box__txt grade-a">A</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">4. 업무전문성</span>
+                <span class="grade-box__percent">20%</span>
+                <span class="grade-box__txt grade-b">B</span>
+              </a>
+            </div>
           </div>
           <!-- //왼쪽영역 E -->
           <!-- 오른쪽영역 S -->
@@ -1056,7 +1145,7 @@
             <!-- write table1 E -->
 
             <!-- write table2 S -->
-            <div class="evaluation-pop-write">
+            <div class="evaluation-pop-write mat10">
               <div class="write-wrap ma20">
                 <table>
                   <colgroup>
@@ -1119,8 +1208,8 @@
           <div class="evaluation-bottom__title icon-performance-rating">
             평가등급
           </div>
-          <div class="evaluation-bottom__con">
-            <div class="grade-level">
+          <div class="evaluation-bottom__con grade-wrap">
+            <div class="grade-level not-link">
               <a class="grade-a on">A</a>
             </div>
             <div class="number">87</div>
@@ -1155,7 +1244,7 @@
           </button>
         </div>
       </div>
-      <div class="pop-body bg-round">
+      <div class="pop-body cont-wrap-100 bg-round">
         <!-- title -->
         <div class="evaluation-pop-wrap">
           <!-- 왼쪽영역 S -->
@@ -1234,24 +1323,26 @@
           <!-- //왼쪽영역 E -->
           <!-- 오른쪽영역 S -->
           <div class="evaluation-pop-rightfull">
-            <div class="dis-flex">
+            <div class="dis-flex" style="max-height: calc(100% - 16.4rem);">
               <div class="evaluation-pop-left w200">
-                <a class="grade-box on">
-                  <span class="grade-box__title"><em>1.</em> 전략목표</span>
-                  <span class="grade-box__percent">20%</span>
-                </a>
-                <a class="grade-box">
-                  <span class="grade-box__title"><em>2.</em> 외부영업</span>
-                  <span class="grade-box__percent">30%</span>
-                </a>
-                <a class="grade-box">
-                  <span class="grade-box__title"><em>3.</em> 마케팅</span>
-                  <span class="grade-box__percent">30%</span>
-                </a>
-                <a class="grade-box">
-                  <span class="grade-box__title"><em>4.</em> 전략영업</span>
-                  <span class="grade-box__percent">20%</span>
-                </a>
+                <div class="grade-group">
+                  <a class="grade-box on">
+                    <span class="grade-box__title"><em>1.</em> 전략목표</span>
+                    <span class="grade-box__percent">20%</span>
+                  </a>
+                  <a class="grade-box">
+                    <span class="grade-box__title"><em>2.</em> 외부영업</span>
+                    <span class="grade-box__percent">30%</span>
+                  </a>
+                  <a class="grade-box">
+                    <span class="grade-box__title"><em>3.</em> 마케팅</span>
+                    <span class="grade-box__percent">30%</span>
+                  </a>
+                  <a class="grade-box">
+                    <span class="grade-box__title"><em>4.</em> 전략영업</span>
+                    <span class="grade-box__percent">20%</span>
+                  </a>
+                </div>
                 <div class="total-weight-box">
                   <div class="total-weight-box__title">가중치 합계</div>
                   <div class="total-weight-box__con">100%</div>
@@ -1379,7 +1470,7 @@
           </button>
         </div>
       </div>
-      <div class="pop-body bg-round">
+      <div class="pop-body cont-wrap-100 bg-round">
         <div class="evaluation-pop-wrap">
           <!-- 왼쪽영역 S -->
           <div class="evaluation-pop-leftfull">
@@ -1528,23 +1619,6 @@
                         즉시, 대응이 가능한 방향으로 진행
                       </td>
                     </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td class="text-center">
-                        <label class="custom-checkbox">
-                          <input type="checkbox" />
-                          <span></span>
-                        </label>
-                      </td>
-                      <td class="text-center"></td>
-                      <td class="text-center">2025-07-01</td>
-                      <td>미팅룸</td>
-                      <td>
-                        주요이슈사안에 대해서 보고<br />
-                        ㅇㅇㅇ지원 부족에 따른 ㅁㅁㅁ의 필요성 요청<br />
-                        즉시, 대응이 가능한 방향으로 진행
-                      </td>
-                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -1558,6 +1632,63 @@
     </div>
     <!-- //[팝업] 2025년 연말 역량평가(코칭 및 면담) E -->
     <div class="dimmed"></div>
+
+    <!-- AirDatepicker js -->
+    <script src="../assets/js/air-datepicker.js"></script>
+    <script>
+      document.querySelectorAll(".airdatepicker").forEach((input) => {
+        if (
+          !input ||
+          input.hasAttribute("readonly") ||
+          input.hasAttribute("disabled")
+        )
+          return;
+
+        new AirDatepicker(input, {
+          // inline: true,
+          locale: {
+            days: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+            daysShort: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+            daysMin: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+            months: [
+              "1월",
+              "2월",
+              "3월",
+              "4월",
+              "5월",
+              "6월",
+              "7월",
+              "8월",
+              "9월",
+              "10월",
+              "11월",
+              "12월",
+            ],
+            monthsShort: [
+              "1월",
+              "2월",
+              "3월",
+              "4월",
+              "5월",
+              "6월",
+              "7월",
+              "8월",
+              "9월",
+              "10월",
+              "11월",
+              "12월",
+            ],
+            today: "오늘",
+            clear: "초기화",
+          },
+          dateFormat: "yyyy-MM-dd",
+          autoClose: true,
+          allowInput: false,
+          navTitles: { days: "yyyy MMMM" },
+          buttons: ["clear"],
+        });
+      });
+    </script>
     <script>
       //S-D 평가 클릭 관련
       document.addEventListener("DOMContentLoaded", () => {
@@ -1569,6 +1700,11 @@
           if (!target.matches(".grade-level a")) return;
 
           const container = target.closest(".grade-level");
+          if (container.classList.contains("not-link")) {
+            e.preventDefault();
+            return;
+          }
+
           const currentOn = container.querySelector(".on");
 
           if (target === currentOn) {

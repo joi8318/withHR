@@ -1270,7 +1270,6 @@
     &:not(:nth-child(-n + 3)) {
       margin-bottom: 0;
     }
-    cursor: pointer;
     &:hover {
       border-color: var(--primary-color) !important;
     }
@@ -1289,6 +1288,7 @@
       color: var(--gray-0);
       border-color: var(--primary-color);
       padding: 0.3rem 1rem 0.3rem 1.5rem;
+      cursor: pointer;
       &::after {
         @include boots-icon("\F285", 1.1rem, var(--gray-0));
         margin-left: 0.5rem;
@@ -1316,6 +1316,7 @@
       white-space: normal;
       width: calc(100% - 11rem);
       height: 5rem;
+      cursor: pointer;
     }
     .status-box {
       position: absolute;
@@ -1556,14 +1557,10 @@
           font-weight: 500;
         }
         .marks {
-          display: flex;
-          align-items: center;
-          justify-content: center;
           margin-top: 1.5rem;
+          justify-content: center;
           .number {
             font-size: 2.2rem;
-            font-weight: 600;
-            margin-left: 0.5rem;
           }
         }
       }

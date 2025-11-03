@@ -155,65 +155,88 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ====================== 레이어 팝업 (딤 + 최대화) ======================
-  const dim = document.querySelector(".dimmed");
-  const layerPops = document.querySelectorAll(".pop-wrap");
-  if (dim && layerPops.length) {
-    const openLayerPopup = (pop) => {
-      if (!pop) return;
-      dim.style.display = "block";
-      pop.style.display = "flex";
-      requestAnimationFrame(() => {
-        dim.classList.add("active");
-        pop.classList.add("active");
-      });
+  const openPopupBtns = document.querySelectorAll(".btn-pop-open");
 
-      const closeBtns = pop.querySelectorAll(".btn-pop-close");
-      closeBtns.forEach((btn) => {
-        if (!btn.dataset.listenerAdded) {
-          btn.addEventListener("click", () => closeLayerPopup(pop));
-          btn.dataset.listenerAdded = "true";
+  const openLayerPopup = (pop) => {
+    if (!pop) return;
+
+    let dim = pop._dim;
+    if (!dim) {
+      dim = document.createElement("div");
+      dim.className = "dimmed";
+      document.body.appendChild(dim);
+      pop._dim = dim;
+    }
+
+    const activePopCount = document.querySelectorAll(".pop-wrap.active").length;
+    const zBase = 100;
+    dim.style.zIndex = zBase + activePopCount * 2;
+    pop.style.zIndex = zBase + activePopCount * 2 + 1;
+
+    dim.style.display = "block";
+    pop.style.display = "flex";
+
+    requestAnimationFrame(() => {
+      dim.classList.add("active");
+      pop.classList.add("active");
+    });
+
+    const closeHandler = () => closeLayerPopup(pop);
+
+    // 닫기 버튼
+    pop.querySelectorAll(".btn-pop-close").forEach((btn) => {
+      if (!btn.dataset.listenerAdded) {
+        btn.addEventListener("click", closeHandler);
+        btn.dataset.listenerAdded = "true";
+      }
+    });
+
+    // 최대화 버튼
+    const maxBtn = pop.querySelector(".pop-maximize");
+    if (maxBtn && !maxBtn.dataset.listenerAdded) {
+      maxBtn.addEventListener("click", () => {
+        const isMaximized = pop.classList.toggle("maximized");
+
+        // tooltip-text 내용 변경
+        const tooltipText = maxBtn.querySelector(".tooltip-text");
+        if (tooltipText) {
+          tooltipText.textContent = isMaximized ? "최소화" : "최대화";
         }
       });
+      maxBtn.dataset.listenerAdded = "true";
+    }
 
-      const maxBtn = pop.querySelector(".pop-maximize");
-      if (maxBtn && !maxBtn.dataset.listenerAdded) {
-        maxBtn.addEventListener("click", () => {
-          const isMaximized = pop.classList.toggle("maximized");
-          const tooltipText = maxBtn.querySelector(".tooltip-text");
-          if (tooltipText)
-            tooltipText.textContent = isMaximized ? "이전 크기로" : "최대화";
-        });
-        maxBtn.dataset.listenerAdded = "true";
-      }
-    };
+    // dim 클릭 시 해당 팝업만 닫기
+    dim.addEventListener("click", closeHandler);
+  };
 
-    const closeLayerPopup = (pop) => {
-      if (!pop) return;
-      dim.classList.remove("active");
-      pop.classList.remove("active");
-      const handler = () => {
-        dim.style.display = "none";
+  const closeLayerPopup = (pop) => {
+    if (!pop || !pop._dim || !pop.classList.contains("active")) return;
+
+    const dim = pop._dim;
+
+    pop.classList.remove("active");
+    dim.classList.remove("active");
+
+    dim.addEventListener(
+      "transitionend",
+      () => {
         pop.style.display = "none";
-        dim.removeEventListener("transitionend", handler);
-      };
-      dim.addEventListener("transitionend", handler);
-    };
+        if (dim.parentNode) dim.remove();
+        delete pop._dim;
+      },
+      { once: true }
+    );
+  };
 
-    document.addEventListener("click", (e) => {
-      const btn = e.target.closest(".btn-pop-open");
-      if (!btn) return;
+  // 팝업 열기 버튼 클릭
+  openPopupBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
       e.preventDefault();
       const target = document.querySelector(btn.dataset.target);
-      if (!target) return;
       openLayerPopup(target);
     });
-
-    dim.addEventListener("click", () => {
-      layerPops.forEach((pop) => {
-        if (pop.classList.contains("active")) closeLayerPopup(pop);
-      });
-    });
-  }
+  });
 
   // ====================== 상단 탭 ======================
   document.querySelectorAll(".top-tab").forEach((topTab) => {

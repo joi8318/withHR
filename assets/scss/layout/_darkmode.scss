@@ -247,6 +247,107 @@
       background-color: var(--gray-40);
     }
   }
+
+  .grade-s {
+    background-color: #690101;
+    color: var(--gray-100);
+    border-color: #690101;
+  }
+  .grade-a {
+    background-color: #025018;
+    color: var(--gray-100);
+    border-color: #025018;
+  }
+  .grade-b {
+    background-color: #523d04;
+    color: var(--gray-100);
+    border-color: #523d04;
+  }
+  .grade-c {
+    background-color: #04336b;
+    color: var(--gray-100);
+    border-color: #04336b;
+  }
+  .grade-d {
+    background-color: var(--gray-70);
+    color: var(--gray-0);
+  }
+  .grade-level {
+    .grade-s {
+      background-color: #690101;
+      color: var(--gray-100);
+      border-color: #690101;
+      &:hover {
+        background-color: #e64f56;
+        color: var(--gray-100);
+        border-color: #e64f56;
+      }
+    }
+    .grade-s.on {
+      background-color: #e64f56;
+      color: var(--gray-100);
+      border-color: #e64f56;
+    }
+    .grade-a {
+      background-color: #025018;
+      color: var(--gray-100);
+      border-color: #025018;
+      &:hover {
+        background-color: #44c378;
+        color: var(--gray-100);
+        border-color: #44c378;
+      }
+    }
+    .grade-a.on {
+      background-color: #44c378;
+      color: var(--gray-100);
+      border-color: #44c378;
+    }
+    .grade-b {
+      background-color: #523d04;
+      color: var(--gray-100);
+      border-color: #523d04;
+      &:hover {
+        background-color: var(--yellow-color);
+        color: var(--gray-100);
+        border-color: var(--yellow-color);
+      }
+    }
+    .grade-b.on {
+      background-color: var(--yellow-color);
+      color: var(--gray-100);
+      border-color: var(--yellow-color);
+    }
+    .grade-c {
+      background-color: #04336b;
+      color: var(--gray-100);
+      border-color: #04336b;
+      &:hover {
+        background-color: #1277e7;
+        color: var(--gray-100);
+        border-color: #1277e7;
+      }
+    }
+    .grade-c.on {
+      background-color: #1277e7;
+      color: var(--gray-100);
+      border-color: #1277e7;
+    }
+    .grade-d {
+      background-color: var(--gray-70);
+      color: var(--gray-0);
+      &:hover {
+        background-color: var(--gray-10);
+        color: var(--gray-100);
+        border-color: var(--gray-10);
+      }
+    }
+    .grade-d.on {
+      background-color: var(--gray-10);
+      color: var(--gray-100);
+      border-color: var(--gray-10);
+    }
+  }
 }
 
 [data-theme="dark"][data-theme-color="black"] {

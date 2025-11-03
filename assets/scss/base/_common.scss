@@ -101,6 +101,9 @@ a {
 .w120 {
   width: 12rem !important;
 }
+.w100p {
+  width: 100% !important;
+}
 .w150 {
   width: 15rem !important;
 }
@@ -109,6 +112,9 @@ a {
 }
 .w280 {
   width: 28rem !important;
+}
+.w330 {
+  width: 33rem !important;
 }
 .flex-auto {
   flex: none !important;
@@ -133,6 +139,12 @@ a {
     width: auto !important;
     height: auto !important;
   }
+}
+.overflow-hidden {
+  overflow: hidden !important;
+}
+.air-datepicker-global-container {
+  z-index: 10000;
 }
 
 /* ---------------------- form ---------------------- */
