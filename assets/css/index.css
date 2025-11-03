@@ -6799,9 +6799,9 @@ button {
   color: var(--gray-0);
 }
 [data-theme=dark] .grade-level .grade-s {
-  background-color: #690101;
+  background-color: #580000;
   color: var(--gray-100);
-  border-color: #690101;
+  border-color: #580000;
 }
 [data-theme=dark] .grade-level .grade-s:hover {
   background-color: #e64f56;
@@ -6814,9 +6814,9 @@ button {
   border-color: #e64f56;
 }
 [data-theme=dark] .grade-level .grade-a {
-  background-color: #025018;
+  background-color: #02571a;
   color: var(--gray-100);
-  border-color: #025018;
+  border-color: #02571a;
 }
 [data-theme=dark] .grade-level .grade-a:hover {
   background-color: #44c378;
@@ -6844,9 +6844,9 @@ button {
   border-color: var(--yellow-color);
 }
 [data-theme=dark] .grade-level .grade-c {
-  background-color: #04336b;
+  background-color: #012858;
   color: var(--gray-100);
-  border-color: #04336b;
+  border-color: #012858;
 }
 [data-theme=dark] .grade-level .grade-c:hover {
   background-color: #1277e7;
@@ -6859,18 +6859,19 @@ button {
   border-color: #1277e7;
 }
 [data-theme=dark] .grade-level .grade-d {
-  background-color: var(--gray-70);
-  color: var(--gray-0);
+  background-color: var(--gray-10);
+  color: var(--gray-100);
+  border-color: var(--gray-10);
 }
 [data-theme=dark] .grade-level .grade-d:hover {
-  background-color: var(--gray-10);
+  background-color: var(--gray-70);
   color: var(--gray-100);
-  border-color: var(--gray-10);
+  border-color: var(--gray-70);
 }
 [data-theme=dark] .grade-level .grade-d.on {
-  background-color: var(--gray-10);
+  background-color: var(--gray-70);
   color: var(--gray-100);
-  border-color: var(--gray-10);
+  border-color: var(--gray-70);
 }
 
 [data-theme=dark][data-theme-color=black] .search-wrap .search-btn-wrap {

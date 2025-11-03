@@ -274,9 +274,9 @@
   }
   .grade-level {
     .grade-s {
-      background-color: #690101;
+      background-color: #580000;
       color: var(--gray-100);
-      border-color: #690101;
+      border-color: #580000;
       &:hover {
         background-color: #e64f56;
         color: var(--gray-100);
@@ -289,9 +289,9 @@
       border-color: #e64f56;
     }
     .grade-a {
-      background-color: #025018;
+      background-color: #02571a;
       color: var(--gray-100);
-      border-color: #025018;
+      border-color: #02571a;
       &:hover {
         background-color: #44c378;
         color: var(--gray-100);
@@ -319,9 +319,9 @@
       border-color: var(--yellow-color);
     }
     .grade-c {
-      background-color: #04336b;
+      background-color: #012858;
       color: var(--gray-100);
-      border-color: #04336b;
+      border-color: #012858;
       &:hover {
         background-color: #1277e7;
         color: var(--gray-100);
@@ -334,18 +334,19 @@
       border-color: #1277e7;
     }
     .grade-d {
-      background-color: var(--gray-70);
-      color: var(--gray-0);
-      &:hover {
-        background-color: var(--gray-10);
-        color: var(--gray-100);
-        border-color: var(--gray-10);
-      }
-    }
-    .grade-d.on {
       background-color: var(--gray-10);
       color: var(--gray-100);
       border-color: var(--gray-10);
+      &:hover {
+        background-color: var(--gray-70);
+        color: var(--gray-100);
+        border-color: var(--gray-70);
+      }
+    }
+    .grade-d.on {
+      background-color: var(--gray-70);
+      color: var(--gray-100);
+      border-color: var(--gray-70);
     }
   }
 }
