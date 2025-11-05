@@ -600,25 +600,14 @@
 .grade-box.on {
   border-color: var(--primary-color);
 }
-.grade-s {
-  background-color: #fff1f1;
-  color: #e64f56;
-}
-.grade-a {
-  background-color: #eafff0;
-  color: #44c378;
-}
-.grade-b {
-  background-color: #fff3d1;
-  color: var(--yellow-color);
-}
-.grade-c {
-  background-color: #f5f9fe;
-  color: #1277e7;
-}
+.grade-s,
+.grade-a,
+.grade-b,
+.grade-c,
 .grade-d {
-  background-color: #f4f5f6;
-  color: var(--gray-100);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  font-weight: 600;
 }
 .icon-performance {
   &::before {
@@ -728,70 +717,19 @@
     border-radius: var(--base-round);
     border: 1px solid var(--gray-50);
     margin-left: 0.5rem;
+    background-color: var(--gray-0);
+    color: var(--gray-60);
+    font-weight: 600;
     &:first-child {
       margin-left: 1rem;
     }
-  }
-
-  .grade-s {
     &:hover {
-      background-color: #e64f56;
-      color: var(--gray-0);
-      border-color: #e64f56;
+      background-color: var(--bg-color);
     }
   }
-  .grade-s.on {
-    background-color: #e64f56;
-    color: var(--gray-0);
-    border-color: #e64f56;
-  }
-  .grade-a {
-    &:hover {
-      background-color: #44c378;
-      color: var(--gray-0);
-      border-color: #44c378;
-    }
-  }
-  .grade-a.on {
-    background-color: #44c378;
-    color: var(--gray-0);
-    border-color: #44c378;
-  }
-  .grade-b {
-    &:hover {
-      background-color: var(--yellow-color);
-      color: var(--gray-0);
-      border-color: var(--yellow-color);
-    }
-  }
-  .grade-b.on {
-    background-color: var(--yellow-color);
-    color: var(--gray-0);
-    border-color: var(--yellow-color);
-  }
-  .grade-c {
-    &:hover {
-      background-color: #1277e7;
-      color: var(--gray-0);
-      border-color: #1277e7;
-    }
-  }
-  .grade-c.on {
-    background-color: #1277e7;
-    color: var(--gray-0);
-    border-color: #1277e7;
-  }
-  .grade-d {
-    &:hover {
-      background-color: var(--gray-100);
-      color: var(--gray-0);
-      border-color: var(--gray-100);
-    }
-  }
-  .grade-d.on {
-    background-color: var(--gray-100);
-    color: var(--gray-0);
-    border-color: var(--gray-100);
+  a.on {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
   }
 }
 .total-weight-box {

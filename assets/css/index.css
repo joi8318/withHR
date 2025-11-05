@@ -1366,18 +1366,11 @@ button {
   color: var(--gray-0);
   padding: 1.2rem 3rem 1rem;
   position: relative;
-  z-index: 0;
 }
-.btn-wrap .btn-color-point::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  z-index: -1;
-}
-.btn-wrap .btn-color-point:hover::before {
-  opacity: 1;
+.btn-wrap .btn-color-point:hover {
+  background-color: var(--gray-0);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 .btn-wrap .btn-yellow {
   background-color: var(--yellow-color);
@@ -1385,18 +1378,11 @@ button {
   color: var(--gray-0);
   padding: 1.2rem 3rem 1rem;
   position: relative;
-  z-index: 0;
 }
-.btn-wrap .btn-yellow::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  z-index: -1;
-}
-.btn-wrap .btn-yellow:hover::before {
-  opacity: 1;
+.btn-wrap .btn-yellow:hover {
+  background-color: var(--gray-0);
+  border-color: var(--yellow-color);
+  color: var(--yellow-color);
 }
 .btn-wrap .btn-small {
   padding: 0.6rem 1rem;
@@ -4048,29 +4034,14 @@ button {
   border-color: var(--primary-color);
 }
 
-.grade-s {
-  background-color: #fff1f1;
-  color: #e64f56;
-}
-
-.grade-a {
-  background-color: #eafff0;
-  color: #44c378;
-}
-
-.grade-b {
-  background-color: #fff3d1;
-  color: var(--yellow-color);
-}
-
-.grade-c {
-  background-color: #f5f9fe;
-  color: #1277e7;
-}
-
+.grade-s,
+.grade-a,
+.grade-b,
+.grade-c,
 .grade-d {
-  background-color: #f4f5f6;
-  color: var(--gray-100);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 .icon-performance::before {
@@ -4264,59 +4235,19 @@ button {
   border-radius: var(--base-round);
   border: 1px solid var(--gray-50);
   margin-left: 0.5rem;
+  background-color: var(--gray-0);
+  color: var(--gray-60);
+  font-weight: 600;
 }
 .grade-level a:first-child {
   margin-left: 1rem;
 }
-.grade-level .grade-s:hover {
-  background-color: #e64f56;
-  color: var(--gray-0);
-  border-color: #e64f56;
+.grade-level a:hover {
+  background-color: var(--bg-color);
 }
-.grade-level .grade-s.on {
-  background-color: #e64f56;
-  color: var(--gray-0);
-  border-color: #e64f56;
-}
-.grade-level .grade-a:hover {
-  background-color: #44c378;
-  color: var(--gray-0);
-  border-color: #44c378;
-}
-.grade-level .grade-a.on {
-  background-color: #44c378;
-  color: var(--gray-0);
-  border-color: #44c378;
-}
-.grade-level .grade-b:hover {
-  background-color: var(--yellow-color);
-  color: var(--gray-0);
-  border-color: var(--yellow-color);
-}
-.grade-level .grade-b.on {
-  background-color: var(--yellow-color);
-  color: var(--gray-0);
-  border-color: var(--yellow-color);
-}
-.grade-level .grade-c:hover {
-  background-color: #1277e7;
-  color: var(--gray-0);
-  border-color: #1277e7;
-}
-.grade-level .grade-c.on {
-  background-color: #1277e7;
-  color: var(--gray-0);
-  border-color: #1277e7;
-}
-.grade-level .grade-d:hover {
-  background-color: var(--gray-100);
-  color: var(--gray-0);
-  border-color: var(--gray-100);
-}
-.grade-level .grade-d.on {
-  background-color: var(--gray-100);
-  color: var(--gray-0);
-  border-color: var(--gray-100);
+.grade-level a.on {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
 }
 
 .total-weight-box {
@@ -6482,41 +6413,6 @@ button {
   display: block;
   margin-top: 0.5rem;
 }
-.evaluation-list__box .evaluation-list-info__name .btn-evaluation {
-  display: inline-flex;
-  margin-left: 0.5rem;
-  width: 2.4rem;
-  height: 2.4rem;
-  border-radius: 50%;
-  background-color: var(--gray-60);
-  align-items: center;
-  justify-content: center;
-}
-.evaluation-list__box .evaluation-list-info__name .btn-evaluation::before {
-  font-family: var(--bi-font-family);
-  font-style: normal;
-  font-weight: 700;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  line-height: 1;
-  vertical-align: middle;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\f71b";
-  font-size: 1.2rem;
-  color: var(--gray-0);
-  width: 1.2rem;
-  height: 1.2rem;
-  text-align: center;
-  cursor: pointer;
-  transition: color 0.3s;
-  font-weight: 400;
-}
-.evaluation-list__box .evaluation-list-info__name .btn-evaluation:hover {
-  background-color: var(--primary-color);
-}
 .evaluation-list__box .evaluation-list-info .blt-round {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
@@ -6554,9 +6450,28 @@ button {
 .evaluation-list__box .evaluation-list-marks__box .marks {
   margin-top: 1.5rem;
   justify-content: center;
+  height: 3rem;
 }
 .evaluation-list__box .evaluation-list-marks__box .marks .number {
   font-size: 2.2rem;
+}
+.evaluation-list__box .evaluation-list-marks__box .marks__evaluation-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--gray-60);
+  color: var(--gray-0);
+  height: 2.5rem;
+  padding-inline: 1rem;
+  font-size: 1.3rem;
+  border-radius: var(--base-round);
+}
+.evaluation-list__box .evaluation-list-marks__box .marks__evaluation-btn:hover {
+  background-color: var(--primary-color);
+}
+.evaluation-list__box .evaluation-list-marks__box .marks__evaluation-btn::before {
+  color: var(--gray-0);
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
 }
 
 @media screen and (max-width: 119rem) {
@@ -6774,104 +6689,11 @@ button {
 [data-theme=dark] .pop-tab a.on {
   background-color: var(--gray-40);
 }
-[data-theme=dark] .grade-s {
-  background-color: #690101;
-  color: var(--gray-100);
-  border-color: #690101;
+[data-theme=dark] .pop-wrap {
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
-[data-theme=dark] .grade-a {
-  background-color: #025018;
-  color: var(--gray-100);
-  border-color: #025018;
-}
-[data-theme=dark] .grade-b {
-  background-color: #523d04;
-  color: var(--gray-100);
-  border-color: #523d04;
-}
-[data-theme=dark] .grade-c {
-  background-color: #04336b;
-  color: var(--gray-100);
-  border-color: #04336b;
-}
-[data-theme=dark] .grade-d {
-  background-color: var(--gray-70);
-  color: var(--gray-0);
-}
-[data-theme=dark] .grade-level .grade-s {
-  background-color: #580000;
-  color: var(--gray-100);
-  border-color: #580000;
-}
-[data-theme=dark] .grade-level .grade-s:hover {
-  background-color: #e64f56;
-  color: var(--gray-100);
-  border-color: #e64f56;
-}
-[data-theme=dark] .grade-level .grade-s.on {
-  background-color: #e64f56;
-  color: var(--gray-100);
-  border-color: #e64f56;
-}
-[data-theme=dark] .grade-level .grade-a {
-  background-color: #02571a;
-  color: var(--gray-100);
-  border-color: #02571a;
-}
-[data-theme=dark] .grade-level .grade-a:hover {
-  background-color: #44c378;
-  color: var(--gray-100);
-  border-color: #44c378;
-}
-[data-theme=dark] .grade-level .grade-a.on {
-  background-color: #44c378;
-  color: var(--gray-100);
-  border-color: #44c378;
-}
-[data-theme=dark] .grade-level .grade-b {
-  background-color: #523d04;
-  color: var(--gray-100);
-  border-color: #523d04;
-}
-[data-theme=dark] .grade-level .grade-b:hover {
-  background-color: var(--yellow-color);
-  color: var(--gray-100);
-  border-color: var(--yellow-color);
-}
-[data-theme=dark] .grade-level .grade-b.on {
-  background-color: var(--yellow-color);
-  color: var(--gray-100);
-  border-color: var(--yellow-color);
-}
-[data-theme=dark] .grade-level .grade-c {
-  background-color: #012858;
-  color: var(--gray-100);
-  border-color: #012858;
-}
-[data-theme=dark] .grade-level .grade-c:hover {
-  background-color: #1277e7;
-  color: var(--gray-100);
-  border-color: #1277e7;
-}
-[data-theme=dark] .grade-level .grade-c.on {
-  background-color: #1277e7;
-  color: var(--gray-100);
-  border-color: #1277e7;
-}
-[data-theme=dark] .grade-level .grade-d {
-  background-color: var(--gray-10);
-  color: var(--gray-100);
-  border-color: var(--gray-10);
-}
-[data-theme=dark] .grade-level .grade-d:hover {
-  background-color: var(--gray-70);
-  color: var(--gray-100);
-  border-color: var(--gray-70);
-}
-[data-theme=dark] .grade-level .grade-d.on {
-  background-color: var(--gray-70);
-  color: var(--gray-100);
-  border-color: var(--gray-70);
+[data-theme=dark] .grade-level a {
+  border: 1px solid var(--gray-70);
 }
 
 [data-theme=dark][data-theme-color=black] .search-wrap .search-btn-wrap {
