@@ -482,17 +482,18 @@
               <div class="goal-wrap">
                 <!-- box S -->
                 <div
-                  class="goal-wrap__box goal-wrap__box3">
+                  class="goal-wrap__box goal-wrap__box3 btn-pop-open"
+                      data-target="#evaluationTargetEmployeePop">
                   <div class="text-blt-group">
                     <span class="text-box">중간점검</span>
                     <a
                       class="text-box interview-text btn-pop-open"
-                      data-target="#evaluationInterviewCoachingPop"
+                      data-target="#evaluationInterviewCoachingPop" onclick="event.stopPropagation();"
                       >면담 및 코칭</a
                     >
                   </div>
                   <div class="goal-title btn-pop-open"
-                  data-target="#evaluationGoalApprovaPop">2025년 연말 업적평가(목표승인)</div>
+                  data-target="#evaluationGoalApprovaPop" onclick="event.stopPropagation();">2025년 연말 업적평가(목표승인)</div>
                   <div class="goal-text">
                     <p class="text-blt">승인기간: 2025.03.01 ~ 2025.03.10</p>
                   </div>
@@ -614,6 +615,677 @@
       </section>
     </div>
     <!-- //wrap E -->
+
+     <!-- [팝업]평가대상자 S -->
+    <div id="evaluationTargetEmployeePop" class="pop-wrap">
+      <div class="pop-header">
+        <div class="btn-wrap btn-right">
+          <h3>2025년 연말 업적평가</h3>
+          <button class="pop-maximize tooltip">
+            <span class="tooltip-text">최대화</span>
+          </button>
+          <button class="pop-close btn-pop-close tooltip">
+            <span class="tooltip-text">닫기</span>
+          </button>
+        </div>
+      </div>
+      <div class="pop-body cont-wrap-100 bg-round">
+        <div class="evaluation-pop-wrap">
+          <!-- 왼쪽영역 S -->
+          <div class="evaluation-pop-leftfull">
+              <!-- title -->
+              <h3>평가 대상자</h3>
+              <!-- 평가대상자 설정 S -->
+              <div class="evaluation-target">
+                <div class="evaluation-target__box on">
+                  <div class="title">인사팀</div>
+                  <div class="con-box">
+                    <div class="con">
+                      <span class="con__number">1</span>
+                      <span class="con__text">차수</span>
+                    </div>
+                    <div class="con">
+                      <span class="con__number">4</span>
+                      <span class="con__text">대상</span>
+                    </div>
+                    <div class="con">
+                      <span class="con__number">2</span>
+                      <span class="con__text">완료</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="evaluation-target__box">
+                  <div class="title">기획팀</div>
+                  <div class="con-box">
+                    <div class="con">
+                      <span class="con__number">1</span>
+                      <span class="con__text">차수</span>
+                    </div>
+                    <div class="con">
+                      <span class="con__number">13</span>
+                      <span class="con__text">대상</span>
+                    </div>
+                    <div class="con">
+                      <span class="con__number">10</span>
+                      <span class="con__text">완료</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //평가대상자 설정 E -->
+            </div>
+            <!-- //왼쪽영역 E -->
+            <!-- 우측영역 S -->
+            <div class="evaluation-pop-rightfull coaching-pop-right h-auto">
+              <!-- title -->
+              <div class="btn-wrap btn-right">
+                <button class="btn-point">평가완료</button>
+              </div>
+              <div class="evaluation-list mat20">
+                <!-- 평가박스 S -->
+                <div class="evaluation-list__box">
+                  <div class="evaluation-list-info">
+                    <div class="blt-round">1차</div>
+                    <div class="evaluation-list-info__pic">
+                      <img src="../assets/images/sample.png" />
+                    </div>
+                    <div class="evaluation-list-info__name">
+                      <strong>김영숙 과장</strong>
+                      <span>고객서비스 기획담당</span>
+                    </div>
+                  </div>
+                  <div class="evaluation-list-marks">
+                    <div class="evaluation-list-marks__box">
+                      <strong>본인평가</strong>
+                      <div class="grade-wrap marks">
+                        <div class="grade-level not-link">
+                          <a class="grade-a on">A</a>
+                        </div>
+                        <div class="number">87</div>
+                      </div>
+                    </div>
+                    <div class="evaluation-list-marks__box">
+                      <strong>1차평가</strong>
+                      <div class="grade-wrap marks">
+                        <a
+                          class="marks__evaluation-btn icon-performance-rating btn-pop-open"
+                          data-target="#evaluationInprogressPop"
+                        >
+                          평가
+                        </a>
+                      </div>
+                    </div>
+                    <div class="evaluation-list-marks__box">
+                      <strong>2차평가</strong>
+                      <div class="grade-wrap marks">
+                        <a
+                          class="marks__evaluation-btn icon-performance-rating btn-pop-open"
+                          data-target="#evaluationCapabilityInprogressPop"
+                        >
+                          평가
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- //평가박스 E -->
+                <div class="evaluation-list__box">
+                  <div class="evaluation-list-info">
+                    <div class="blt-round">1차</div>
+                    <div class="evaluation-list-info__pic">
+                      <img src="../assets/images/sample.png" />
+                    </div>
+                    <div class="evaluation-list-info__name">
+                      <strong>김영숙 과장</strong>
+                      <span>고객서비스 기획담당</span>
+                    </div>
+                  </div>
+                  <div class="evaluation-list-marks">
+                    <div class="evaluation-list-marks__box">
+                      <strong>본인평가</strong>
+                      <div class="grade-wrap marks">
+                        <div class="grade-level not-link">
+                          <a class="grade-a on">A</a>
+                        </div>
+                        <div class="number">87</div>
+                      </div>
+                    </div>
+                    <div class="evaluation-list-marks__box">
+                      <strong>1차평가</strong>
+                      <div class="grade-wrap marks">
+                        <div class="grade-level not-link">
+                          <a class="grade-s on">S</a>
+                        </div>
+                        <div class="number">95</div>
+                      </div>
+                    </div>
+                    <div class="evaluation-list-marks__box">
+                      <strong>2차평가</strong>
+                      <div class="grade-wrap marks">
+                        <a class="marks__evaluation-btn icon-performance-rating">
+                          평가
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="evaluation-list__box">
+                  <div class="evaluation-list-info">
+                    <div class="blt-round">1차</div>
+                    <div class="evaluation-list-info__pic">
+                      <img src="../assets/images/sample.png" />
+                    </div>
+                    <div class="evaluation-list-info__name">
+                      <strong>최영호 과장</strong>
+                      <span>고객서비스 기획담당</span>
+                    </div>
+                  </div>
+                  <div class="evaluation-list-marks">
+                    <div class="evaluation-list-marks__box">
+                      <strong>본인평가</strong>
+                      <div class="grade-wrap marks">
+                        <div class="grade-level not-link">
+                          <a class="grade-a on">A</a>
+                        </div>
+                        <div class="number">81</div>
+                      </div>
+                    </div>
+                    <div class="evaluation-list-marks__box">
+                      <strong>1차평가</strong>
+                      <div class="grade-wrap marks">
+                        <div class="grade-level not-link">
+                          <a class="grade-c on">C</a>
+                        </div>
+                        <div class="number">63</div>
+                      </div>
+                    </div>
+                    <div class="evaluation-list-marks__box">
+                      <strong>2차평가</strong>
+                      <div class="grade-wrap marks">
+                        <div class="grade-level not-link">
+                          <a class="grade-c on">C</a>
+                        </div>
+                        <div class="number">65</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="evaluation-list__box">
+                  <div class="evaluation-list-info">
+                    <div class="blt-round">1차</div>
+                    <div class="evaluation-list-info__pic">
+                      <div class="no-img">
+                        <img src="../assets/images/no-img.png" />
+                      </div>
+                    </div>
+                    <div class="evaluation-list-info__name">
+                      <strong>이한영 대리</strong>
+                      <span>고객서비스 기획담당</span>
+                    </div>
+                  </div>
+                  <div class="evaluation-list-marks">
+                    <div class="evaluation-list-marks__box">
+                      <strong>본인평가</strong>
+                      <div class="grade-wrap marks">
+                        <a class="marks__evaluation-btn icon-performance-rating">
+                          평가
+                        </a>
+                      </div>
+                    </div>
+                    <div class="evaluation-list-marks__box">
+                      <strong>1차평가</strong>
+                      <div class="grade-wrap marks">
+                        <a class="marks__evaluation-btn icon-performance-rating">
+                          평가
+                        </a>
+                      </div>
+                    </div>
+                    <div class="evaluation-list-marks__box">
+                      <strong>2차평가</strong>
+                      <div class="grade-wrap marks">
+                        <a class="marks__evaluation-btn icon-performance-rating">
+                          평가
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //우측영역 E -->
+          </div>
+      </div>
+    </div>
+    <!-- //[팝업]평가대상자 E -->
+
+    <!-- [팝업]2025년 연말 업적평가(평가중) S -->
+    <div id="evaluationInprogressPop" class="pop-wrap">
+      <div class="pop-header">
+        <div class="btn-wrap btn-right">
+          <h3>2025년 연말 업적평가<span class="text-box">평가중</span></h3>
+          <button class="pop-maximize tooltip">
+            <span class="tooltip-text">최대화</span>
+          </button>
+          <button class="pop-close btn-pop-close tooltip">
+            <span class="tooltip-text">닫기</span>
+          </button>
+        </div>
+      </div>
+      <div
+        class="pop-body cont-wrap-100"
+        style="max-height: calc(100vh - 28rem)"
+      >
+        <!-- title -->
+        <div class="btn-wrap btn-right">
+          <button class="btn-point">면담이력</button>
+          <button class="btn-point">평가저장</button>
+        </div>
+        <div class="evaluation-pop-wrap mat10">
+          <!-- 왼쪽영역 S -->
+          <div class="evaluation-pop-left w330">
+            <!-- 개인정보 -->
+            <div class="evaluation-pop-hr">
+              <div class="evaluation-pop-hr__info">
+                <div class="photo">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="name">
+                  <strong>홍길동 부장</strong>
+                  <span>고객서비스 기획담당</span>
+                </div>
+              </div>
+              <div class="evaluation-pop-hr__department">
+                <div class="con">
+                  <strong class="text-blt">평가조직</strong>
+                  <span>영업관리팀</span>
+                </div>
+                <div class="con">
+                  <strong class="text-blt">평가상태</strong>
+                  <span class="text-box">최종승인</span>
+                </div>
+              </div>
+            </div>
+            <!-- 등급안내 -->
+            <div class="grade-group">
+              <a class="grade-box on">
+                <span class="grade-box__title">1. 일반영업</span>
+                <span class="grade-box__percent">20%</span>
+                <span class="grade-box__txt grade-c">C</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">2. 외부영업</span>
+                <span class="grade-box__percent">30%</span>
+                <span class="grade-box__txt grade-s">S</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">3. 마케팅</span>
+                <span class="grade-box__percent">30%</span>
+                <span class="grade-box__txt grade-a">A</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">4. 전략영업</span>
+                <span class="grade-box__percent">20%</span>
+                <span class="grade-box__txt grade-b">B</span>
+              </a>
+            </div>
+            <!-- 평가등급 -->
+            <div class="evaluation-left-bottom">
+              <div
+                class="evaluation-left-bottom__title icon-performance-rating"
+              >
+                평가등급
+              </div>
+              <div class="evaluation-left-bottom__con">
+                <div class="grade-wrap">
+                  <div class="grade-level not-link">
+                    <a class="grade-a on">A</a>
+                  </div>
+                  <div class="number">87</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //왼쪽영역 E -->
+          <!-- 오른쪽영역 S -->
+          <div class="evaluation-pop-right">
+            <!-- write table S -->
+            <div class="evaluation-pop-write">
+              <div class="write-wrap ma20">
+                <table>
+                  <colgroup>
+                    <col style="width: 14rem" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>목표구분</th>
+                      <td>
+                        <select class="width-auto">
+                          <option>전략목표</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>평가항목</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="width-auto"
+                          value="일반영업"
+                          readonly
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>항목정의</th>
+                      <td>
+                        <textarea style="height: 7.4rem" readonly>
+항목정의 들어갑니다.
+항목정의 들어갑니다.항목정의 들어갑니다.항목정의 들어갑니다.
+항목정의 들어갑니다.</textarea
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>기간</th>
+                      <td>
+                        <fieldset class="form-group-wauto">
+                          <input
+                            type="text"
+                            class="w120 datepicker airdatepicker"
+                          />
+                          -
+                          <input
+                            type="text"
+                            class="w120 datepicker airdatepicker"
+                          />
+                        </fieldset>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>가중치</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="w80 text-right"
+                          value="40"
+                          readonly
+                        />
+                        %
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- write table E -->
+            <!-- 실적 -->
+            <div class="evaluation-txtbox mat10">
+              <div class="evaluation-txtbox__title icon-performance">실적</div>
+              <div class="evaluation-txtbox__form">
+                <textarea class="auto-textarea" rows="1" readonly>
+목표대비 89% 달성 하였습니다.</textarea
+                >
+              </div>
+            </div>
+            <!-- 평가 -->
+            <div class="evaluation-txtbox mat10">
+              <div class="evaluation-txtbox__title icon-evaluation">평가</div>
+              <div class="evaluation-txtbox__form grade-level">
+                <a class="grade-s on">S</a>
+                <a class="grade-a">A</a>
+                <a class="grade-b">B</a>
+                <a class="grade-c">C</a>
+                <a class="grade-d">D</a>
+              </div>
+            </div>
+          </div>
+          <!-- //오른쪽영역 E -->
+        </div>
+      </div>
+      <!-- 하단(종합평가)영역 S -->
+      <div class="evaluation-bottom">
+        <div class="evaluation-txtbox w100p">
+          <div class="evaluation-txtbox__title icon-feedback">종합 의견</div>
+          <div class="evaluation-txtbox__form">
+            <textarea class="auto-textarea" rows="1" readonly>
+내년에는 더욱 열심히 하겠습니다.</textarea
+            >
+          </div>
+        </div>
+        <div class="evaluation-txtbox w100p mat10">
+          <div class="evaluation-txtbox__title icon-feedback">평가자 의견</div>
+          <div class="evaluation-txtbox__form">
+            <textarea class="auto-textarea" rows="1"></textarea>
+          </div>
+        </div>
+      </div>
+      <!-- //하단(종합평가)영역 E -->
+    </div>
+    <!-- //[팝업] 2025년 연말 업적평가(평가중) E -->
+
+    <!-- [팝업]2025년 연말 역량평가(평가중) S -->
+    <div id="evaluationCapabilityInprogressPop" class="pop-wrap">
+      <div class="pop-header">
+        <div class="btn-wrap btn-right">
+          <h3>2025년 연말 역량평가<span class="text-box">평가중</span></h3>
+          <button class="pop-maximize tooltip">
+            <span class="tooltip-text">최대화</span>
+          </button>
+          <button class="pop-close btn-pop-close tooltip">
+            <span class="tooltip-text">닫기</span>
+          </button>
+        </div>
+      </div>
+      <div
+        class="pop-body cont-wrap-100"
+        style="max-height: calc(100vh - 28rem)"
+      >
+        <!-- title -->
+        <div class="btn-wrap btn-right">
+          <button class="btn-point">평가저장</button>
+        </div>
+        <div class="evaluation-pop-wrap mat10">
+          <!-- 왼쪽영역 S -->
+          <div class="evaluation-pop-left w330">
+            <!-- 개인정보 -->
+            <div class="evaluation-pop-hr">
+              <div class="evaluation-pop-hr__info">
+                <div class="photo">
+                  <img src="../assets/images/sample.png" />
+                </div>
+                <div class="name">
+                  <strong>홍길동 부장</strong>
+                  <span>고객서비스 기획담당</span>
+                </div>
+              </div>
+              <div class="evaluation-pop-hr__department">
+                <div class="con">
+                  <strong class="text-blt">평가조직</strong>
+                  <span>영업관리팀</span>
+                </div>
+                <div class="con">
+                  <strong class="text-blt">평가상태</strong>
+                  <span class="text-box">최종승인</span>
+                </div>
+              </div>
+            </div>
+            <!-- 등급안내 -->
+            <div class="grade-group">
+              <a class="grade-box on">
+                <span class="grade-box__title">1. 일반영업</span>
+                <span class="grade-box__percent">20%</span>
+                <span class="grade-box__txt grade-c">C</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">2. 외부영업</span>
+                <span class="grade-box__percent">30%</span>
+                <span class="grade-box__txt grade-s">S</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">3. 마케팅</span>
+                <span class="grade-box__percent">30%</span>
+                <span class="grade-box__txt grade-a">A</span>
+              </a>
+              <a class="grade-box">
+                <span class="grade-box__title">4. 전략영업</span>
+                <span class="grade-box__percent">20%</span>
+                <span class="grade-box__txt grade-b">B</span>
+              </a>
+            </div>
+            <!-- 평가등급 -->
+            <div class="evaluation-left-bottom">
+              <div
+                class="evaluation-left-bottom__title icon-performance-rating"
+              >
+                평가등급
+              </div>
+              <div class="evaluation-left-bottom__con">
+                <div class="grade-wrap">
+                  <div class="grade-level not-link">
+                    <a class="grade-a on">A</a>
+                  </div>
+                  <div class="number">87</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //왼쪽영역 E -->
+          <!-- 오른쪽영역 S -->
+          <div class="evaluation-pop-right">
+            <!-- write table1 S -->
+            <div class="evaluation-pop-write">
+              <div class="write-wrap ma20">
+                <table>
+                  <colgroup>
+                    <col style="width: 14rem" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>역량구분</th>
+                      <td>
+                        <select class="width-auto">
+                          <option>공통역량</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>역량항목</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="width-auto"
+                          value="책임감"
+                          readonly
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>역량정의</th>
+                      <td>
+                        <textarea style="height: 7.4rem" readonly>
+항목정의 들어갑니다.
+항목정의 들어갑니다.항목정의 들어갑니다.항목정의 들어갑니다.
+항목정의 들어갑니다.</textarea
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 평가 -->
+              <div class="evaluation-txtbox position-bottom">
+                <div class="evaluation-txtbox__title icon-evaluation">평가</div>
+                <div class="evaluation-txtbox__form grade-level">
+                  <a class="grade-s">S</a>
+                  <a class="grade-a on">A</a>
+                  <a class="grade-b">B</a>
+                  <a class="grade-c">C</a>
+                  <a class="grade-d">D</a>
+                </div>
+              </div>
+            </div>
+            <!-- write table1 E -->
+
+            <!-- write table2 S -->
+            <div class="evaluation-pop-write mat10">
+              <div class="write-wrap ma20">
+                <table>
+                  <colgroup>
+                    <col style="width: 14rem" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>역량구분</th>
+                      <td>
+                        <select class="width-auto">
+                          <option>공통역량</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>역량항목</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="width-auto"
+                          value="책임감"
+                          readonly
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>역량정의</th>
+                      <td>
+                        <textarea style="height: 7.4rem" readonly>
+항목정의 들어갑니다.
+항목정의 들어갑니다.항목정의 들어갑니다.항목정의 들어갑니다.
+항목정의 들어갑니다.</textarea
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 평가 -->
+              <div class="evaluation-txtbox position-bottom">
+                <div class="evaluation-txtbox__title icon-evaluation">평가</div>
+                <div class="evaluation-txtbox__form grade-level">
+                  <a class="grade-s">S</a>
+                  <a class="grade-a">A</a>
+                  <a class="grade-b on">B</a>
+                  <a class="grade-c">C</a>
+                  <a class="grade-d">D</a>
+                </div>
+              </div>
+            </div>
+            <!-- write table2 E -->
+          </div>
+          <!-- //오른쪽영역 E -->
+        </div>
+      </div>
+      <!-- 하단(종합평가)영역 S -->
+      <div class="evaluation-bottom">
+        <div class="evaluation-txtbox w100p">
+          <div class="evaluation-txtbox__title icon-feedback">종합 의견</div>
+          <div class="evaluation-txtbox__form">
+            <textarea class="auto-textarea" rows="1" readonly>
+내년에는 더욱 열심히 하겠습니다.</textarea
+            >
+          </div>
+        </div>
+        <div class="evaluation-txtbox w100p mat10">
+          <div class="evaluation-txtbox__title icon-feedback">평가자 의견</div>
+          <div class="evaluation-txtbox__form">
+            <textarea class="auto-textarea" rows="1"></textarea>
+          </div>
+        </div>
+      </div>
+      <!-- //하단(종합평가)영역 E -->
+    </div>
+    <!-- //[팝업] 2025년 연말 역량평가(평가중) E -->
 
     <!-- [팝업]2025년 연말 업적평가(미제출) S -->
     <div id="evaluationNotSubmitPop" class="pop-wrap">
@@ -1715,7 +2387,7 @@
       (function () {
         function adjustHeight(el) {
           el.style.height = "auto";
-          el.style.height = Math.max(el.scrollHeight, 15) + "px";
+          el.style.height = Math.max(el.scrollHeight, 17) + "px";
         }
 
         const autoTextareas = document.querySelectorAll(".auto-textarea");

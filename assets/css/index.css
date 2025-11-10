@@ -766,6 +766,10 @@ a {
   z-index: 10000;
 }
 
+.h-auto {
+  height: auto !important;
+}
+
 /* ---------------------- form ---------------------- */
 input,
 select,
@@ -3914,7 +3918,8 @@ button {
 #evaluationNotSubmitPop,
 #evaluationGoalApprovaPop,
 #evaluationInprogressPop,
-#evaluationCapabilityInprogressPop {
+#evaluationCapabilityInprogressPop,
+#evaluationTargetEmployeePop {
   min-width: 110rem;
 }
 
@@ -3974,6 +3979,7 @@ button {
   display: flex;
   flex-direction: column;
   height: 55rem;
+  overflow-y: auto;
 }
 
 .maximized .coaching-pop-right {
@@ -6242,6 +6248,7 @@ button {
   justify-content: center;
   align-items: baseline;
   padding: 4rem 3rem 9rem;
+  cursor: pointer;
 }
 .goal-wrap__box3 .goal-title {
   height: auto;
@@ -6342,6 +6349,11 @@ button {
   background-color: var(--gray-0);
   display: block;
   margin-bottom: 1rem;
+  cursor: pointer;
+}
+.evaluation-target__box:hover .title {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
 }
 .evaluation-target__box .title {
   height: 3rem;
@@ -6371,6 +6383,13 @@ button {
   display: block;
   margin-top: 0.5rem;
 }
+.evaluation-target__box.on {
+  border: 1px solid var(--primary-color);
+}
+.evaluation-target__box.on .title {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
 
 .evaluation-list {
   display: flex;
@@ -6379,7 +6398,7 @@ button {
   gap: 3rem;
 }
 .evaluation-list__box {
-  width: calc(50% - 1.5rem);
+  width: 100%;
   border: 1px solid var(--gray-50);
   border-radius: var(--base-round);
   display: flex;
@@ -6389,7 +6408,7 @@ button {
   position: relative;
   align-items: center;
   padding: 2rem 2rem 2rem 4rem;
-  min-width: 30rem;
+  min-width: 40%;
 }
 .evaluation-list__box .evaluation-list-info__pic .no-img {
   width: 7rem;
@@ -6474,14 +6493,6 @@ button {
   margin-right: 0.3rem;
 }
 
-@media screen and (max-width: 119rem) {
-  .evaluation-list__box {
-    width: 100%;
-  }
-  .evaluation-list__box .evaluation-list-info {
-    min-width: 40%;
-  }
-}
 [data-theme=dark] input,
 [data-theme=dark] select {
   background-color: rgba(255, 255, 255, 0);

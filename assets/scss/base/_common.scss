@@ -146,7 +146,9 @@ a {
 .air-datepicker-global-container {
   z-index: 10000;
 }
-
+.h-auto {
+  height: auto !important;
+}
 /* ---------------------- form ---------------------- */
 input,
 select,
