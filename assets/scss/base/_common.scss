@@ -125,6 +125,9 @@ a {
 .dis-flex {
   display: flex !important;
 }
+.dis-none {
+  display: none !important;
+}
 .width-auto {
   width: auto !important;
 }
@@ -148,6 +151,9 @@ a {
 }
 .h-auto {
   height: auto !important;
+}
+.c-pointer {
+  cursor: pointer !important;
 }
 /* ---------------------- form ---------------------- */
 input,

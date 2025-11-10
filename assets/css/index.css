@@ -741,6 +741,10 @@ a {
   display: flex !important;
 }
 
+.dis-none {
+  display: none !important;
+}
+
 .width-auto {
   width: auto !important;
 }
@@ -768,6 +772,10 @@ a {
 
 .h-auto {
   height: auto !important;
+}
+
+.c-pointer {
+  cursor: pointer !important;
 }
 
 /* ---------------------- form ---------------------- */
@@ -6122,6 +6130,17 @@ button {
   margin-left: 0.5rem;
 }
 
+.target-wrap {
+  position: relative;
+  margin-top: 2rem;
+}
+.target-wrap__left {
+  width: 26rem !important;
+  border: 1px solid var(--gray-50);
+  border-radius: var(--base-round);
+  height: calc(100vh - 35rem);
+}
+
 .goal-wrap {
   margin-top: 1rem;
   display: flex;
@@ -6248,7 +6267,6 @@ button {
   justify-content: center;
   align-items: baseline;
   padding: 4rem 3rem 9rem;
-  cursor: pointer;
 }
 .goal-wrap__box3 .goal-title {
   height: auto;
@@ -6398,7 +6416,7 @@ button {
   gap: 3rem;
 }
 .evaluation-list__box {
-  width: 100%;
+  width: calc(50% - 1.5rem);
   border: 1px solid var(--gray-50);
   border-radius: var(--base-round);
   display: flex;
@@ -6408,7 +6426,7 @@ button {
   position: relative;
   align-items: center;
   padding: 2rem 2rem 2rem 4rem;
-  min-width: 40%;
+  min-width: 30rem;
 }
 .evaluation-list__box .evaluation-list-info__pic .no-img {
   width: 7rem;
@@ -6491,6 +6509,21 @@ button {
   color: var(--gray-0);
   font-size: 1.2rem;
   margin-right: 0.3rem;
+}
+
+@media screen and (max-width: 119rem) {
+  .evaluation-list__box {
+    width: 100%;
+  }
+  .evaluation-list__box .evaluation-list-info {
+    min-width: 40%;
+  }
+}
+.evaluation-pop-rightfull .evaluation-list__box {
+  width: 100%;
+}
+.evaluation-pop-rightfull .evaluation-list__box .evaluation-list-info {
+  min-width: 40%;
 }
 
 [data-theme=dark] input,
